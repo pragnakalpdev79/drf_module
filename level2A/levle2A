@@ -1,0 +1,19 @@
+curl -X POST http://localhost:8000/api/register/ \
+  -H "Content-Type: application/json" \
+  -d '{
+    "username": "testuser",
+    "email": "test@example.com",
+    "password": "testpass123",
+    "password_confirm": "testpass123"
+  }'
+---RESPONSE :- 
+{"user":{"username":"testuser","email":"test@example.com","first_name":"","last_name":""},"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MjExMDk1NywiaWF0IjoxNzcyMDI0NTU3LCJqdGkiOiIzNzg1NGUyMTMxY2Q0YmUyOTk3NjY2ZjkyNjFlZDU2MCIsInVzZXJfaWQiOiIyIn0.6E2BoG2qv7R6rd10dHKZwLWIrt5xoUOq83B6FV3ToIg","access":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMDI4MTU3LCJpYXQiOjE3NzIwMjQ1NTcsImp0aSI6IjJlMzg0NTI4OTFlZjQwZDBiZDQwZmNkNTM3YTdhZmExIiwidXNlcl9pZCI6IjIifQ.u5Icfiib2-K6olFbfVKiXp5jhnjwaYHefRBbZkRBeVA"}
+
+
+2.============
+curl -X POST http://localhost:8000/api/token -H "Content-Type: application/json" -d '{"username":"testuser","password":"testpass123"}'
+
+{"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MjExMTEwOCwiaWF0IjoxNzcyMDI0NzA4LCJqdGkiOiI2ZWFiMDkwZmJjNmU0NTA4YmExOGVmMWNjODE2YzBhZCIsInVzZXJfaWQiOiIyIn0.r5s_8WfCLpEIhXK6pF1ZqYECVRERdRDCodWlWsSpUTU","access":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMDI4MzA4LCJpYXQiOjE3NzIwMjQ3MDgsImp0aSI6IjI2NGIwZDhkMmIyNjRiMDk5MDRjZjFhOWM2OWQwZDQ2IiwidXNlcl9pZCI6IjIifQ.G0tw95hP_W8QOpOatKOulKOQ6d2IJ52FygemdzBJEqE"}
+
+3. ==================
+

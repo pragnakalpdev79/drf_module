@@ -1,28 +1,43 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser,BaseUserManager
-from django.core.validators import RegexValidator
+from django.core.validators import RegexValidator,MaxValueValidator,MinValueValidator
+from django.utils.translation import gettext_lazy as _
 import uuid
 
-# username (unique)
-# email (unique)
-# phone_number (unique)
-# first_name
-# last_name
-# user_type (choices: Customer, Restaurant Owner, Delivery Driver)
-# is_active (boolean)
-# created_at
-# updated_at
-
 class TimestampedModel(models.Model):
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True,db_index=True)
     updated_at = models.DateTimeField(auto_now=True)
     class Meta:
         abstract = True 
 
+class MyUserManager(BaseUserManager):
+    def create_user(self,email,password=None,**extra_fields):
+        print("`````````````````````````````````````````````````p6-create function inside usermanager`````````````````````````````````````````````````")
+        if not email:
+            raise ValueError(_('The Email field must be set'))
+        email = self.normalize_email(email)
+        print("----p6.1-email checkd -----")
+        user = self.model(email=email,**extra_fields)
+        print("----p6.2-details stored -----")
+        user.set_password(password)
+        print("----p6.3-password stored-----")
+        user.save(using=self.db)
+        print("----p6.4-user saved-----")
+        return user
+    def create_superuser(self,email,password=None,**extra_fields):
+        extra_fields.setdefault('is_staff',True)
+        extra_fields.setdefault('is_superuser',True)
+        extra_fields.setdefailt('is_active',True)
+        if extra_fields.get("is_staff") is not True:
+            raise ValueError(_('Superuser must have is_staff=True'))
+        if extra_fields.get('is_superuser') is not True:
+            raise ValueError(_('Superuser must have is_superuser=True'))
+        return self.create_user(email,password,**extra_fields)
+
 class CustomUser(AbstractUser):
+    username = None
     id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
     email = models.EmailField(unique=True) #UNIQUE EMAIL
-    #
     first_name = models.CharField(max_length=20) # FIRST NAME
     last_name = models.CharField(max_length=20) # LAST NAME
     USER_TYPE = (
@@ -38,30 +53,36 @@ class CustomUser(AbstractUser):
         validators=[RegexValidator(
             regex=r'^\+?1?\d{9,15}$',
             message='Phone number must be entered in the format: "+999999999".Up to 15 digits allowed.' 
-        )]
+        )],
     )
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['first_name','last_name','utype','phone_number']
+    objects = MyUserManager()
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
+
 
 
 class CustomerProfile(TimestampedModel):
-    user = models.ForeignKey('CustomUser',on_delete=models.RESTRICT,null=True)
+    user = models.OneToOneField('CustomUser',on_delete=models.RESTRICT,related_name='customer_profile',primary_key=True)
     avatar = models.ImageField(upload_to='user_avatars/',blank=True,null=True)
     default_address = models.TextField()
     #
     total_orders = models.IntegerField()
     loyalty_points = models.IntegerField()
 
+    def __str__(self):
+        return f"{self.user.first_name} {self.user.last_name}"
+
+class address(TimestampedModel):
+    address = models.TextField(unique=True)
+    is_default = models.BooleanField()
+    adrofuser = models.ForeignKey('CustomUser',on_delete=models.CASCADE,related_name="user_s_adress")
+
+
 class DriverProfile(TimestampedModel):
-    # user (ForeignKey to User)
-    # avatar (image upload, max 5MB)
-    # vehicle_type (choices: Bike, Scooter, Car)
-    # vehicle_number
-    # license_number
-    # is_available (boolean, default True)
-    # total_deliveries
-    # average_rating (decimal, default 0)
-    # created_at
-    # updated_at
-    user = models.ForeignKey('CustomUser',on_delete=models.RESTRICT)
+    user = models.ForeignKey('CustomUser',on_delete=models.RESTRICT,related_name='driver_profile')
     avatar = models.ImageField(upload_to='user_avatars/',blank=True,null=True)
     VTYPE = (
         ('b','Bike'),
@@ -70,31 +91,13 @@ class DriverProfile(TimestampedModel):
     )
     vehicle_type = models.CharField(max_length=1,choices=VTYPE,blank=True,default='b',help_text="Delivery partner's Vehicle Type")
     vehicle_number = models.CharField(max_length=10)
-    license_number = models.DecimalField(max_digits=10)
+    license_number = models.CharField(max_length=10)
     is_available = models.BooleanField(default=False)
     total_deliveries = models.IntegerField()
-    average_rating = models.DecimalField(max_digits=1,decimal_places=1,default=0)
+    average_rating = models.DecimalField(max_digits=2,decimal_places=1,default=0)
 
 class RestrauntModel(TimestampedModel):
-    # owner (ForeignKey to User)
-    # name
-    # description
-    # cuisine_type (choices: Italian, Chinese, Indian, Mexican, American, Japanese, Thai, Mediterranean)
-    # address
-    # phone_number
-    # email
-    # logo (image upload, max 5MB)
-    # banner (image upload, max 10MB)
-    # opening_time
-    # closing_time
-    # is_open (boolean)
-    # delivery_fee (decimal)
-    # minimum_order (decimal, default 0)
-    # average_rating (decimal, default 0)
-    # total_reviews
-    # created_at
-    # updated_at
-    owner = models.ForeignKey('CustomUser',on_delete=models.RESTRICT)
+    owner = models.ForeignKey('CustomUser',on_delete=models.RESTRICT,related_name='restraunt_owner')
     name = models.CharField(max_length=50)
     description = models.TextField()
     CC = (
@@ -108,4 +111,111 @@ class RestrauntModel(TimestampedModel):
         ('md','Mediterranean'),
     )
     cuisine_type = models.CharField(max_length=2,choices=CC,help_text='Available Cuisine')
+    address = models.TextField()
+    phone_number = models.CharField(
+        max_length=13,
+        validators=[
+            RegexValidator(
+            regex=r'^\+?1?\d{9,15}$',
+            message='Phone number must be entered in the format: "+999999999".Up to 15 digits allowed.' ,
+        )],)
+    email = models.EmailField(unique=True) 
+    logo = models.ImageField(upload_to='logos/',blank=True,null=True)
+    banner = models.ImageField(upload_to='banners/',blank=True,null=True)
+    opening_time = models.TimeField()
+    closing_time = models.TimeField()
+    is_open = models.BooleanField(default=False)
+    delivery_fee = models.DecimalField(max_digits=2,decimal_places=2)
+    minimum_order = models.DecimalField(default=0,decimal_places=0,max_digits=3)
+    average_rating = models.DecimalField(max_digits=1,default=0,decimal_places=1)
+    total_reviews = models.IntegerField()
+
+    def __str__(self):
+        return f"{self.name}"
+
+class MenuItem(TimestampedModel):
+    restaurant = models.ForeignKey('RestrauntModel',on_delete=models.CASCADE,related_name='menu')
+    name = models.CharField(max_length=50)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=5,decimal_places=2)
+    CAC = (
+        ('a','Appteizer'),
+        ('m','Main Course'),
+        ('d','Desert'),
+        ('b','Beverage'),
+        ('s','Side Dish'),
+    )
+    category = models.CharField(
+        max_length = 1,
+        choices = CAC,
+        help_text = 'Available Catagories',
+    )
+    DIC = (
+        ('v1','Vegetarian'),
+        ('v2','Vegan'),
+        ('gf','Gluten-Free'),
+        ('df','Dairy-Free'),
+        ('no','None'),
+    )
+    dietary_info = models.CharField(
+        max_length=2,
+        choices = DIC,
+        help_text= 'Diteray information',
+    )
+    def file_path(self):
+        return f"{self.name}/menu_items"
+    item_image = models.ImageField(upload_to=file_path,blank=True,null=True)
+    is_available = models.BooleanField(default=True)
+    preparation_time = models.PositiveIntegerField(default=3)
+
+    def __str__(self):
+        return f"{self.name}"
+
+class Order(TimestampedModel):
+    customer = models.ForeignKey('CustomUser',on_delete=models.DO_NOTHING,related_name='order_for',db_index=True)
+    restaurant = models.ForeignKey('RestrauntModel',on_delete=models.DO_NOTHING,related_name='order_by',db_index=True)
+    driver = models.ForeignKey('CustomUser',on_delete=models.DO_NOTHING,related_name='deliver_by',null=True)
+    order_number = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
+    SC = (
+        ('pd','Pending'),
+        ('co','Confiremd'),
+        ('pr','Preparing'),
+        ('rd','Ready'),
+        ('pu','Picked Up'),
+        ('dl','Delivered'),
+        ('cd','Cancelled'),
+    )
+    status = models.CharField(
+        max_length=2,
+        choices= SC,
+        help_text = 'Order Status',
+        db_index=True,
+    )
+    #delivery adress
+    #subtotal =
+    #tax
+    #total_amount
+    special_instructions = models.TextField(null=True,blank=True)
+    #estimated delivery time
+    #actual delivery time
+    #def calculate_total(self):
+
+
+
+class OrderItem(models.Model):
+    order = models.ForeignKey('CustomUser',on_delete=models.DO_NOTHING,related_name='item_for')
+    menu_item = models.ForeignKey('MenuItem',on_delete=models.DO_NOTHING,related_name='item_from')
+    quantity = models.PositiveIntegerField(blank=False,null=False)
+    #price
+    special_instructions = models.TextField(null=True,blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+class Review(TimestampedModel):
+    customer = models.ForeignKey('CustomUser',on_delete=models.CASCADE,related_name='review_by')
+    restaurant = models.ForeignKey('RestrauntModel',on_delete=models.CASCADE,related_name='review_for',null=True)
+    menu_item = models.ForeignKey('MenuItem',on_delete=models.CASCADE,related_name='review_of',null=True)
+    order = models.ForeignKey('Order',on_delete=models.CASCADE,related_name='order')
+    rating = models.IntegerField(validators=[MinValueValidator(0),MaxValueValidator(5)])
+    comment = models.TextField(null=True)
     
+

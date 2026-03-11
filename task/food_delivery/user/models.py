@@ -2,7 +2,9 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser,BaseUserManager
 from django.core.validators import RegexValidator,MaxValueValidator,MinValueValidator
 from django.utils.translation import gettext_lazy as _
-import uuid
+import uuid,logging
+
+logger = logging.getLogger('user')
 
 class TimestampedModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True,db_index=True)
@@ -10,57 +12,89 @@ class TimestampedModel(models.Model):
     class Meta:
         abstract = True 
 
+############################################################################
+#  0. USER MANAGER FOR CUSTOMUSER MODEL
 class MyUserManager(BaseUserManager):
+    # 0.1 FUNCTION TO HANDLE NEW NORMAL USER CREATION
     def create_user(self,email,password=None,**extra_fields):
-        print("`````````````````````````````````````````````````p6-create function inside usermanager`````````````````````````````````````````````````")
+
+        logger.info("p6-create function inside usermanager ")
+
         if not email:
             raise ValueError(_('The Email field must be set'))
+        
         email = self.normalize_email(email)
-        print("----p6.1-email checkd -----")
+        logger.info("----p6.1-email checkd -----")
+
         user = self.model(email=email,**extra_fields)
-        print("----p6.2-details stored -----")
+        logger.info("----p6.2-details stored -----")
+
         user.set_password(password)
-        print("----p6.3-password stored-----")
+        logger.info("----p6.3-password stored-----")
+
         user.save(using=self.db)
-        print("----p6.4-user saved-----")
+        logger.info("----p6.4-user saved-----")
+
         return user
+    
+    # 0.2 FUNCTION TO HANDLE NEW ADMIN/SUPERUSER CREATION 
     def create_superuser(self,email,password=None,**extra_fields):
         extra_fields.setdefault('is_staff',True)
         extra_fields.setdefault('is_superuser',True)
-        extra_fields.setdefailt('is_active',True)
+        extra_fields.setdefault('is_active',True)
+
         if extra_fields.get("is_staff") is not True:
             raise ValueError(_('Superuser must have is_staff=True'))
+        
         if extra_fields.get('is_superuser') is not True:
             raise ValueError(_('Superuser must have is_superuser=True'))
+        
         return self.create_user(email,password,**extra_fields)
 
+############################################################################
+#  1. MAIN USER MODEL EXTENDED FROM ABSTRACTUSER
 class CustomUser(AbstractUser):
-    username = None
-    id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
+
+    id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False) #UUID
     email = models.EmailField(unique=True) #UNIQUE EMAIL
     first_name = models.CharField(max_length=20) # FIRST NAME
     last_name = models.CharField(max_length=20) # LAST NAME
-    USER_TYPE = (
+
+    USER_TYPE = ( 
         ('c','Customer'),
         ('r','Restraunt'),
         ('d','Driver'),
     )
     utype = models.CharField(max_length=1,choices=USER_TYPE,blank=True,default='c',help_text='User Type') #USER TYPE
+
     created_at = models.DateTimeField(auto_now_add=True) # CREATED AT
     updated_at = models.DateTimeField(auto_now=True) # UPDATED AT
+
     phone_number = models.CharField(
         max_length=13,
+        unique=True,
         validators=[RegexValidator(
             regex=r'^\+?1?\d{9,15}$',
             message='Phone number must be entered in the format: "+999999999".Up to 15 digits allowed.' 
         )],
     )
+    
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name','last_name','utype','phone_number']
     objects = MyUserManager()
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name}"
+        return f"{self.first_name} {self.last_name} - {self.email}"
+    
+    class Meta: 
+        permissions = [
+            ('IsOwnerOrReadOnly',"owner can edit/delete, others read-only"),
+            ('IsRestaurantOwner',"only restaurant owner can edit restaurant and menu items"),
+            ('IsCustomer',"only customers can place orders and write reviews"),
+            ('IsDriver',"only drivers can update delivery status and location"),
+            ('IsOrderCustomer',"only order customer can view order details"),
+            ('IsRestaurantOwnerOrDriver',"restaurant owner or assigned driver can update order status"),
+        ]
 
 
 
@@ -70,7 +104,7 @@ class CustomerProfile(TimestampedModel):
     default_address = models.TextField()
     #
     total_orders = models.IntegerField()
-    loyalty_points = models.IntegerField()
+    loyalty_points = models.IntegerField(default=0)
 
     def __str__(self):
         return f"{self.user.first_name} {self.user.last_name}"
@@ -191,9 +225,9 @@ class Order(TimestampedModel):
         help_text = 'Order Status',
         db_index=True,
     )
-    #delivery adress
+    delivery_address = models.ForeignKey('address',on_delete=models.DO_NOTHING,related_name='delivery_adress')
     #subtotal =
-    #tax
+    tax = models.DecimalField(max_digits=4,decimal_places=2,default=30)
     #total_amount
     special_instructions = models.TextField(null=True,blank=True)
     #estimated delivery time

@@ -12,19 +12,21 @@ from .throttles import BookCreateThrottle
 from rest_framework.decorators import action
 from django_filters.rest_framework import DjangoFilterBackend
 from .filters import TaskFilter,BookFilter
-#from .pagination import BookLimitOffsetPagination
+from .pagination import BookLimitOffsetPagination,BookCursorPagination
 
 
 class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     permission_classes = [IsAuthenticatedOrReadOnly,IsOwnerOrReadOnly]
-    #throttle_classes = [BookCreateThrottle]
+    throttle_classes = [BookCreateThrottle]
     filter_backends = [DjangoFilterBackend,filters.SearchFilter,filters.OrderingFilter]
     filterset_class = BookFilter
     search_fields = ['title','author','description']
     ordering_fields = ['title','author','published_date','created_at']
     ordering = ['-created_at']
+    pagination_class = BookLimitOffsetPagination
+    #pagination_class = BookCursorPagination
     def get_throttles(self):
         if self.action =='create':
             return [BookCreateThrottle()]
@@ -42,7 +44,6 @@ class TaskViewSet(viewsets.ModelViewSet):
     ordering = ['-created_at']
     search_fields = ['title','desc']
     permission_classes = [IsAuthenticated]
-    #pagination_class = BookLimitOffsetPagination
     def perform_create(self,serializer):
         print(self.request.user)
         serializer.save(owner=self.request.user)

@@ -41,6 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'corsheaders',
+    'django_filters',
+    'dvd',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +129,48 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+REST_FRAMEWORK = { 
+    'DEFAULT_RENDERER_CLASSES' : [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer'
+    ] ,
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser'
+    ],
+    'DEFAULT_PAGINATION_CLASS': None,
+    'EXCEPTION_HANDLER' : 'api.views.custom_exception_handler',
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+    'DEFAULT_PERMISSSION_CLASSES':[
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_THROTTLE_RATES':{
+        'anon' : '100/hour',
+        'user' : '100/hour',
+    },
+    'DEFAULT_PAGINATION_CLASS':'rest_framework.pagination.PageNumberPagination', #PAGE-NUMBER PAGINATION
+    'PAGE_SIZE' : 5, #NUMBER OF ITEMS TO BE DISPLAYED WHEN PAGENUMBER PAGINATION IS USED
+    'EXCEPTION_HANDLER' : 'api.exceptions.custom_exception_handler',
+    }
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME' : timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME' : timedelta(days=1),
+    'ROTATE_REFRESH_TOKENS' : True,
+    'BLACKLIST_AFTER_ROTATION':True,
+    'UPDATE_LAST_LOGIN':True,
+    'ALGORITHM': 'HS256',
+    'SIGNING_KEY' : SECRET_KEY,
+    'AUTH_HEADER_TYPES' : ('Bearer',),
+    'AUTH_HEADER_NAME' : 'HTTP_AUTHORIZATION',
+    'USER_ID_FIELD' : 'id',
+    'USER_ID_CLAIM' : 'user_id',
+}

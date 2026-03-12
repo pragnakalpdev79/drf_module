@@ -83,7 +83,7 @@ class Post(models.Model):
     #MANY-TO-MANY
     tags = models.ManyToManyField(Tag,related_name='posts',blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    comments = models.ManyToManyField(Comment,related_name='comments',blank=True)
+    comments = models.ForeignKey(Comment,related_name='comments',blank=True)
 
     def __str__(self):
         return self.title

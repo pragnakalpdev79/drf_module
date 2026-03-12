@@ -29,11 +29,12 @@ class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     permission_classes = [IsAuthenticatedOrReadOnly,IsOwnerOrReadOnly]
-    #throttle_classes = [BookCreateThrottle]
-    def get_throttles(self):
-        if self.action =='create':
+    throttle_classes = [BookCreateThrottle]
+    def get_throttles(self): #USED TO APPLY DIFFERENT THROTTLES PER ACTION
+        if self.action =='create': #SPECIFICALLY IMPLIES STRICT THROTTLE OF THIS CLASS WHEN create ACTION IS CALLED
+            #OTHER ACTIONS WILL USE DEFAULT THROTTLES
             return [BookCreateThrottle()]
-        return super().get_throttles()
+        return super().get_throttles() #RETURNS THROTTLES FROM THROTTLE CLASSES ATTRIBUTE
 
     def perform_create(self,serializer):
         serializer.save(owner=self.request.user)

@@ -8,7 +8,7 @@ class TaskFilter(django_filters.FilterSet):
     completed = django_filters.BooleanFilter()
     class Meta:
         model = Task
-        fields = ['completed','title','created_after','created_before']
+        fields = ['completed','title','created_after','created_before','priority']
         
 class BookFilter(django_filters.FilterSet):
     author = django_filters.CharFilter(lookup_expr='icontain')

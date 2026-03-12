@@ -14,6 +14,7 @@ from rest_framework_simplejwt.exceptions import InvalidToken, TokenError
 from django.conf import settings
 import logging
 import traceback
+import os
 
 logger = logging.getLogger(__name__)
 
@@ -22,23 +23,57 @@ def custom_exception_handler(exc, context):
     Comprehensive exception handler for DRF.
     Provides consistent, user-friendly error responses.
     """
-    # Call DRF's default exception handler
+    # Call DRF's default exception handler for handling common exceptions such as validation and permission
     response = exception_handler(exc, context)
     
     # Request object
     request = context.get('request')
+
+#CODE FOR PRODUCTION AND SHORT WITH TRACEBACK RESPONSE
+    # if response is not None:
+    #     # os.system('clear')
+    #     if settings.DEBUG:
+    #         print("debug!--")
+    #         error_details = {
+    #             'message' : str(exc),
+    #             'traceback' : traceback.format_exc() if hasattr(exc,'__traceback__') else None,
+    #             'context' : {
+    #                 'view' : context.get('view').__class__.__name__ if context.get('view') else None,
+    #                 'request_method' : context.get('request').method if context.get('request') else None,
+    #             }
+    #         }
+    #     else:
+    #         print("creating custom response")
+    #         error_details = {
+    #             'message' : get_error_message(response.status_code,exc) if 'get_error_message' in globals() else 'An error occured',
+    #             'code' : 'error'
+    #         }
+    #     print("creating custom response")
+    #     custom_response_data = {
+    #         'success' : False,
+    #         'error' : {
+    #             'status_code' : response.status_code,
+    #             **error_details,
+    #             'type' : exc.__class__.__name__,
+    #         }
+    #     }
+    #     print(custom_response_data)
+    #     response.data = custom_response_data
+    #     return response
     
+#CUSTOM EXCPETION HANDLER FOR USER-FRIENDLY ERROR MESSAGES
     if response is not None:
         # Customize based on exception type
         error_data = {
             'success': False,
             'error': {}
         }
+        
         # Authentication errors
         if isinstance(exc, (AuthenticationFailed, NotAuthenticated)):
             error_data['error'] = {
                 'status_code': 401,
-                'message': 'Authentication required',
+                'message': 'Authentication required hello!!!!',
                 'details': {
                     'code': 'authentication_required',
                     'hint': 'Include a valid token in Authorization header: Bearer <token>'
@@ -106,7 +141,6 @@ def custom_exception_handler(exc, context):
                 'details': response.data if settings.DEBUG else {'code': 'error'}
             }
         
-        # Add exception type for debugging
         error_data['error']['type'] = exc.__class__.__name__
         
         # Log error
@@ -119,9 +153,9 @@ def custom_exception_handler(exc, context):
             exc_info=settings.DEBUG
         )
         
-        response.data = error_data['error']
+        response.data = error_data
+        print(response.data)
     
-    # Handle unexpected errors (500)
     else:
         error_data = {
             'success': False,
@@ -135,24 +169,19 @@ def custom_exception_handler(exc, context):
                 'type': exc.__class__.__name__
             }
         }
-        # Log unexpected errors
         logger.exception(f"Unexpected error: {exc}")
-        
-        response = Response(error_data['error'], status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        response = Response(error_data, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
     return response
 
 def format_validation_errors(errors):
-    """Format DRF validation errors into user-friendly format"""
     formatted = {}
     
     if isinstance(errors, dict):
         for field, field_errors in errors.items():
             if isinstance(field_errors, list):
-                # Take first error message
                 formatted[field] = field_errors[0] if field_errors else 'Invalid value'
             elif isinstance(field_errors, dict):
-                # Nested errors
                 formatted[field] = format_validation_errors(field_errors)
             else:
                 formatted[field] = str(field_errors)
@@ -160,7 +189,6 @@ def format_validation_errors(errors):
     return formatted
 
 def get_error_message(status_code):
-    """Get user-friendly error message"""
     messages = {
         400: 'Bad request',
         401: 'Authentication required',

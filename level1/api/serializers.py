@@ -30,9 +30,9 @@ class ProductSerializer(serializers.ModelSerializer):
         fields = '__all__'
         read_only_fields = ['id','created_at','updated_at']
     def validate(self,data):
-        if data['stock'] <= 0:
+        if data['stock'] >= 0:
             raise serializers.ValidationError("The stock must be a postive number")
-        if data['price'] <= 0:
+        if data['price'] >= 0:
             raise serializers.ValidationError("The price must be greater then zero")
         return data
         

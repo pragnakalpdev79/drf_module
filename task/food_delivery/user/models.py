@@ -93,6 +93,7 @@ class CustomUser(AbstractUser):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name','last_name','utype','phone_number']
     objects = MyUserManager()
+    all_objects = models.Manager()
     # METHODS TO CHECK TYPE OF USER
     @property
     def check_if_customer(self):
@@ -108,13 +109,14 @@ class CustomUser(AbstractUser):
     def check_if_driver(self):
         result = (self.utype == 'd')
         return result
-    #SOFT DELETE AND USER RESTORE
+    #SOFT DELETE AND USER RESTORE FROM LEVEL 3B SOFT DELETE CODE
     @property
     def delete(self,using=None,keep_parents=False):
         self.deleted_at = timezone.now()
         logger.info("User deleted")
 
         self.save() #overrides default delete method
+    @property
     def restore(self):
         self.deleted_at = None
         
@@ -154,7 +156,7 @@ class address(TimestampedModel):
 class CustomerProfile(TimestampedModel):
     user = models.OneToOneField('CustomUser',on_delete=models.RESTRICT,related_name='customer_profile',primary_key=True)
     avatar = models.ImageField(upload_to='user_avatars/',blank=True,null=True)
-    default_address = models.ForeignKey(address,on_delete=models.DO_NOTHING,related_name="saved_adresses_for_user")
+    default_address = models.ForeignKey(address,on_delete=models.DO_NOTHING,related_name="saved_adresses_for_user",null=True,blank=True)
     total_orders = models.IntegerField()
     loyalty_points = models.IntegerField(default=0)
 
@@ -189,7 +191,7 @@ class DriverProfile(TimestampedModel):
     vehicle_number = models.CharField(max_length=10)
     license_number = models.CharField(max_length=10)
     is_available = models.BooleanField(default=False)
-    total_deliveries = models.IntegerField()
+    total_deliveries = models.IntegerField(blank=True,null=True)
     average_rating = models.DecimalField(max_digits=2,decimal_places=1,default=0)
 
 class RestrauntModel(TimestampedModel):
@@ -221,9 +223,9 @@ class RestrauntModel(TimestampedModel):
     opening_time = models.TimeField()
     closing_time = models.TimeField()
     is_open = models.BooleanField(default=False)
-    delivery_fee = models.DecimalField(max_digits=2,decimal_places=2)
+    delivery_fee = models.DecimalField(max_digits=4,decimal_places=2)
     minimum_order = models.DecimalField(default=0,decimal_places=0,max_digits=3)
-    average_rating = models.DecimalField(max_digits=1,default=0,decimal_places=1)
+    average_rating = models.DecimalField(max_digits=2,default=0,decimal_places=1)
     total_reviews = models.IntegerField()
 
     def __str__(self):

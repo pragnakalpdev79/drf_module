@@ -1,18 +1,32 @@
 import logging
 from django.shortcuts import render
 from django.contrib.auth.models import Group
-from rest_framework import generics,status
-from rest_framework.permissions import AllowAny
+from rest_framework import generics,status,viewsets,filters
+from rest_framework.permissions import AllowAny,IsAuthenticated,IsAdminUser
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
-from .models import CustomUser
-from .serializers import CustomUserRegistrationSerializer
+from .models import CustomUser,address
+from .serializers import *
 
 
 logger = logging.getLogger(__name__)
 
+#===============================================================================================
+#===============================================================================================
+# USER-RELAYTED VIEWS
+# 1.REGISTRATION - Allowany
+# 2.LOGIN - Allowany
+# 3.LOGOUT - Logged in user only
+# 4. DELETE USER VIEW -Admin only
+# 5. RESTORE USER VIEW - Admin Only
+
+# 1.REGISTRATION - Allowany
 class UserRegisterationView(generics.CreateAPIView):
+    #generics.CreateAPIView inherits from APIView
+    #Extends with mixin CreateModelMixin
+    #Specifcialy to handle create_only post method handler
+    #only works with post requests
     serializer_class = CustomUserRegistrationSerializer
     permission_classes = [AllowAny]
     
@@ -55,12 +69,53 @@ class UserRegisterationView(generics.CreateAPIView):
             'access' : str(refresh.access_token),
         },status=status.HTTP_201_CREATED
         )
-
     
+# 2.LOGIN - Allowany
+class UserLoginView(APIView):
+    permission_classes = [AllowAny]
+    def post(self,request):
+        logger.info("===========================================p2 -entering the Login-view ======================================================")
+        serializer = CustomUserLoginSerializer(data=request.data)
+        # print(serializer)
+        serializer.is_valid(raise_exception=True)
+        logger.info('p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ')
+        # print(serializer.validated_data)
+        logger.info("p2.2   authentication request for the following user  {serializer.validated_data['user']}      ")
+        logger.info(f"p2.2         ")
+        refresh = RefreshToken.for_user(serializer.validated_data['user'])
+        return Response({
+            'user' : serializer.validated_data['email'],
+            'refresh' : str(refresh),
+            'access' : str(refresh.access_token),
+        },status=status.HTTP_201_CREATED)
 
+# 3.LOGOUT - Logged in user only
+class UserLogoutView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self,request):
+        logger.info("===========================================entering the Logout-view ======================================================")
+        try:
+            refresh_token = request.data["refresh_token"]
+            #print("db1")
+            token = RefreshToken(refresh_token)
+            #print("db2")
+            token.blacklist()
+            #print("db3")
+            logger.info("Logout success")
+            return Response({
+                'message' : 'Log out successful',
+            },status=status.HTTP_205_RESET_CONTENT)
+        except Exception as e:
+            logger.info(f"An error occured in log out == {e}")
+            return Response({
+                'error' : 'something went wrong'
+            },status=status.HTTP_400_BAD_REQUEST)
+
+# 4. DELETE USER VIEW -Admin only
 class DeleteUser(APIView):
     queryset = CustomUser
-    permission_classes = [AllowAny] #FOR TESTING ONLY
+    permission_classes = [IsAdminUser] #FOR TESTING ONLY
     def delete(self,request,uname):
         logger.info("===========================================DELETE 1 -entering the view ======================================================")
         #uname=self.request.GET.get('uname',None)
@@ -78,3 +133,29 @@ class DeleteUser(APIView):
         return Response({
             'message' : 'User has been deleted',
         })
+
+# 5. RESTORE USER VIEW - Admin Only
+class RestoreDeletedUserView(APIView):
+    permission_classes = [IsAdminUser]
+
+    def post(self,request,uname):
+        logger.info("===========================================RESTORE 1 -entering the RESTORE view ======================================================")
+        if uname is not None:
+            try:
+                user = CustomUser.all_objects.get(username=uname)
+                logger.info("===========================================R1.1-USER FOUND  ======================================================")
+            except CustomUser.DoesNotExist:
+                logger.info("===========================================R1.1 -USER DOES NOT EXISTS ======================================================")
+                return Response({
+                    "error" : "The Requested User does not exist" 
+                })
+            user.restore
+        logger.info("===========================================R1.2-USER FOUND AND DELETED ======================================================")
+        
+        return Response({
+            'message' : 'User has been restored',
+        })
+    
+#===============================================================================================
+#===============================================================================================
+

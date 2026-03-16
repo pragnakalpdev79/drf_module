@@ -445,3 +445,434 @@
 {"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-13 09:42:45,182"}
 {"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-13 09:42:45,182"}
 {"message": "test5f test5l - test5@test.com added to group Customers", "module": "views", "asctime": "2026-03-13 09:42:45,185"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 04:54:39,774"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 04:54:39,775"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 04:54:39,777"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 04:55:20,647"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 04:55:20,647"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 04:55:20,650"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:28:49,733"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:30:03,424"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:30:17,185"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:32:20,902"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID", "module": "views", "asctime": "2026-03-16 05:32:23,331"}
+{"message": "authenticating the following user", "module": "views", "asctime": "2026-03-16 05:32:23,331"}
+{"message": "test5@test.com", "module": "views", "asctime": "2026-03-16 05:32:23,331"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:32:57,539"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID", "module": "views", "asctime": "2026-03-16 05:33:00,199"}
+{"message": "authenticating the following user", "module": "views", "asctime": "2026-03-16 05:33:00,199"}
+{"message": "test6@test.com", "module": "views", "asctime": "2026-03-16 05:33:00,200"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:33:27,524"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID", "module": "views", "asctime": "2026-03-16 05:33:30,128"}
+{"message": "authentication request for the following user", "module": "views", "asctime": "2026-03-16 05:33:30,128"}
+{"message": "test6@test.com", "module": "views", "asctime": "2026-03-16 05:33:30,128"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:34:09,584"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID", "module": "views", "asctime": "2026-03-16 05:34:12,202"}
+{"message": "p2.2   authentication request for the following user", "module": "views", "asctime": "2026-03-16 05:34:12,202"}
+{"message": "p2.2   test6@test.com", "module": "views", "asctime": "2026-03-16 05:34:12,202"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:34:41,794"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 05:34:44,426"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 05:34:44,426"}
+{"message": "p2.2   test6@test.com       ", "module": "views", "asctime": "2026-03-16 05:34:44,426"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:39:55,488"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:40:11,736"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 05:40:14,182"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 05:40:14,182"}
+{"message": "p2.2   test680@test.com       ", "module": "views", "asctime": "2026-03-16 05:40:14,182"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:41:25,837"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 05:41:28,393"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 05:41:28,393"}
+{"message": "p2.2   test680@test.com       ", "module": "views", "asctime": "2026-03-16 05:41:28,393"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:42:52,434"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:43:06,561"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:43:17,506"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 05:43:20,023"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 05:43:20,023"}
+{"message": "p2.2   test5@test.com       ", "module": "views", "asctime": "2026-03-16 05:43:20,024"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:44:46,585"}
+{"message": "p2.1.1  checking if user exists       ", "module": "serializers", "asctime": "2026-03-16 05:44:46,696"}
+{"message": "p2.1.2 test5f test5l - test5@test.com      ", "module": "serializers", "asctime": "2026-03-16 05:44:49,087"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 05:44:49,088"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 05:44:49,088"}
+{"message": "p2.2   test5@test.com       ", "module": "views", "asctime": "2026-03-16 05:44:49,088"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:45:10,183"}
+{"message": "p2.1.1  checking if user exists       ", "module": "serializers", "asctime": "2026-03-16 05:45:10,186"}
+{"message": "p2.1.2 None      ", "module": "serializers", "asctime": "2026-03-16 05:45:12,787"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:46:19,274"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 05:46:19,404"}
+{"message": "p2.1.2 None      ", "module": "serializers", "asctime": "2026-03-16 05:46:21,898"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:47:09,643"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 05:47:09,767"}
+{"message": "p2.1.2 Requested User does not exist raising Validation Errors      ", "module": "serializers", "asctime": "2026-03-16 05:47:12,330"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:50:40,411"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 05:50:40,539"}
+{"message": "p2.1.2 Requested User does not exist raising Validation Error      ", "module": "serializers", "asctime": "2026-03-16 05:50:43,149"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:55:39,272"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 05:55:39,418"}
+{"message": "p2.1.2 Requested User does not exist raising Validation Error      ", "module": "serializers", "asctime": "2026-03-16 05:55:41,868"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:56:40,289"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 05:56:40,428"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:56:58,178"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 05:56:58,284"}
+{"message": "Result of authentication function None", "module": "serializers", "asctime": "2026-03-16 05:57:00,736"}
+{"message": "p2.1.2 Requested User does not exist raising Validation Error      ", "module": "serializers", "asctime": "2026-03-16 05:57:00,736"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:58:26,951"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 05:58:26,953"}
+{"message": "Result of authentication function test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 05:58:29,485"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 05:58:29,486"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 05:58:29,486"}
+{"message": "p2.2   test1@test.com       ", "module": "views", "asctime": "2026-03-16 05:58:29,486"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 05:59:35,587"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 05:59:35,718"}
+{"message": "Result of authentication function test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 05:59:38,356"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:00:17,596"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:00:17,704"}
+{"message": "Result of authentication function test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:00:20,084"}
+{"message": "User object to be returned to the view : -test1f test2l - test1@test.com      ", "module": "serializers", "asctime": "2026-03-16 06:00:20,084"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:00:20,084"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 06:00:20,085"}
+{"message": "p2.2   test1@test.com       ", "module": "views", "asctime": "2026-03-16 06:00:20,085"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:03:11,631"}
+{"message": "p2.1.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:03:11,746"}
+{"message": "Result of authentication function test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:03:14,356"}
+{"message": "User object to be returned to the view : - test1f test2l - test1@test.com      ", "module": "serializers", "asctime": "2026-03-16 06:03:14,356"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:03:14,356"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 06:03:14,357"}
+{"message": "p2.2   test1@test.com       ", "module": "views", "asctime": "2026-03-16 06:03:14,357"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:04:44,461"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:04:44,636"}
+{"message": "Result of authentication function test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:04:47,363"}
+{"message": "User object to be returned to the view : - test1f test2l - test1@test.com      ", "module": "serializers", "asctime": "2026-03-16 06:04:47,363"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:04:47,363"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 06:04:47,364"}
+{"message": "p2.2   test1@test.com       ", "module": "views", "asctime": "2026-03-16 06:04:47,364"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:05:35,327"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:05:35,458"}
+{"message": "p2.0.1  Result of authentication function test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:05:37,919"}
+{"message": "p2.0.1  User object to be returned to the view : - test1f test2l - test1@test.com      ", "module": "serializers", "asctime": "2026-03-16 06:05:37,920"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:05:37,920"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 06:05:37,920"}
+{"message": "p2.2   test1@test.com       ", "module": "views", "asctime": "2026-03-16 06:05:37,920"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:06:29,394"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:06:29,535"}
+{"message": "p2.0.1  Result of authentication function == test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:06:32,033"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test1f test2l - test1@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:06:32,034"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:06:32,034"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 06:06:32,034"}
+{"message": "p2.2   test1@test.com       ", "module": "views", "asctime": "2026-03-16 06:06:32,034"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:07:23,344"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:07:23,448"}
+{"message": "p2.0.1  Result of authentication function == test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:07:25,672"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test1f test2l - test1@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:07:25,672"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:07:25,672"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 06:07:25,672"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:08:16,835"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:08:16,966"}
+{"message": "p2.0.1  Result of authentication function == test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:08:19,406"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test1f test2l - test1@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:08:19,406"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:08:19,406"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 06:08:19,407"}
+{"message": "p2.2   test1f test2l - test1@test.com       ", "module": "views", "asctime": "2026-03-16 06:08:19,407"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:08:58,393"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:08:58,512"}
+{"message": "p2.0.1  Result of authentication function == test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:09:01,087"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test1f test2l - test1@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:09:01,087"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:09:01,088"}
+{"message": "p2.2   authentication request for the following user       ", "module": "views", "asctime": "2026-03-16 06:09:01,088"}
+{"message": "p2.2   test1f test2l - test1@test.com       ", "module": "views", "asctime": "2026-03-16 06:09:01,088"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:11:51,666"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:11:51,896"}
+{"message": "p2.0.1  Result of authentication function == test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:11:54,486"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test1f test2l - test1@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:11:54,487"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:11:54,487"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 06:11:54,487"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 06:11:54,487"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:19:28,773"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:19:28,923"}
+{"message": "p2.0.1  Result of authentication function == test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:19:31,607"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test1f test2l - test1@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:19:31,607"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:19:31,608"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 06:19:31,608"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 06:19:31,608"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:26:42,667"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:26:42,794"}
+{"message": "p2.0.1  Result of authentication function == test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:26:45,263"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test1f test2l - test1@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:26:45,264"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:26:45,264"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 06:26:45,264"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 06:26:45,264"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:27:12,689"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:27:12,691"}
+{"message": "p2.0.1  Result of authentication function == test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:27:15,185"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test1f test2l - test1@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:27:15,185"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:27:15,185"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 06:27:15,185"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 06:27:15,185"}
+{"message": "An error occured in log out == Token is blacklisted", "module": "views", "asctime": "2026-03-16 06:38:58,988"}
+{"message": "===========================================entering the Logout-view ======================================================", "module": "views", "asctime": "2026-03-16 06:39:57,235"}
+{"message": "An error occured in log out == Token is blacklisted", "module": "views", "asctime": "2026-03-16 06:39:57,242"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:40:09,701"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:40:09,822"}
+{"message": "p2.0.1  Result of authentication function == test1f test2l - test1@test.com", "module": "serializers", "asctime": "2026-03-16 06:40:12,586"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test1f test2l - test1@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:40:12,586"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:40:12,586"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 06:40:12,586"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 06:40:12,586"}
+{"message": "===========================================entering the Logout-view ======================================================", "module": "views", "asctime": "2026-03-16 06:40:39,660"}
+{"message": "Logout success", "module": "views", "asctime": "2026-03-16 06:40:39,683"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 06:56:52,140"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 06:56:52,257"}
+{"message": "p2.0.1  Result of authentication function == Shreehari Kadia - admin@gmail.com", "module": "serializers", "asctime": "2026-03-16 06:56:54,835"}
+{"message": "p2.0.1  User object to be returned to the view : - [ Shreehari Kadia - admin@gmail.com ]     ", "module": "serializers", "asctime": "2026-03-16 06:56:54,836"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 06:56:54,840"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 06:56:54,840"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 06:56:54,840"}
+{"message": "===========================================RESTORE 1 -entering the RESTORE view ======================================================", "module": "views", "asctime": "2026-03-16 07:04:27,867"}
+{"message": "===========================================R1.1 -USER DOES NOT EXISTS ======================================================", "module": "views", "asctime": "2026-03-16 07:04:27,871"}
+{"message": "===========================================RESTORE 1 -entering the RESTORE view ======================================================", "module": "views", "asctime": "2026-03-16 07:08:39,884"}
+{"message": "===========================================R1.1 -USER DOES NOT EXISTS ======================================================", "module": "views", "asctime": "2026-03-16 07:08:39,888"}
+{"message": "===========================================RESTORE 1 -entering the RESTORE view ======================================================", "module": "views", "asctime": "2026-03-16 07:10:41,444"}
+{"message": "===========================================R1.1-USER FOUND  ======================================================", "module": "views", "asctime": "2026-03-16 07:10:41,448"}
+{"message": "User deleted", "module": "models", "asctime": "2026-03-16 07:10:41,448"}
+{"message": "===========================================R1.2-USER FOUND AND DELETED ======================================================", "module": "views", "asctime": "2026-03-16 07:10:41,458"}
+{"message": "===========================================RESTORE 1 -entering the RESTORE view ======================================================", "module": "views", "asctime": "2026-03-16 07:11:12,331"}
+{"message": "===========================================R1.1-USER FOUND  ======================================================", "module": "views", "asctime": "2026-03-16 07:11:12,335"}
+{"message": "User deleted", "module": "models", "asctime": "2026-03-16 07:11:12,335"}
+{"message": "===========================================R1.2-USER FOUND AND DELETED ======================================================", "module": "views", "asctime": "2026-03-16 07:11:12,344"}
+{"message": "===========================================RESTORE 1 -entering the RESTORE view ======================================================", "module": "views", "asctime": "2026-03-16 07:12:35,452"}
+{"message": "===========================================R1.1-USER FOUND  ======================================================", "module": "views", "asctime": "2026-03-16 07:12:35,455"}
+{"message": "User deleted", "module": "models", "asctime": "2026-03-16 07:12:35,455"}
+{"message": "===========================================R1.2-USER FOUND AND DELETED ======================================================", "module": "views", "asctime": "2026-03-16 07:12:35,465"}
+{"message": "===========================================RESTORE 1 -entering the RESTORE view ======================================================", "module": "views", "asctime": "2026-03-16 07:13:22,101"}
+{"message": "===========================================R1.1-USER FOUND  ======================================================", "module": "views", "asctime": "2026-03-16 07:13:22,105"}
+{"message": "User deleted", "module": "models", "asctime": "2026-03-16 07:13:22,105"}
+{"message": "===========================================R1.2-USER FOUND AND DELETED ======================================================", "module": "views", "asctime": "2026-03-16 07:13:22,115"}
+{"message": "===========================================RESTORE 1 -entering the RESTORE view ======================================================", "module": "views", "asctime": "2026-03-16 07:14:45,123"}
+{"message": "===========================================R1.1-USER FOUND  ======================================================", "module": "views", "asctime": "2026-03-16 07:14:45,132"}
+{"message": "===========================================R1.2-USER FOUND AND DELETED ======================================================", "module": "views", "asctime": "2026-03-16 07:14:45,136"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:23:45,291"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:23:45,291"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:23:45,295"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:23:45,560"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:23:45,561"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:23:45,561"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:23:45,561"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:23:45,561"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:23:45,562"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:23:45,562"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:23:45,562"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:23:45,563"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:23:47,964"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-16 07:23:47,998"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-16 07:23:47,998"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-16 07:23:47,998"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-16 07:23:48,058"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-16 07:23:48,059"}
+{"message": "test6f test6l - test6@test.com added to group RestrauntOwners", "module": "views", "asctime": "2026-03-16 07:23:48,073"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:28:24,784"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:28:24,784"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:28:24,787"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:28:34,202"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:28:34,202"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:28:34,205"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:28:34,256"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:28:34,257"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:28:34,257"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:28:34,257"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:28:34,257"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:28:34,257"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:28:34,258"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:28:34,258"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:28:34,258"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:28:36,838"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-16 07:28:36,889"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-16 07:28:36,889"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-16 07:28:36,889"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-16 07:28:36,987"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-16 07:28:36,987"}
+{"message": "test7f test7l - test7@test.com added to group Customers", "module": "views", "asctime": "2026-03-16 07:28:36,999"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:30:24,980"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:30:24,981"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:30:24,984"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:30:25,181"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:30:25,181"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:30:25,182"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:30:25,182"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:30:25,182"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:30:25,182"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:30:25,183"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:30:25,183"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:30:25,183"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:30:27,646"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:38:10,485"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:38:10,486"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:38:10,488"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:38:40,141"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:38:40,142"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:38:40,144"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:38:40,202"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:39:01,757"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:39:01,758"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:39:01,760"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:39:01,814"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:39:01,815"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:39:01,815"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:39:01,815"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:39:01,815"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:39:01,815"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:39:01,816"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:39:01,816"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:39:01,816"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:39:04,302"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:40:42,686"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:40:42,686"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:40:42,689"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:40:42,902"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:40:42,903"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:40:42,903"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:40:42,903"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:40:42,904"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:40:42,904"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:40:42,904"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:40:42,904"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:40:42,905"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:40:45,351"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:43:18,335"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:43:18,336"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:43:18,338"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:43:18,533"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:43:18,534"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:43:18,534"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:43:18,534"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:43:18,534"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:43:18,534"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:43:18,535"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:43:18,535"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:43:18,535"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:43:20,933"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-16 07:43:20,969"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-16 07:43:20,970"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-16 07:43:20,970"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-16 07:43:21,064"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-16 07:43:21,065"}
+{"message": "test11f test11l - test11@test.com added to group Customers", "module": "views", "asctime": "2026-03-16 07:43:21,076"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:44:35,025"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:44:35,026"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:44:35,028"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:44:35,083"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:44:48,570"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:44:48,570"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:44:48,572"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:44:48,755"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:44:48,756"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:44:48,756"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:44:48,756"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:44:48,756"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:44:48,756"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:44:48,757"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:44:48,757"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:44:48,757"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:44:51,304"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:47:12,490"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:47:12,490"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:47:12,493"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:47:12,673"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:47:12,674"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:47:12,675"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:47:12,675"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:47:12,675"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:47:12,675"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:47:12,676"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:47:12,676"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:47:12,676"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:47:15,118"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-16 07:47:15,155"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-16 07:47:15,156"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-16 07:47:15,156"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-16 07:47:15,217"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-16 07:47:15,218"}
+{"message": "test13f test13l - test13@test.com added to group Customers", "module": "views", "asctime": "2026-03-16 07:47:15,229"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:53:26,884"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:53:26,884"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:53:26,887"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:53:27,080"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:53:27,081"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:53:27,082"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:53:27,082"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:53:27,082"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:53:27,082"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:53:27,083"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:53:27,083"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:53:27,084"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:53:29,475"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-03-16 07:53:29,479"}
+{"message": "<class 'user.models.CustomUser'>", "module": "signals", "asctime": "2026-03-16 07:53:29,479"}
+{"message": "New Customer Profile for test14@test.com Completed!!", "module": "signals", "asctime": "2026-03-16 07:53:29,483"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-16 07:53:29,505"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-16 07:53:29,505"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-16 07:53:29,505"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-16 07:53:29,565"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-16 07:53:29,565"}
+{"message": "test14f test14l - test14@test.com added to group Customers", "module": "views", "asctime": "2026-03-16 07:53:29,577"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:53:57,918"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:53:57,921"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:53:57,923"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:53:57,977"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:53:57,977"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:53:57,978"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:53:57,978"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:53:57,978"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:53:57,978"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:53:57,978"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:53:57,979"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:53:57,979"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:54:00,529"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:57:47,193"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:57:47,193"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:57:47,196"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-16 07:58:14,307"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-16 07:58:14,308"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-16 07:58:14,311"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-16 07:58:14,371"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-16 07:58:14,371"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-16 07:58:14,372"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-16 07:58:14,372"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-16 07:58:14,372"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-16 07:58:14,372"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-16 07:58:14,372"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-16 07:58:14,372"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-16 07:58:14,373"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-16 07:58:16,744"}
+{"message": "New Driver Profile for test16@test.com Completed!!", "module": "signals", "asctime": "2026-03-16 07:58:16,757"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-16 07:58:16,779"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-16 07:58:16,779"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-16 07:58:16,779"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-16 07:58:16,836"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-16 07:58:16,836"}
+{"message": "test16f test16l - test16@test.com added to group Drivers", "module": "views", "asctime": "2026-03-16 07:58:16,846"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 10:53:29,901"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 10:53:30,025"}
+{"message": "p2.0.1  Result of authentication function == None", "module": "serializers", "asctime": "2026-03-16 10:53:32,617"}
+{"message": "p2.0.1 Requested User does not exist raising Validation Error      ", "module": "serializers", "asctime": "2026-03-16 10:53:32,617"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 10:53:50,779"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 10:53:50,781"}
+{"message": "p2.0.1  Result of authentication function == test6f test6l - test6@test.com", "module": "serializers", "asctime": "2026-03-16 10:53:53,329"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test6f test6l - test6@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 10:53:53,329"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 10:53:53,330"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 10:53:53,330"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 10:53:53,330"}
+{"message": "Logger Works", "module": "views", "asctime": "2026-03-16 11:02:40,412"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 11:30:01,634"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 11:30:01,760"}
+{"message": "p2.0.1  Result of authentication function == test6f test6l - test6@test.com", "module": "serializers", "asctime": "2026-03-16 11:30:04,330"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test6f test6l - test6@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 11:30:04,330"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 11:30:04,330"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 11:30:04,331"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 11:30:04,331"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-16 12:14:06,381"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-16 12:14:06,528"}
+{"message": "p2.0.1  Result of authentication function == test6f test6l - test6@test.com", "module": "serializers", "asctime": "2026-03-16 12:14:09,090"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test6f test6l - test6@test.com ]     ", "module": "serializers", "asctime": "2026-03-16 12:14:09,090"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 12:14:09,095"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 12:14:09,095"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 12:14:09,095"}

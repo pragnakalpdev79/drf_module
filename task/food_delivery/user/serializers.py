@@ -1,9 +1,13 @@
+from django.contrib.auth import authenticate
 from rest_framework import serializers
 from .models import *
 import logging,re
 
 logger = logging.getLogger('user')
 
+
+#===============================================================
+# SIGN UP VIEW SERIALIZER
 class CustomUserRegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(min_length=8,)
     password_confirm = serializers.CharField(write_only=True)
@@ -33,34 +37,31 @@ class CustomUserRegistrationSerializer(serializers.ModelSerializer):
         logger.info("-part 6 over it returned the following")
         return user
 
+#===============================================================
+# LOGIN VIEW SERIALIZER
+class CustomUserLoginSerializer(serializers.ModelSerializer):
+    email = serializers.EmailField()
+    password = serializers.CharField(write_only=True)
+    class Meta:
+        model = CustomUser
+        fields = ['email','password']
+    def validate(self,data):
 
-class CustomProfileSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = CustomerProfile
-        fields = ['user','avatar',]
-        
-    def validate_image(self,value):
-        if value:
-            if value.size > 5*1024*1024:
-                raise serializers.ValidationError("Image size cannot exceed 5mb")
-        from PIL import Image
-        try:
-            img = Image.open(value)
-            img.verify()
-        except Exception:
-            raise serializers.ValidationError("Invalid Image format")
-        return value
-        
-class AddressSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = address
-        fields = ['adrname','address','isdefault','adrofuser']
-        read_only_fields = ['adrofuser']
+        logger.info('p2.0.1  checking if user is registered or not     ')
+        user = authenticate(email=data['email'],password=data['password'])
+        logger.info(f"p2.0.1  Result of authentication function == {user}")
 
-class DriverProfileSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = DriverProfile
-        fields = "__all__"
+        if not user:
+            # this will check both if user is deleted or user was never registered as queryset only considers the non-deleted users
+            # and is_active too.
+            logger.info(f'p2.0.1 Requested User does not exist raising Validation Error      ')
+            raise serializers.ValidationError("Please enter proper email and password")
+        
+        logger.info(f"p2.0.1  User object to be returned to the view : - [ {user} ]     ")
+        data['user'] = user
+        return data
+
+
 
 class RestrauntSerializer(serializers.ModelSerializer):
     class Meta:

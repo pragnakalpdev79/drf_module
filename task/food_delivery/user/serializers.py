@@ -37,7 +37,7 @@ class CustomUserRegistrationSerializer(serializers.ModelSerializer):
 class CustomProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomerProfile
-        fields = "__all__"
+        fields = ['user','avatar',]
         
     def validate_image(self,value):
         if value:
@@ -54,7 +54,8 @@ class CustomProfileSerializer(serializers.ModelSerializer):
 class AddressSerializer(serializers.ModelSerializer):
     class Meta:
         model = address
-        fields = "__all__"
+        fields = ['adrname','address','isdefault','adrofuser']
+        read_only_fields = ['adrofuser']
 
 class DriverProfileSerializer(serializers.ModelSerializer):
     class Meta:

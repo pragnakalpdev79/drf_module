@@ -5,8 +5,9 @@ from .models import Post
 
 @receiver(pre_save,sender=Post)
 def pre_save_post(sender,instance,**kwargs):
-    if not instance.slug:
-        instance.slug = slugify(instance.title)
+    #if not instance.slug:
+        # instance.slug = slugify(instance.title)
+    print("hello!!")
 
 @receiver(post_save,sender=Post)
 def post_save_post(sender,instance,created,**kwargs):

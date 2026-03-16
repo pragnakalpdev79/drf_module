@@ -25,6 +25,11 @@ class UserProfile(TimestampedModel):
         return f"{self.user.username}'s profile"
 #================================================================================
 # TASK API MODELS
+class Category(models.Model):
+    name = models.CharField(max_length=50,unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return self.name
 class Task(TimestampedModel):
     title = models.CharField(max_length=100)
     desc = models.TextField(null=True, blank=True)
@@ -41,10 +46,12 @@ class Task(TimestampedModel):
                                 help_text='Task Priority,')
     due_date = models.DateField(null=True,blank=True,help_text='Task Deadline')
     owner = models.ForeignKey(User,on_delete=models.CASCADE,related_name='tasks')
+    category = models.ManyToManyField(Category,related_name='category_of_task',blank=True)
     def __str__(self):
         return self.title
     class Meta:
         ordering = ['-created_at']
+
 #================================================================================
 # BOOK API MODELS
 class Book(TimestampedModel):
@@ -83,7 +90,7 @@ class Post(models.Model):
     #MANY-TO-MANY
     tags = models.ManyToManyField(Tag,related_name='posts',blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    comments = models.ForeignKey(Comment,related_name='comments',blank=True)
+    comments = models.ForeignKey(Comment,related_name='comments',blank=True,on_delete=models.DO_NOTHING)
 
     def __str__(self):
         return self.title

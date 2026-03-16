@@ -27,59 +27,59 @@ class UserProfile(TimestampedModel):
 #================================================================================
 # TASK API MODELS
 
-class Category(models.Model):
-    name = models.CharField(max_length=50,unique=True)
-    color = models.CharField(max_length=7,default='#000000')
-    created_at = models.DateTimeField(auto_now_add=True)
+# class Category(models.Model):
+#     name = models.CharField(max_length=50,unique=True)
+#     color = models.CharField(max_length=7,default='#000000')
+#     created_at = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
 
-class Task(TimestampedModel):
-    title = models.CharField(max_length=100)
-    desc = models.TextField(null=True, blank=True)
-    completed = models.BooleanField(default=False)
-    PRIORITY_CHOICE = ( #EXCERCISE 2 ENHACING TASK API -ADDED priority field and due dat field
-        ('l','Low'),
-        ('m','Medium'),
-        ('h','High')
-    )
-    priority = models.CharField(max_length=1,
-                                choices=PRIORITY_CHOICE,
-                                blank=True,
-                                default='m',
-                                help_text='Task Priority,')
-    due_date = models.DateField(null=True,blank=True,help_text='Task Deadline')
-    owner = models.ForeignKey(User,on_delete=models.CASCADE,related_name='tasks')
-    category = models.ForeignKey(Category,on_delete=models.SET_NULL,null=True,blank=True,related_name='tasks')
-    assigned_to = models.ForeignKey(User,related_name='assigned_tasks',blank=True)
-    deleted_at = models.DateTimeField(null=True,blank=True)
+# class Task(TimestampedModel):
+#     title = models.CharField(max_length=100)
+#     desc = models.TextField(null=True, blank=True)
+#     completed = models.BooleanField(default=False)
+#     PRIORITY_CHOICE = ( #EXCERCISE 2 ENHACING TASK API -ADDED priority field and due dat field
+#         ('l','Low'),
+#         ('m','Medium'),
+#         ('h','High')
+#     )
+#     priority = models.CharField(max_length=1,
+#                                 choices=PRIORITY_CHOICE,
+#                                 blank=True,
+#                                 default='m',
+#                                 help_text='Task Priority,')
+#     due_date = models.DateField(null=True,blank=True,help_text='Task Deadline')
+#     owner = models.ForeignKey(User,on_delete=models.CASCADE,related_name='tasks')
+#     category = models.ForeignKey(Category,on_delete=models.SET_NULL,null=True,blank=True,related_name='tasks')
+#     assigned_to = models.ForeignKey(User,related_name='assigned_tasks',blank=True,on_delete=models.CASCADE)
+#     deleted_at = models.DateTimeField(null=True,blank=True)
 
-    def delete(self,using=None,keep_parents=False):
-        self.deleted_at = timezone.now()
-        self.save()
+#     def delete(self,using=None,keep_parents=False):
+#         self.deleted_at = timezone.now()
+#         self.save()
     
-    def restore(self):
-        self.deleted_at = None
-        self.save()
+#     def restore(self):
+#         self.deleted_at = None
+#         self.save()
 
-    def __str__(self):
-        return self.title
-    class Meta:
-        ordering = ['-created_at']
+#     def __str__(self):
+#         return self.title
+#     class Meta:
+#         ordering = ['-created_at']
 #================================================================================
 # BOOK API MODELS
-class Book(TimestampedModel):
-    title = models.CharField(max_length=200)
-    author = models.CharField(max_length=100)
-    published_date = models.DateField()
-    isbn = models.CharField(max_length=13, unique=True)
-    description = models.TextField(blank=True)
-    owner = models.ForeignKey(User,on_delete=models.CASCADE,related_name='books')
-    def __str__(self):
-        return self.title
-    class Meta:
-        ordering = ['-created_at']
+# class Book(TimestampedModel):
+#     title = models.CharField(max_length=200)
+#     author = models.CharField(max_length=100)
+#     published_date = models.DateField()
+#     isbn = models.CharField(max_length=13, unique=True)
+#     description = models.TextField(blank=True)
+#     owner = models.ForeignKey(User,on_delete=models.CASCADE,related_name='books')
+#     def __str__(self):
+#         return self.title
+#     class Meta:
+#         ordering = ['-created_at']
     
 #================================================================================
 # BLOG API MODELS
@@ -99,7 +99,8 @@ class Post(models.Model):
     #MANY-TO-MANY
     tags = models.ManyToManyField(Tag,related_name='posts',blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
-
+    updated_at = models.DateTimeField(auto_now=True)
+    
     def __str__(self):
         return self.title
     

@@ -1,8 +1,13 @@
+from decimal import Decimal
 from django.db import models
+from django.db.models import Avg,Sum,F
+from django.utils import timezone
 from django.contrib.auth.models import AbstractUser,BaseUserManager
 from django.core.validators import RegexValidator,MaxValueValidator,MinValueValidator
+from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 import uuid,logging
+
 
 logger = logging.getLogger('user')
 
@@ -50,6 +55,10 @@ class MyUserManager(BaseUserManager):
             raise ValueError(_('Superuser must have is_superuser=True'))
         
         return self.create_user(email,password,**extra_fields)
+    
+    # 0.3 USING ONLY NON-DELETED USERS
+    def get_queryset(self):
+        return super().get_queryset().filter(deleted_at__isnull=True)
 
 ############################################################################
 #  1. MAIN USER MODEL EXTENDED FROM ABSTRACTUSER
@@ -62,7 +71,7 @@ class CustomUser(AbstractUser):
 
     USER_TYPE = ( 
         ('c','Customer'),
-        ('r','Restraunt'),
+        ('r','Restaurant'),
         ('d','Driver'),
     )
     utype = models.CharField(max_length=1,choices=USER_TYPE,blank=True,default='c',help_text='User Type') #USER TYPE
@@ -79,9 +88,37 @@ class CustomUser(AbstractUser):
         )],
     )
     
+    deleted_at = models.DateTimeField(null=True,blank=True)
+
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name','last_name','utype','phone_number']
     objects = MyUserManager()
+    # METHODS TO CHECK TYPE OF USER
+    @property
+    def check_if_customer(self):
+        result = (self.utype == 'c')
+        return result
+    
+    @property
+    def check_if_restaurant(self):
+        result = (self.utype == 'r')
+        return result
+    
+    @property
+    def check_if_driver(self):
+        result = (self.utype == 'd')
+        return result
+    #SOFT DELETE AND USER RESTORE
+    @property
+    def delete(self,using=None,keep_parents=False):
+        self.deleted_at = timezone.now()
+        logger.info("User deleted")
+
+        self.save() #overrides default delete method
+    def restore(self):
+        self.deleted_at = None
+        
+        self.save()
 
     def __str__(self):
         return f"{self.first_name} {self.last_name} - {self.email}"
@@ -95,24 +132,49 @@ class CustomUser(AbstractUser):
             ('IsOrderCustomer',"only order customer can view order details"),
             ('IsRestaurantOwnerOrDriver',"restaurant owner or assigned driver can update order status"),
         ]
+############################################################################
+#  2. ADDRESS MODEL TO STORE ALL ADDRESSES
+class address(TimestampedModel):
+    adrname = models.CharField(max_length=60,unique=True,help_text='Short name to identify the adress')
+    address = models.TextField(help_text='Your full address')
+    is_default = models.BooleanField()
+    adrofuser = models.ForeignKey('CustomUser',on_delete=models.CASCADE,related_name="user_s_adress")
 
+    def save(self,*args,**kwargs):
+        if self.is_default:
+            usradrs = address.objects.filter(user=self.user)
+            usradrs.update(is_default=False)
+        super().save(*args,**kwargs)
 
+    def __str__(self):
+        return f"User : {self.adrofuser}, Adress saved as : {self.adrname}, Full Address:  {self.address}"
 
+############################################################################
+#  3.CUSTOMER PROFILE
 class CustomerProfile(TimestampedModel):
     user = models.OneToOneField('CustomUser',on_delete=models.RESTRICT,related_name='customer_profile',primary_key=True)
     avatar = models.ImageField(upload_to='user_avatars/',blank=True,null=True)
-    default_address = models.TextField()
-    #
+    default_address = models.ForeignKey(address,on_delete=models.DO_NOTHING,related_name="saved_adresses_for_user")
     total_orders = models.IntegerField()
     loyalty_points = models.IntegerField(default=0)
 
+    @property
+    def total_orders(self):
+        return self.user.order_for.count()
+    
+    @property
+    def total_spend(self):
+        spend = self.user.order_for.filter(status='dl')
+        spend = spend.aggregate(total=Sum('total_amount'))
+        if spend['total']:
+            return spend['total']
+        return Decimal('0.00')
+    
     def __str__(self):
         return f"{self.user.first_name} {self.user.last_name}"
 
-class address(TimestampedModel):
-    address = models.TextField(unique=True)
-    is_default = models.BooleanField()
-    adrofuser = models.ForeignKey('CustomUser',on_delete=models.CASCADE,related_name="user_s_adress")
+
+
 
 
 class DriverProfile(TimestampedModel):
@@ -139,7 +201,7 @@ class RestrauntModel(TimestampedModel):
         ('ch','Chinese'),
         ('in','Indian'),
         ('me','Mexican'),
-        ('am','American'),
+        ('am','American'), 
         ('ja','Japanese'),
         ('th','Thai'),
         ('md','Mediterranean'),
@@ -232,7 +294,8 @@ class Order(TimestampedModel):
     special_instructions = models.TextField(null=True,blank=True)
     #estimated delivery time
     #actual delivery time
-    #def calculate_total(self):
+    def calculate_total(self):
+        total = None
 
 
 
@@ -240,9 +303,13 @@ class OrderItem(models.Model):
     order = models.ForeignKey('CustomUser',on_delete=models.DO_NOTHING,related_name='item_for')
     menu_item = models.ForeignKey('MenuItem',on_delete=models.DO_NOTHING,related_name='item_from')
     quantity = models.PositiveIntegerField(blank=False,null=False)
-    #price
+    uprice = models.DecimalField(max_digits=5,decimal_places=2,help_text='snapshot of item price at order time')
     special_instructions = models.TextField(null=True,blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f" Order Item details : {self.menu_item} | Quantity : {self.quantity} | Special Instructions provided : {self.special_instructions}" 
+
 
 class Review(TimestampedModel):
     customer = models.ForeignKey('CustomUser',on_delete=models.CASCADE,related_name='review_by')
@@ -251,5 +318,14 @@ class Review(TimestampedModel):
     order = models.ForeignKey('Order',on_delete=models.CASCADE,related_name='order')
     rating = models.IntegerField(validators=[MinValueValidator(0),MaxValueValidator(5)])
     comment = models.TextField(null=True)
-    
 
+    def clean(self):
+        if self.order.customer != self.customer:
+            raise ValidationError("you can only review your own orders")
+        if self.order.status != 'dl':
+            raise ValidationError("can not review the orders which are not delivered")
+        
+
+
+    def __str__(self):
+        return f"Review by {self.customer.email} for menu-item {self.menu_item} is {self.rating},which was order the {self.restaurant} "

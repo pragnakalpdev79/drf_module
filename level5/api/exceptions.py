@@ -33,7 +33,7 @@ def custom_exception_handler(exc, context):
         error_data = {
             'success': False,
             'error': {}
-        }
+        }  
         # Authentication errors
         if isinstance(exc, (AuthenticationFailed, NotAuthenticated)):
             error_data['error'] = {

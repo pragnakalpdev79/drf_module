@@ -876,3 +876,769 @@
 {"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-16 12:14:09,095"}
 {"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-16 12:14:09,095"}
 {"message": "p2.2         ", "module": "views", "asctime": "2026-03-16 12:14:09,095"}
+{"message": "<bound method RestaurantViewSet.get_serializer_class of <restaurants.views.RestaurantViewSet object at 0x73c71e4c9fa0>>", "module": "views", "asctime": "2026-03-17 05:59:02,303"}
+{"message": "RestoListSerializer(context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QuerySet []>):\n    id = IntegerField(label='ID', read_only=True)\n    created_at = DateTimeField(read_only=True)\n    updated_at = DateTimeField(read_only=True)\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()\n    is_open = BooleanField(required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    average_rating = DecimalField(decimal_places=1, max_digits=2, required=False)\n    total_reviews = IntegerField(max_value=2147483647, min_value=-2147483648)\n    owner = PrimaryKeyRelatedField(queryset=CustomUser.objects.all())", "module": "views", "asctime": "2026-03-17 06:03:24,414"}
+{"message": "RestoListSerializer(context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QuerySet []>):\n    id = IntegerField(label='ID', read_only=True)\n    created_at = DateTimeField(read_only=True)\n    updated_at = DateTimeField(read_only=True)\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()\n    is_open = BooleanField(required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    average_rating = DecimalField(decimal_places=1, max_digits=2, required=False)\n    total_reviews = IntegerField(max_value=2147483647, min_value=-2147483648)\n    owner = PrimaryKeyRelatedField(queryset=CustomUser.objects.all())", "module": "views", "asctime": "2026-03-17 06:03:57,443"}
+{"message": "RestoListSerializer(context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QuerySet []>):\n    id = IntegerField(label='ID', read_only=True)\n    created_at = DateTimeField(read_only=True)\n    updated_at = DateTimeField(read_only=True)\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()\n    is_open = BooleanField(required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    average_rating = DecimalField(decimal_places=1, max_digits=2, required=False)\n    total_reviews = IntegerField(max_value=2147483647, min_value=-2147483648)\n    owner = PrimaryKeyRelatedField(queryset=CustomUser.objects.all())", "module": "views", "asctime": "2026-03-17 06:03:58,661"}
+{"message": "RestoListSerializer(<QuerySet []>, context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, many=True):\n    id = IntegerField(label='ID', read_only=True)\n    created_at = DateTimeField(read_only=True)\n    updated_at = DateTimeField(read_only=True)\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()\n    is_open = BooleanField(required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    average_rating = DecimalField(decimal_places=1, max_digits=2, required=False)\n    total_reviews = IntegerField(max_value=2147483647, min_value=-2147483648)\n    owner = PrimaryKeyRelatedField(queryset=CustomUser.objects.all())", "module": "views", "asctime": "2026-03-17 06:08:21,739"}
+{"message": "Listing all rests : -  RestoListSerializer(<QuerySet []>, context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, many=True):\n    id = IntegerField(label='ID', read_only=True)\n    created_at = DateTimeField(read_only=True)\n    updated_at = DateTimeField(read_only=True)\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()\n    is_open = BooleanField(required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    average_rating = DecimalField(decimal_places=1, max_digits=2, required=False)\n    total_reviews = IntegerField(max_value=2147483647, min_value=-2147483648)\n    owner = PrimaryKeyRelatedField(queryset=CustomUser.objects.all())", "module": "views", "asctime": "2026-03-17 06:37:05,893"}
+{"message": "Listing all rests : -  RestoListSerializer(<QuerySet []>, context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, many=True):\n    id = IntegerField(label='ID', read_only=True)\n    created_at = DateTimeField(read_only=True)\n    updated_at = DateTimeField(read_only=True)\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()\n    is_open = BooleanField(required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    average_rating = DecimalField(decimal_places=1, max_digits=2, required=False)\n    total_reviews = IntegerField(max_value=2147483647, min_value=-2147483648)\n    owner = PrimaryKeyRelatedField(queryset=CustomUser.objects.all())", "module": "views", "asctime": "2026-03-17 06:37:29,436"}
+{"message": "Listing all rests : -  RestoListSerializer(<QuerySet []>, context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, many=True):\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    is_open_now = SerializerMethodField()", "module": "views", "asctime": "2026-03-17 07:01:28,887"}
+{"message": "Listing all rests : -  RestoListSerializer(<QuerySet []>, context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, many=True):\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    is_open_now = SerializerMethodField()", "module": "views", "asctime": "2026-03-17 07:01:29,326"}
+{"message": "Listing all rests : -  RestoListSerializer(<QuerySet []>, context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, many=True):\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    is_open_now = SerializerMethodField()", "module": "views", "asctime": "2026-03-17 07:03:04,023"}
+{"message": "Listing all rests : -  RestoListSerializer(<QuerySet []>, context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, many=True):\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    is_open_now = SerializerMethodField()", "module": "views", "asctime": "2026-03-17 07:03:38,195"}
+{"message": "Listing all rests : -  RestoListSerializer(<QuerySet []>, context={'request': <rest_framework.request.Request: GET '/api/restaurants/details/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, many=True):\n    name = CharField(max_length=50)\n    description = CharField(style={'base_template': 'textarea.html'})\n    cuisine_type = ChoiceField(choices=[('it', 'Italian'), ('ch', 'Chinese'), ('in', 'Indian'), ('me', 'Mexican'), ('am', 'American'), ('ja', 'Japanese'), ('th', 'Thai'), ('md', 'Mediterranean')], help_text='Available Cuisine')\n    address = CharField(style={'base_template': 'textarea.html'})\n    phone_number = CharField(max_length=13, validators=[<django.core.validators.RegexValidator object>])\n    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=RestrauntModel.objects.all())>])\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    delivery_fee = DecimalField(decimal_places=2, max_digits=4)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    is_open_now = SerializerMethodField()", "module": "views", "asctime": "2026-03-17 07:04:25,572"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:27:04,450"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:27:55,956"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:27:55,956"}
+{"message": "Listing all rests : -  []", "module": "views", "asctime": "2026-03-17 07:29:00,285"}
+{"message": "Listing all rests : -  []", "module": "views", "asctime": "2026-03-17 07:30:15,783"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:30:44,883"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:30:44,883"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:36:10,433"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:36:10,434"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:36:28,474"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:36:28,475"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:36:41,102"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:36:41,102"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:38:28,228"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:38:28,229"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:38:28,840"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:38:28,840"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:39:02,231"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:39:02,231"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:39:02,934"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:39:02,935"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:39:03,899"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:39:03,900"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:40:24,301"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:40:24,302"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:40:24,302"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:42:13,323"}
+{"message": "test!!", "module": "permissions", "asctime": "2026-03-17 07:42:13,323"}
+{"message": "False", "module": "permissions", "asctime": "2026-03-17 07:42:13,323"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:45:20,985"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:45:20,986"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:45:20,986"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:45:22,913"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:45:22,914"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:45:22,914"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:50:10,421"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:50:10,422"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:50:10,423"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:50:11,830"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:50:11,831"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:50:11,831"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:51:10,694"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:51:24,237"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 07:51:24,238"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 07:51:24,238"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:52:37,943"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:52:52,518"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:52:52,952"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 07:56:29,617"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-17 08:02:01,124"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-17 08:02:01,248"}
+{"message": "p2.0.1  Result of authentication function == test6f test6l - test6@test.com", "module": "serializers", "asctime": "2026-03-17 08:02:03,940"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test6f test6l - test6@test.com ]     ", "module": "serializers", "asctime": "2026-03-17 08:02:03,940"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-17 08:02:03,940"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-17 08:02:03,940"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-17 08:02:03,940"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:02:22,709"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 08:02:22,709"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:02:22,739"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-17 08:02:45,135"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-17 08:02:45,137"}
+{"message": "p2.0.1  Result of authentication function == test7f test7l - test7@test.com", "module": "serializers", "asctime": "2026-03-17 08:02:47,914"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test7f test7l - test7@test.com ]     ", "module": "serializers", "asctime": "2026-03-17 08:02:47,914"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-17 08:02:47,914"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-17 08:02:47,914"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-17 08:02:47,914"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:03:03,990"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 08:03:03,991"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:03:04,008"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:03:12,266"}
+{"message": "permission did not work", "module": "views", "asctime": "2026-03-17 08:03:12,267"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:03:12,281"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:04:26,265"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:04:26,284"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:06:00,512"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:06:00,532"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:15:03,477"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:15:11,655"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:15:11,677"}
+{"message": "None", "module": "views", "asctime": "2026-03-17 08:21:17,559"}
+{"message": "None", "module": "views", "asctime": "2026-03-17 08:21:44,272"}
+{"message": "Listing all rests : -  []", "module": "views", "asctime": "2026-03-17 08:22:16,450"}
+{"message": "Listing all rests : -  []", "module": "views", "asctime": "2026-03-17 08:22:42,552"}
+{"message": "Listing all rests : -  []", "module": "views", "asctime": "2026-03-17 08:23:14,963"}
+{"message": "Listing all rests : -  []", "module": "views", "asctime": "2026-03-17 08:28:29,911"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:29:28,843"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:31:50,142"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:35:54,856"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:40:42,193"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:41:24,427"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:41:49,627"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:42:18,597"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:42:18,612"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 08:42:34,997"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 08:42:35,015"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-17 09:36:04,193"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-17 09:36:04,324"}
+{"message": "p2.0.1  Result of authentication function == test7f test7l - test7@test.com", "module": "serializers", "asctime": "2026-03-17 09:36:06,833"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test7f test7l - test7@test.com ]     ", "module": "serializers", "asctime": "2026-03-17 09:36:06,833"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-17 09:36:06,834"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-17 09:36:06,834"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-17 09:36:06,834"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:36:20,945"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 09:36:20,961"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:37:36,808"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-17 09:37:53,132"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-17 09:37:53,253"}
+{"message": "p2.0.1  Result of authentication function == test6f test6l - test6@test.com", "module": "serializers", "asctime": "2026-03-17 09:37:55,921"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test6f test6l - test6@test.com ]     ", "module": "serializers", "asctime": "2026-03-17 09:37:55,921"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-17 09:37:55,921"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-17 09:37:55,921"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-17 09:37:55,921"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:38:13,549"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:39:48,404"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:40:26,175"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:40:40,706"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:41:07,866"}
+{"message": "False", "module": "permissions", "asctime": "2026-03-17 09:41:07,888"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-17 09:41:36,875"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-17 09:41:37,005"}
+{"message": "p2.0.1  Result of authentication function == test6f test6l - test6@test.com", "module": "serializers", "asctime": "2026-03-17 09:41:39,657"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test6f test6l - test6@test.com ]     ", "module": "serializers", "asctime": "2026-03-17 09:41:39,657"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-17 09:41:39,657"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-17 09:41:39,657"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-17 09:41:39,657"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 09:42:15,702"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 09:42:15,702"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 09:42:15,704"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 09:42:15,757"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 09:42:15,758"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 09:42:15,758"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 09:42:15,758"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 09:42:15,758"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 09:42:15,759"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 09:42:15,759"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 09:42:15,759"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 09:42:15,759"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 09:42:18,286"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-03-17 09:42:18,296"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 09:42:18,319"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 09:42:18,319"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 09:42:18,320"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 09:42:18,324"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 09:42:18,324"}
+{"message": "test17f test17l - test17@test.com added to group RestrauntOwners", "module": "views", "asctime": "2026-03-17 09:42:18,333"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:42:32,816"}
+{"message": "False", "module": "permissions", "asctime": "2026-03-17 09:42:32,830"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:43:17,890"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:43:18,226"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:44:23,462"}
+{"message": "False", "module": "permissions", "asctime": "2026-03-17 09:44:23,481"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:46:04,361"}
+{"message": "False", "module": "permissions", "asctime": "2026-03-17 09:46:04,379"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:47:41,431"}
+{"message": "False", "module": "permissions", "asctime": "2026-03-17 09:47:41,450"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:48:59,670"}
+{"message": "False", "module": "permissions", "asctime": "2026-03-17 09:48:59,687"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 09:48:59,688"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 09:48:59,689"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-17 09:49:12,087"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-17 09:49:12,229"}
+{"message": "p2.0.1  Result of authentication function == test7f test7l - test7@test.com", "module": "serializers", "asctime": "2026-03-17 09:49:14,759"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test7f test7l - test7@test.com ]     ", "module": "serializers", "asctime": "2026-03-17 09:49:14,760"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-17 09:49:14,760"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-17 09:49:14,760"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-17 09:49:14,760"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:49:28,667"}
+{"message": "False", "module": "permissions", "asctime": "2026-03-17 09:49:28,681"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:50:26,388"}
+{"message": "The user does not have permission to register ", "module": "permissions", "asctime": "2026-03-17 09:50:26,398"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:51:18,441"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:51:18,689"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:51:21,875"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:51:22,107"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:51:47,435"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:51:47,715"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:52:26,054"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:52:26,823"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:52:27,039"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:53:18,093"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:53:18,328"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:54:10,325"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:54:10,555"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:54:23,613"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:54:23,952"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:55:02,247"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:55:02,483"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:55:33,611"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 09:55:33,835"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 10:04:19,803"}
+{"message": "The user does not have permission to register a restaurant", "module": "permissions", "asctime": "2026-03-17 10:04:19,810"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-17 10:04:59,326"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-17 10:04:59,452"}
+{"message": "p2.0.1  Result of authentication function == test17f test17l - test17@test.com", "module": "serializers", "asctime": "2026-03-17 10:05:02,106"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test17f test17l - test17@test.com ]     ", "module": "serializers", "asctime": "2026-03-17 10:05:02,106"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-17 10:05:02,106"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-17 10:05:02,107"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-17 10:05:02,107"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:10:32,518"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:10:32,518"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:10:32,521"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:10:38,734"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:10:38,734"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:10:38,736"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:10:38,788"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:10:38,789"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:10:38,789"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:10:38,789"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:10:38,789"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:10:38,789"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:10:38,790"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:10:38,790"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:10:38,790"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:10:41,256"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-03-17 10:10:41,266"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:10:41,288"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:10:41,288"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:10:41,288"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:10:41,344"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:10:41,344"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:12:04,423"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:12:04,424"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:12:04,426"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:12:04,619"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:12:04,620"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:12:04,620"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:12:04,621"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:12:04,621"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:12:04,621"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:12:04,621"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:12:04,621"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:12:04,622"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:12:07,138"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-03-17 10:12:07,148"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:12:07,171"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:12:07,172"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:12:07,172"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:12:07,231"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:12:07,231"}
+{"message": "test19f test10l - test19@test.com added to group RestrauntOwners", "module": "views", "asctime": "2026-03-17 10:12:07,252"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:13:55,316"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:13:55,316"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:13:55,319"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:13:55,508"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:13:55,509"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:13:55,509"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:13:55,509"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:13:55,509"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:13:55,510"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:13:55,510"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:13:55,510"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:13:55,511"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:13:58,067"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-03-17 10:13:58,077"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:13:58,104"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:13:58,104"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:13:58,105"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:13:58,180"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:13:58,180"}
+{"message": "test20f test20l - test20@test.com added to group RestrauntOwners", "module": "views", "asctime": "2026-03-17 10:13:58,201"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:15:08,141"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:15:08,141"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:15:08,144"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:15:08,346"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:15:08,347"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:15:08,347"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:15:08,348"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:15:08,349"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:15:08,349"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:15:08,349"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:15:08,350"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:15:08,350"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:15:10,843"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-03-17 10:15:10,853"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:15:10,876"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:15:10,876"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:15:10,876"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:15:10,937"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:15:10,937"}
+{"message": "test21f test21l - test21@test.com added to group RestrauntOwners", "module": "views", "asctime": "2026-03-17 10:15:10,958"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:15:43,812"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:15:43,813"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:15:43,815"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:15:43,868"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:15:43,869"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:15:43,869"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:15:43,869"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:15:43,870"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:15:43,870"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:15:43,870"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:15:43,870"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:15:43,870"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:15:46,298"}
+{"message": "New Driver Profile for test22@test.com Completed!!", "module": "signals", "asctime": "2026-03-17 10:15:46,306"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:15:46,306"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:15:46,306"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:15:46,306"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:15:46,309"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:15:46,309"}
+{"message": "test22f test22l - test22@test.com added to group Drivers", "module": "views", "asctime": "2026-03-17 10:15:46,323"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:21:56,874"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:21:56,875"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:21:56,877"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:21:56,937"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:21:56,937"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:21:56,938"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:21:56,938"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:21:56,938"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:21:56,938"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:21:56,938"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:21:56,938"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:21:56,939"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:21:59,459"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-03-17 10:21:59,469"}
+{"message": "<class 'user.models.CustomUser'>", "module": "signals", "asctime": "2026-03-17 10:21:59,469"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:21:59,473"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:21:59,473"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:21:59,473"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:21:59,476"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:21:59,477"}
+{"message": "test23f test23l - test23@test.com added to group Customers", "module": "views", "asctime": "2026-03-17 10:21:59,490"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:29:42,186"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:29:42,186"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:29:42,189"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:29:42,380"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:29:42,381"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:29:42,381"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:29:42,381"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:29:42,381"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:29:42,381"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:29:42,382"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:29:42,382"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:29:42,382"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:29:44,905"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-03-17 10:29:44,915"}
+{"message": "<class 'user.models.CustomUser'>", "module": "signals", "asctime": "2026-03-17 10:29:44,915"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:29:44,941"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:29:44,942"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:29:44,942"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:29:44,999"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:29:44,999"}
+{"message": "test24f test24l - test24@test.com added to group Customers", "module": "views", "asctime": "2026-03-17 10:29:45,019"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:31:32,191"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:31:32,192"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:31:32,194"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:31:32,383"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:31:32,384"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:31:32,384"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:31:32,384"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:31:32,384"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:31:32,384"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:31:32,385"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:31:32,385"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:31:32,385"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:31:34,808"}
+{"message": "New Driver Profile for test25@test.com Completed!!", "module": "signals", "asctime": "2026-03-17 10:31:34,822"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:31:34,844"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:31:34,844"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:31:34,844"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:31:34,902"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:31:34,902"}
+{"message": "test25f test25l - test25@test.com added to group Drivers", "module": "views", "asctime": "2026-03-17 10:31:34,920"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:34:46,850"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:34:46,851"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:34:46,853"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:34:47,057"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:34:47,058"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:34:47,058"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:34:47,058"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:34:47,059"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:34:47,059"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:34:47,059"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:34:47,059"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:34:47,060"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:34:49,570"}
+{"message": "New Driver Profile for test26@test.com Completed!!", "module": "signals", "asctime": "2026-03-17 10:34:49,583"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:34:49,606"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:34:49,606"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:34:49,606"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:34:49,662"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:34:49,663"}
+{"message": "test26f test26l - test26@test.com added to group Drivers", "module": "views", "asctime": "2026-03-17 10:34:49,681"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:42:32,975"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:42:32,976"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:42:32,979"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:42:33,033"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:42:46,496"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:42:46,496"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:42:46,498"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:42:46,690"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:42:46,690"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:42:46,691"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:42:46,691"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:42:46,691"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:42:46,691"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:42:46,691"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:42:46,692"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:42:46,692"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:42:49,277"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-03-17 10:42:49,286"}
+{"message": "<class 'user.models.CustomUser'>", "module": "signals", "asctime": "2026-03-17 10:42:49,287"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:42:49,313"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:42:49,313"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:42:49,314"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:42:49,373"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:42:49,373"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:44:22,812"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:44:22,812"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:44:22,815"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:44:23,007"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:44:23,008"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:44:23,008"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:44:23,009"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:44:23,009"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:44:23,009"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:44:23,009"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:44:23,009"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:44:23,010"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:44:25,467"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-03-17 10:44:25,476"}
+{"message": "<class 'user.models.CustomUser'>", "module": "signals", "asctime": "2026-03-17 10:44:25,477"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:44:25,501"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:44:25,501"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:44:25,501"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:44:25,560"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:44:25,560"}
+{"message": "test28f test28l - test28@test.com added to group Customers", "module": "views", "asctime": "2026-03-17 10:44:25,589"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:45:28,757"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:45:28,758"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:45:28,760"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:45:28,971"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:45:28,972"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:45:28,973"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:45:28,973"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:45:28,974"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:45:28,974"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:45:28,974"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:45:28,974"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:45:28,975"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:45:31,466"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-03-17 10:45:31,476"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:45:31,498"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:45:31,498"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:45:31,498"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:45:31,556"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:45:31,556"}
+{"message": "test29f test29l - test29@test.com added to group RestrauntOwners", "module": "views", "asctime": "2026-03-17 10:45:31,584"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 10:46:47,429"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 10:46:47,447"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 10:46:47,448"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 10:47:12,718"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 10:47:12,732"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 10:47:12,733"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:47:48,467"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:47:48,467"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:47:48,470"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:47:48,661"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:47:48,662"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:47:48,662"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:47:48,663"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:47:48,663"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:47:48,663"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:47:48,663"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:47:48,663"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:47:48,664"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:47:51,202"}
+{"message": "New Driver Profile for test30@test.com Completed!!", "module": "signals", "asctime": "2026-03-17 10:47:51,216"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:47:51,238"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:47:51,239"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:47:51,239"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:47:51,243"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:47:51,243"}
+{"message": "test30f test30l - test30@test.com added to group Drivers", "module": "views", "asctime": "2026-03-17 10:47:51,257"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 10:48:11,372"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:53:44,178"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:53:44,178"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:53:44,181"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:53:44,389"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:53:44,390"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:53:44,390"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:53:44,391"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:53:44,391"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:53:44,391"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:53:44,391"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:53:44,391"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:53:44,392"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:53:47,136"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-03-17 10:53:47,145"}
+{"message": "<class 'user.models.CustomUser'>", "module": "signals", "asctime": "2026-03-17 10:53:47,145"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:53:47,171"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:53:47,171"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:53:47,171"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:53:47,227"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:53:47,227"}
+{"message": "test31f test31l - test31@test.com added to group Customers", "module": "views", "asctime": "2026-03-17 10:53:47,245"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:56:04,604"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:56:04,605"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:56:04,608"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:56:04,800"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:56:04,801"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:56:04,801"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:56:04,801"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:56:04,801"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:56:04,801"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:56:04,801"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:56:04,802"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:56:04,802"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:56:07,351"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-03-17 10:56:07,361"}
+{"message": "<class 'user.models.CustomUser'>", "module": "signals", "asctime": "2026-03-17 10:56:07,361"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:56:07,387"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:56:07,387"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:56:07,388"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:56:07,446"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:56:07,446"}
+{"message": "test32f test32l - test32@test.com added to group Customers", "module": "views", "asctime": "2026-03-17 10:56:07,470"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 10:57:41,569"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 10:57:41,569"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 10:57:41,572"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 10:57:41,786"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 10:57:41,787"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 10:57:41,788"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 10:57:41,788"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 10:57:41,788"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 10:57:41,788"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 10:57:41,789"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 10:57:41,789"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 10:57:41,789"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 10:57:44,675"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-03-17 10:57:44,679"}
+{"message": "<class 'user.models.CustomUser'>", "module": "signals", "asctime": "2026-03-17 10:57:44,679"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 10:57:44,705"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 10:57:44,705"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 10:57:44,706"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 10:57:44,764"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 10:57:44,764"}
+{"message": " Customers==>test33f test33l - test33@test.com", "module": "views", "asctime": "2026-03-17 10:57:44,775"}
+{"message": "test33f test33l - test33@test.com added to group Customers", "module": "views", "asctime": "2026-03-17 10:57:44,776"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:01:00,112"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:01:00,129"}
+{"message": "===========================================p1-entering the view ======================================================", "module": "views", "asctime": "2026-03-17 11:01:29,110"}
+{"message": "p2-create function intiated", "module": "views", "asctime": "2026-03-17 11:01:29,110"}
+{"message": "Rasining an exception!", "module": "views", "asctime": "2026-03-17 11:01:29,113"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-17 11:01:29,313"}
+{"message": "````p3-entering the serializer ````", "module": "serializers", "asctime": "2026-03-17 11:01:29,314"}
+{"message": "````p4-validating within the serializer``", "module": "serializers", "asctime": "2026-03-17 11:01:29,314"}
+{"message": "Raised!", "module": "views", "asctime": "2026-03-17 11:01:29,314"}
+{"message": "p2.1-serialzer validation successful ", "module": "views", "asctime": "2026-03-17 11:01:29,314"}
+{"message": "p``p5-removing extra pass and calling create user function of customuser object `", "module": "serializers", "asctime": "2026-03-17 11:01:29,315"}
+{"message": "p6-create function inside usermanager ", "module": "models", "asctime": "2026-03-17 11:01:29,315"}
+{"message": "----p6.1-email checkd -----", "module": "models", "asctime": "2026-03-17 11:01:29,315"}
+{"message": "----p6.2-details stored -----", "module": "models", "asctime": "2026-03-17 11:01:29,315"}
+{"message": "----p6.3-password stored-----", "module": "models", "asctime": "2026-03-17 11:01:31,860"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-03-17 11:01:31,870"}
+{"message": "----p6.4-user saved-----", "module": "models", "asctime": "2026-03-17 11:01:31,892"}
+{"message": "-part 6 over it returned the following", "module": "serializers", "asctime": "2026-03-17 11:01:31,892"}
+{"message": "p2.3 -serialzer save successful", "module": "views", "asctime": "2026-03-17 11:01:31,893"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-03-17 11:01:31,897"}
+{"message": "===========================================RETURNING THE RESPONSE ======================================================", "module": "views", "asctime": "2026-03-17 11:01:31,898"}
+{"message": " RestrauntOwners==>test34f test34l - test34@test.com", "module": "views", "asctime": "2026-03-17 11:01:31,906"}
+{"message": "test34f test34l - test34@test.com added to group RestrauntOwners", "module": "views", "asctime": "2026-03-17 11:01:31,907"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:01:47,843"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:01:47,856"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:01:47,857"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:07:49,118"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:07:49,134"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:07:49,135"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:07:58,471"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:07:58,730"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:08:36,758"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:12:57,640"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:12:57,660"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:12:57,661"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:13:55,565"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:13:55,582"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:13:55,584"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:15:47,586"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:15:47,602"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:15:47,603"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:19:58,733"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:19:58,752"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:19:58,754"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:20:11,415"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:20:11,429"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:20:11,430"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:21:33,374"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:21:33,390"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:21:33,391"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:34:43,155"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:34:43,174"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:34:43,175"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:35:13,773"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:35:13,790"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:35:13,791"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:36:28,019"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:36:28,036"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:36:28,038"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:37:47,204"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:37:47,218"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:37:47,220"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:38:10,661"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:38:10,678"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:38:10,679"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:38:50,150"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:38:50,165"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:38:50,166"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:38:57,311"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:38:57,326"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:38:57,327"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:40:35,047"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:40:35,063"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:40:35,064"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:40:45,419"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:40:45,435"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:40:45,436"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:41:38,420"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:41:38,441"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:41:38,442"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:42:20,224"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:42:22,073"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:42:22,101"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:42:22,102"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:42:39,161"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:42:39,175"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:42:39,176"}
+{"message": "Current Time : ---- 2026-03-17 11:42:39.199132", "module": "serializers", "asctime": "2026-03-17 11:42:39,199"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:43:01,946"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:43:05,616"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:43:09,475"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:43:17,959"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:43:17,977"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:43:17,979"}
+{"message": "Current Time : ---- 2026-03-17 11:43:18.139579", "module": "serializers", "asctime": "2026-03-17 11:43:18,139"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:43:43,324"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:45:39,778"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:45:53,025"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:46:00,541"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:46:00,559"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:46:00,560"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:46:50,896"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:46:56,658"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:46:56,676"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:46:56,677"}
+{"message": "Current Time : ---- 2026-03-17 11:46:56.850771", "module": "serializers", "asctime": "2026-03-17 11:46:56,850"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:50:30,985"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:50:52,348"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:50:52,366"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:50:52,367"}
+{"message": "Current Time : ---- 2026-03-17 11:50:52.522080", "module": "serializers", "asctime": "2026-03-17 11:50:52,522"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:53:10,659"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:53:12,676"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:53:12,692"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:53:12,694"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:53:27,077"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:53:27,092"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:53:27,093"}
+{"message": "Current Time : ---- 2026-03-17 11:53:27.111046", "module": "serializers", "asctime": "2026-03-17 11:53:27,111"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:53:46,597"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:53:50,209"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:53:56,836"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:53:56,852"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:53:56,853"}
+{"message": "Current Time : ---- 2026-03-17 11:53:57.013823", "module": "serializers", "asctime": "2026-03-17 11:53:57,013"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:54:36,545"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:54:42,314"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:56:04,898"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:56:12,959"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:56:12,979"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:56:12,980"}
+{"message": "Current Time : ---- <built-in method time of datetime.datetime object at 0x7b145f1dc9f0>", "module": "serializers", "asctime": "2026-03-17 11:56:13,187"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:57:29,417"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:57:36,340"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:57:42,131"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:57:45,878"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:57:53,147"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:57:53,163"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:57:53,165"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:58:44,623"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-17 11:59:25,792"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-17 11:59:30,657"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-17 11:59:30,676"}
+{"message": "False", "module": "views", "asctime": "2026-03-17 11:59:30,678"}
+{"message": "Current Time : ---- 11:59:30.871494", "module": "serializers", "asctime": "2026-03-17 11:59:30,871"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 11:59:30,872"}
+{"message": "======================12:00:03.122485=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,122"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,122"}
+{"message": "======================12:00:03.123283=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,123"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,123"}
+{"message": "======================12:00:03.123868=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,123"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,124"}
+{"message": "======================12:00:03.124381=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,124"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,124"}
+{"message": "======================12:00:03.124892=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,124"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,125"}
+{"message": "======================12:00:03.125401=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,125"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,125"}
+{"message": "======================12:00:03.125874=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,125"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,126"}
+{"message": "======================12:00:03.126308=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,126"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,126"}
+{"message": "======================12:00:03.126782=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,126"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,126"}
+{"message": "======================12:00:03.127224=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,127"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,127"}
+{"message": "======================12:00:03.127683=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,127"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,127"}
+{"message": "======================12:00:03.128118=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,128"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,128"}
+{"message": "======================12:00:03.128543=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,128"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,128"}
+{"message": "======================12:00:03.128989=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,129"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,129"}
+{"message": "======================12:00:03.129422=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,129"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,129"}
+{"message": "======================12:00:03.129876=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,129"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,130"}
+{"message": "======================12:00:03.130331=================", "module": "serializers", "asctime": "2026-03-17 12:00:03,130"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:00:03,130"}
+{"message": "Listing all rests : -  [{'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto1@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto2@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto4@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto5@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto6@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto7@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto8@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto9@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto10@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto11@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto12@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto13@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto14@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto15@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-17 12:00:03,130"}
+{"message": "======================12:08:09.094012=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,094"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,094"}
+{"message": "======================12:08:09.094800=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,094"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,095"}
+{"message": "======================12:08:09.095328=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,095"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,095"}
+{"message": "======================12:08:09.095839=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,095"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,096"}
+{"message": "======================12:08:09.096319=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,096"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,096"}
+{"message": "======================12:08:09.096798=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,096"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,096"}
+{"message": "======================12:08:09.097256=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,097"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,097"}
+{"message": "======================12:08:09.097733=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,097"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,097"}
+{"message": "======================12:08:09.098181=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,098"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,098"}
+{"message": "======================12:08:09.098649=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,098"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,098"}
+{"message": "======================12:08:09.099100=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,099"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,099"}
+{"message": "======================12:08:09.099619=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,099"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,099"}
+{"message": "======================12:08:09.100105=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,100"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,100"}
+{"message": "======================12:08:09.100541=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,100"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,100"}
+{"message": "======================12:08:09.101006=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,101"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,101"}
+{"message": "======================12:08:09.101443=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,101"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,101"}
+{"message": "======================12:08:09.101929=================", "module": "serializers", "asctime": "2026-03-17 12:08:09,101"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-17 12:08:09,102"}
+{"message": "Listing all rests : -  [{'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto1@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto2@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto4@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto5@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto6@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto7@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto8@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto9@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto10@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto11@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto12@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto13@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto14@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto15@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'myrestro1', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-17 12:08:09,102"}

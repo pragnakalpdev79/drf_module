@@ -127,12 +127,12 @@ class CustomUser(AbstractUser):
     
     class Meta: 
         permissions = [
-            ('IsOwnerOrReadOnly',"owner can edit/delete, others read-only"),
-            ('IsRestaurantOwner',"only restaurant owner can edit restaurant and menu items"),
-            ('IsCustomer',"only customers can place orders and write reviews"),
-            ('IsDriver',"only drivers can update delivery status and location"),
-            ('IsOrderCustomer',"only order customer can view order details"),
-            ('IsRestaurantOwnerOrDriver',"restaurant owner or assigned driver can update order status"),
+            ('IsOwnerOrReadOnly',"AA owner can edit/delete, others read-only"),
+            ('IsRestaurantOwner',"AA only restaurant owner can edit restaurant and menu items"),
+            ('IsCustomer',"AA only customers can place orders and write reviews"),
+            ('IsDriver',"AA only drivers can update delivery status and location"),
+            ('IsOrderCustomer',"AA only order customer can view order details"),
+            ('IsRestaurantOwnerOrDriver',"AA restaurant owner or assigned driver can update order status"),
         ]
 ############################################################################
 #  2. ADDRESS MODEL TO STORE ALL ADDRESSES
@@ -226,7 +226,7 @@ class RestrauntModel(TimestampedModel):
     delivery_fee = models.DecimalField(max_digits=4,decimal_places=2)
     minimum_order = models.DecimalField(default=0,decimal_places=0,max_digits=3)
     average_rating = models.DecimalField(max_digits=2,default=0,decimal_places=1)
-    total_reviews = models.IntegerField()
+    total_reviews = models.IntegerField(null=True,blank=True)
 
     def __str__(self):
         return f"{self.name}"

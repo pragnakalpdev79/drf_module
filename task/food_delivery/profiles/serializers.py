@@ -7,7 +7,7 @@ logger = logging.getLogger('user')
 class AddressSerializer(serializers.ModelSerializer):
     class Meta:
         model = address
-        fields = ['adrname','address','isdefault','adrofuser']
+        fields = ['adrname','address','is_default','adrofuser']
         read_only_fields = ['adrofuser']
 
 class CustomProfileSerializer(serializers.ModelSerializer):

@@ -1,6 +1,6 @@
 import logging
 from django.shortcuts import render
-from django.contrib.auth.models import Group
+from django.contrib.auth.models import Group,Permission
 from rest_framework import generics,status,viewsets,filters
 from rest_framework.permissions import AllowAny,IsAuthenticated,IsAdminUser
 from rest_framework.response import Response
@@ -49,17 +49,34 @@ class UserRegisterationView(generics.CreateAPIView):
 
         logger.info("p2.4 token generation successful` ")
         logger.info("===========================================RETURNING THE RESPONSE ======================================================")
-        print(user.utype)
+        #print(user.utype)
+        perm_user = CustomUser.objects.get(email=user.email)
 
         if user.check_if_customer:
             group = Group.objects.get(name='Customers')
+            # perm_user = CustomUser.objects.get(email=user.email)
+            perm_user.groups.add(group)
+            logger.info(f" {group}==>{perm_user}")
+            # print(group,'==>',perm_user)
+            #print(user.has_perm('user.IsRestaurantOwner'))
         if user.check_if_restaurant:
             group = Group.objects.get(name='RestrauntOwners')
+            # perm_user = CustomUser.objects.get(email=user.email)
+            perm_user.groups.add(group)
+            logger.info(f" {group}==>{perm_user}")
+            # print(group,'==>',perm_user)
+            #print(user.has_perm('user.IsRestaurantOwner'))
         if user.check_if_driver:
             group = Group.objects.get(name='Drivers')
+            # perm_user = CustomUser.objects.get(email=user.email)
+            perm_user.groups.add(group)
+            logger.info(f" {group}==>{perm_user}")
+            # print(group,'==>',perm_user)
 
-        perm_user = CustomUser.objects.get(email=user.email)
-        perm_user.groups.add(group)
+        # permissions = Permission.objects.filter(user=perm_user)
+        # permissions = perm_user.get_user_permissions()
+        # print("===================",permissions,"===============")
+        # print(perm_user.groups)
 
         logger.info(f"{perm_user} added to group {group}")
 

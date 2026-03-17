@@ -23,7 +23,7 @@ class DriverProfileView(generics.RetrieveUpdateAPIView):
     def get_object(self):
         profile,created = DriverProfile.objects.get_or_create(
             user=self.request.user,
-            defaults={'vehicle_number':'','license_number':'TEMP-'+str(self.request.user.id)[:8]}
+            defaults={'vehicle_number':'','license_number':'TEMP000temp'}
         )
         return profile
 

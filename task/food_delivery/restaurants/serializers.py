@@ -48,3 +48,10 @@ class RestoCreateSerializer(serializers.ModelSerializer):
                   'opening_time','closing_time','delivery_fee','minimum_order','is_open']
         read_only_fields = ['owner']
         model = RestrauntModel
+    
+    def validate_phone_number(self,value):
+        regexf = r'^\+?1?\d{9,15}$'
+        if not re.match(regexf,value):
+            raise serializers.ValidationError("Please enter the phone number in proper format")
+        logger.info("regx matched succesful")
+        return value

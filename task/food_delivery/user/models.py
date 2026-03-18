@@ -144,7 +144,7 @@ class address(TimestampedModel):
 
     def save(self,*args,**kwargs):
         if self.is_default:
-            usradrs = address.objects.filter(user=self.user)
+            usradrs = address.objects.filter(adrofuser=self.adrofuser)
             usradrs.update(is_default=False)
         super().save(*args,**kwargs)
 
@@ -156,9 +156,21 @@ class address(TimestampedModel):
 class CustomerProfile(TimestampedModel):
     user = models.OneToOneField('CustomUser',on_delete=models.RESTRICT,related_name='customer_profile',primary_key=True)
     avatar = models.ImageField(upload_to='user_avatars/',blank=True,null=True)
-    default_address = models.ForeignKey(address,on_delete=models.DO_NOTHING,related_name="saved_adresses_for_user",null=True,blank=True)
-    total_orders = models.IntegerField()
+    #default_address = models.TextField(null=True,blank=True)
+    #saved_addresses = models.ForeignKey(address,on_delete=models.DO_NOTHING,related_name="saved_adresses_for_user",null=True,blank=True)
+    #default_address = models.ForeignKey(address,on_delete=models.DO_NOTHING,related_name="saved_adresses_for_user",null=True,blank=True)
+    #total_orders = models.IntegerField()
     loyalty_points = models.IntegerField(default=0)
+
+    @property
+    def default_adress(self):
+        defadr = address.objects.get(adrofuser=self.user,is_default=True)
+        return defadr
+
+    @property
+    def saved_addresses(self):
+        alladrs = address.objects.filter(adrofuser=self.user)
+        return alladrs
 
     @property
     def total_orders(self):
@@ -302,7 +314,7 @@ class Order(TimestampedModel):
 
 
 class OrderItem(models.Model):
-    order = models.ForeignKey('CustomUser',on_delete=models.DO_NOTHING,related_name='item_for')
+    order = models.ForeignKey('Order',on_delete=models.DO_NOTHING,related_name='item_for')
     menu_item = models.ForeignKey('MenuItem',on_delete=models.DO_NOTHING,related_name='item_from')
     quantity = models.PositiveIntegerField(blank=False,null=False)
     uprice = models.DecimalField(max_digits=5,decimal_places=2,help_text='snapshot of item price at order time')

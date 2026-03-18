@@ -19,6 +19,7 @@ class RestaurantViewSet(viewsets.ModelViewSet):
             return RestoListSerializer
         elif self.action == 'create':
             return RestoCreateSerializer
+        return RestoListSerializer
     
     def get_permissions(self):
         #logger.info("Current action",self.action)

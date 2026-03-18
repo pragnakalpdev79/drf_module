@@ -10,7 +10,7 @@ from .models import CustomUser,address
 from .serializers import *
 
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('user')
 
 #===============================================================================================
 #===============================================================================================
@@ -82,6 +82,7 @@ class UserRegisterationView(generics.CreateAPIView):
 
         return Response( {
             'user' : serializer.data.get("email"),
+            'message' : f"You have been successfully registered as a {group}",
             'refresh' : str(refresh),
             'access' : str(refresh.access_token),
         },status=status.HTTP_201_CREATED

@@ -2430,3 +2430,14 @@
 {"message": "in serializer", "module": "serializers", "asctime": "2026-03-18 18:16:14,014"}
 {"message": "in serializer", "module": "serializers", "asctime": "2026-03-18 18:16:21,219"}
 {"message": "in serializer", "module": "serializers", "asctime": "2026-03-18 18:16:41,251"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-18 18:22:04,620"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-18 18:22:20,865"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-18 18:22:20,999"}
+{"message": "p2.0.1  Result of authentication function == wedtest1f wedtestl - wedtest1@test.com", "module": "serializers", "asctime": "2026-03-18 18:22:23,776"}
+{"message": "p2.0.1  User object to be returned to the view : - [ wedtest1f wedtestl - wedtest1@test.com ]     ", "module": "serializers", "asctime": "2026-03-18 18:22:23,776"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-18 18:22:23,776"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-18 18:22:23,777"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-18 18:22:23,777"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-18 18:23:15,902"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-18 18:23:46,252"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-18 18:24:00,159"}

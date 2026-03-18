@@ -22,7 +22,7 @@ class CustomProfileSerializer(serializers.ModelSerializer):
         fields = ['user','avatar','total_orders','loyalty_points']
         #fields = ['all_address','user','avatar']
         #read_only_fields = ['all_address']
-        depth = 1
+        #depth = 1
 
     #cadr = AddressSerializer()   
     # def get_test(self,obj):

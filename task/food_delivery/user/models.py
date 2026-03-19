@@ -187,10 +187,8 @@ class CustomerProfile(TimestampedModel):
     def __str__(self):
         return f"{self.user.first_name} {self.user.last_name}"
 
-
-
-
-
+############################################################################
+#  4.DRIVER PROFILE
 class DriverProfile(TimestampedModel):
     user = models.ForeignKey('CustomUser',on_delete=models.RESTRICT,related_name='driver_profile')
     avatar = models.ImageField(upload_to='user_avatars/',blank=True,null=True)

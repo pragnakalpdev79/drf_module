@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from user.models import RestrauntModel
+from user.models import *
 #from django.utils.timezone import datetime
 import datetime
 import logging,re
@@ -24,9 +24,7 @@ class RestoListSerializer(serializers.ModelSerializer):
         logger.info('Restro is Closed')
         return False
 
-        
-
-
+    
 class RestoCreateSerializer(serializers.ModelSerializer):
     # logger.info('Starting restro Create serializer')
     
@@ -55,3 +53,17 @@ class RestoCreateSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Please enter the phone number in proper format")
         logger.info("regx matched succesful")
         return value
+    
+        
+class MenuItemSerializer(serializers.ModelSerializer):
+    #restaurant = RestoSerializer()
+    class Meta:
+        fields = ['id','name','description','price','category','dietary_info','is_available','preparation_time']
+        model = MenuItem
+        #depth = 0
+
+class RestoSerializer(serializers.ModelSerializer):
+    menu = MenuItemSerializer(many=True)
+    class Meta:
+        fields = ['name','description','cuisine_type','is_open','opening_time','closing_time','menu','review_for']
+        model = RestrauntModel

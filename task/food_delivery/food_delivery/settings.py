@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-$8*37g=f-1j@31a1i)cl8)p=qt6t(-f5v#oy6#8o6!v3#vxjbx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -50,9 +51,12 @@ INSTALLED_APPS = [
     'restaurants',
     'profiles',
     'debug_toolbar',
+    'orders',
+    'silk',
 ]
 
 MIDDLEWARE = [
+    'silk.middleware.SilkyMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -233,3 +237,4 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.redirects.RedirectsPanel',
 ]
 
+SILKY_PYTHON_PROFILER = True 

@@ -21,8 +21,19 @@ class Address(admin.ModelAdmin):
     list_display = ('adrname','address','is_default','adrofuser','id')
     ordering = ['-created_at']
 
-admin.site.register(RestrauntModel)
-admin.site.register(MenuItem)
+@admin.register(RestrauntModel)
+class RestrauntModel(admin.ModelAdmin):
+    list_display = ('name','email','phone_number','owner','cuisine_type','description','id')
+    ordering = ['-created_at']
+
+
+@admin.register(MenuItem)
+class MenuItem(admin.ModelAdmin):
+    list_display = ('name','restaurant','category','description','id')
+    ordering = ['-created_at']
+
+
+
 admin.site.register(Order)
 admin.site.register(OrderItem)
 admin.site.register(Review)

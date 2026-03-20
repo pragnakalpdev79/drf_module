@@ -1,7 +1,8 @@
 import logging
 from django.shortcuts import render
 from django.contrib.auth.mixins import UserPassesTestMixin
-from rest_framework import generics,status,viewsets,permissions,renderers
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import generics,status,viewsets,permissions,renderers,filters
 from rest_framework.decorators import action
 from rest_framework.permissions import AllowAny,IsAuthenticatedOrReadOnly,IsAuthenticated
 from rest_framework.response import Response
@@ -15,6 +16,8 @@ logger = logging.getLogger('user')
 class RestaurantViewSet(viewsets.ModelViewSet):
     queryset = RestrauntModel.objects.all()
     http_method_names = ['get', 'post','patch']
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['cuisine_type','is_open']
 
     def get_serializer_class(self):
         if self.action == 'list':
@@ -43,6 +46,8 @@ class RestaurantViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(queryset,many=True) #this tells drf that the queryset contains multiple items
         # serializer.is_valid(raise_exception=True)
         logger.info(f"Listing all rests : -  {serializer.data}")
+        filter_backends = [DjangoFilterBackend]
+        filterset_fields = ['cuisine_type','is_open']
         #serializer(self.queryset)
         return Response(serializer.data)    # def has_permission(self, request, view):
     #     logger.info("test!!")

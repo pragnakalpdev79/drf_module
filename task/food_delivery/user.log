@@ -3073,3 +3073,296 @@
 {"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-19 18:00:09,329"}
 {"message": "Create action detected", "module": "views", "asctime": "2026-03-19 18:02:14,638"}
 {"message": "in serializer", "module": "serializers", "asctime": "2026-03-19 18:31:56,922"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-19 18:52:19,179"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 10:47:57,335"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 10:48:03,895"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 10:48:12,141"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 15:29:58,894"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 15:31:08,515"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:38:41,875"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:39:53,523"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:40:12,216"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:40:15,033"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:40:18,845"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:40:22,549"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:40:24,269"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:41:03,884"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:41:33,529"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:41:37,291"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:41:44,037"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:41:51,774"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:41:53,515"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:42:23,083"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:42:30,866"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:42:35,636"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:42:37,314"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:43:10,366"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:43:22,713"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:43:25,444"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:43:29,194"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:43:31,874"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:43:45,671"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:44:01,580"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:44:03,306"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:44:15,726"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:46:14,795"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:46:16,443"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:46:34,320"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:46:35,906"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:46:39,462"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:46:50,079"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:46:51,637"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:46:56,195"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:47:01,762"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:47:04,371"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:47:08,101"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:47:11,846"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:47:21,604"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:47:33,425"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:47:38,009"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:47:44,639"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:48:00,356"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:48:05,937"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:48:10,703"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:09,348"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:10,859"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:13,421"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:15,937"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:19,708"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:22,340"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:24,863"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:29,516"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:35,091"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:37,634"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:43,320"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:46,921"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:48,458"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:51,021"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:52,569"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:55:58,266"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:56:05,872"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:56:11,509"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:56:13,054"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:56:15,827"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 16:56:18,529"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:01:27,250"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:01:32,854"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:01:36,560"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:02:10,643"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:02:15,445"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:02:19,212"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:02:27,824"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:02:32,387"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:02:34,928"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:02:47,763"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 17:03:09,475"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:03:42,628"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:03:48,362"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:03:50,912"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:03:57,506"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:00,118"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:03,777"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:06,344"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:13,093"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:14,630"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:18,166"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:20,826"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:23,522"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:29,272"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:04:31,052"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 17:04:36,610"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 17:04:39,229"}
+{"message": "The user does not has permission to place an order", "module": "permissions", "asctime": "2026-03-20 17:05:07,309"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-20 17:05:18,836"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-20 17:05:18,864"}
+{"message": "p2.0.1  Result of authentication function == wedtest1f wedtestl - wedtest1@test.com", "module": "serializers", "asctime": "2026-03-20 17:05:19,498"}
+{"message": "p2.0.1  User object to be returned to the view : - [ wedtest1f wedtestl - wedtest1@test.com ]     ", "module": "serializers", "asctime": "2026-03-20 17:05:19,498"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-20 17:05:19,498"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-20 17:05:19,498"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-20 17:05:19,498"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:05:34,545"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:05:35,616"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:05:52,967"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:05:57,576"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:06:00,606"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:06:02,070"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:06:27,799"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:06:30,370"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:06:32,075"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:06:36,719"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:08:22,127"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 17:08:24,980"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:08:41,521"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:08:45,191"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:08:49,923"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:08:51,430"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:08:55,021"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:09:03,639"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:09:19,487"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:09:24,215"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 17:09:42,811"}
+{"message": "The user does not has permission to place an order", "module": "permissions", "asctime": "2026-03-20 17:09:54,360"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-20 17:10:01,896"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-20 17:10:01,924"}
+{"message": "p2.0.1  Result of authentication function == wedtest1f wedtestl - wedtest1@test.com", "module": "serializers", "asctime": "2026-03-20 17:10:02,574"}
+{"message": "p2.0.1  User object to be returned to the view : - [ wedtest1f wedtestl - wedtest1@test.com ]     ", "module": "serializers", "asctime": "2026-03-20 17:10:02,574"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-20 17:10:02,575"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-20 17:10:02,575"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-20 17:10:02,575"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:10:21,789"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:12:27,838"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:12:32,589"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:12:40,229"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:12:41,881"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:12:46,621"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:12:54,394"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:12:56,123"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:13:04,786"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:13:13,156"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:13:22,024"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:13:25,066"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:19:31,088"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:19:32,644"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:19:34,171"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:19:39,669"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:20:34,642"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:21:07,241"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:21:31,723"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:21:34,110"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:21:48,693"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:21:50,587"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:22:00,584"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:22:03,131"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:22:05,863"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:23:44,118"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:23:55,914"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:24:01,245"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:24:11,060"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:24:12,738"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:24:32,482"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:24:43,875"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:24:45,618"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:24:46,452"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:25:10,629"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:25:18,387"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:25:20,131"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:25:21,342"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:25:32,382"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:26:08,585"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:26:30,673"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:26:47,352"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:26:48,921"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:26:51,607"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:26:55,306"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:26:57,885"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:26:59,573"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:27:01,022"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:27:15,921"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:27:16,432"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:27:25,789"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:27:31,575"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:27:33,833"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:27:53,792"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:28:01,614"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:28:05,364"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-20 17:28:07,947"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:29:25,044"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:57:35,222"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:58:46,191"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 17:58:48,931"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 17:58:57,115"}
+{"message": "======================17:59:18.878754=================", "module": "serializers", "asctime": "2026-03-20 17:59:18,878"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:18,878"}
+{"message": "======================17:59:18.879159=================", "module": "serializers", "asctime": "2026-03-20 17:59:18,879"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:18,879"}
+{"message": "======================17:59:18.879666=================", "module": "serializers", "asctime": "2026-03-20 17:59:18,879"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:18,879"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 17:59:18,880"}
+{"message": "======================17:59:27.214166=================", "module": "serializers", "asctime": "2026-03-20 17:59:27,214"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:27,214"}
+{"message": "======================17:59:27.214639=================", "module": "serializers", "asctime": "2026-03-20 17:59:27,214"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:27,214"}
+{"message": "======================17:59:27.215061=================", "module": "serializers", "asctime": "2026-03-20 17:59:27,215"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:27,215"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 17:59:27,215"}
+{"message": "======================17:59:35.081005=================", "module": "serializers", "asctime": "2026-03-20 17:59:35,081"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:35,081"}
+{"message": "======================17:59:35.081623=================", "module": "serializers", "asctime": "2026-03-20 17:59:35,081"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:35,081"}
+{"message": "======================17:59:35.082103=================", "module": "serializers", "asctime": "2026-03-20 17:59:35,082"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:35,082"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 17:59:35,082"}
+{"message": "======================17:59:45.654570=================", "module": "serializers", "asctime": "2026-03-20 17:59:45,654"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:45,654"}
+{"message": "======================17:59:45.655047=================", "module": "serializers", "asctime": "2026-03-20 17:59:45,655"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:45,655"}
+{"message": "======================17:59:45.655370=================", "module": "serializers", "asctime": "2026-03-20 17:59:45,655"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:45,655"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 17:59:45,655"}
+{"message": "======================17:59:57.935142=================", "module": "serializers", "asctime": "2026-03-20 17:59:57,935"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:57,935"}
+{"message": "======================17:59:57.935623=================", "module": "serializers", "asctime": "2026-03-20 17:59:57,935"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:57,935"}
+{"message": "======================17:59:57.935972=================", "module": "serializers", "asctime": "2026-03-20 17:59:57,935"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 17:59:57,936"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 17:59:57,936"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 17:59:57,937"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 17:59:57,937"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 17:59:57,942"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 17:59:57,942"}
+{"message": "======================18:00:08.481033=================", "module": "serializers", "asctime": "2026-03-20 18:00:08,481"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:00:08,481"}
+{"message": "======================18:00:08.481629=================", "module": "serializers", "asctime": "2026-03-20 18:00:08,481"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:00:08,481"}
+{"message": "======================18:00:08.482019=================", "module": "serializers", "asctime": "2026-03-20 18:00:08,482"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:00:08,482"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 18:00:08,482"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:00:08,482"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:00:08,483"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:00:08,485"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:00:08,485"}
+{"message": "======================18:00:11.450760=================", "module": "serializers", "asctime": "2026-03-20 18:00:11,450"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:00:11,450"}
+{"message": "======================18:00:11.451150=================", "module": "serializers", "asctime": "2026-03-20 18:00:11,451"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:00:11,451"}
+{"message": "======================18:00:11.451590=================", "module": "serializers", "asctime": "2026-03-20 18:00:11,451"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:00:11,451"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 18:00:11,451"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:00:11,452"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:00:11,452"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:00:11,454"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:00:11,454"}
+{"message": "======================18:13:57.906670=================", "module": "serializers", "asctime": "2026-03-20 18:13:57,906"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:13:57,906"}
+{"message": "======================18:13:57.907244=================", "module": "serializers", "asctime": "2026-03-20 18:13:57,907"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:13:57,907"}
+{"message": "======================18:13:57.907794=================", "module": "serializers", "asctime": "2026-03-20 18:13:57,907"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:13:57,907"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 18:13:57,908"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:13:57,908"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:13:57,908"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:13:57,910"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:13:57,910"}
+{"message": "======================18:14:06.064178=================", "module": "serializers", "asctime": "2026-03-20 18:14:06,064"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:14:06,064"}
+{"message": "======================18:14:06.064755=================", "module": "serializers", "asctime": "2026-03-20 18:14:06,064"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:14:06,064"}
+{"message": "======================18:14:06.065041=================", "module": "serializers", "asctime": "2026-03-20 18:14:06,065"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:14:06,065"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 18:14:06,065"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:14:06,065"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:14:06,065"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:14:06,067"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:14:06,067"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-20 18:14:32,985"}
+{"message": "======================18:14:37.494129=================", "module": "serializers", "asctime": "2026-03-20 18:14:37,494"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:14:37,494"}
+{"message": "======================18:14:37.494484=================", "module": "serializers", "asctime": "2026-03-20 18:14:37,494"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:14:37,494"}
+{"message": "======================18:14:37.494763=================", "module": "serializers", "asctime": "2026-03-20 18:14:37,494"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-20 18:14:37,494"}
+{"message": "Listing all rests : -  [{'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-20 18:14:37,494"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:14:37,499"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:14:37,499"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-20 18:14:37,503"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-20 18:14:37,503"}

@@ -284,20 +284,41 @@ class Order(TimestampedModel):
     restaurant = models.ForeignKey('RestrauntModel',on_delete=models.DO_NOTHING,related_name='order_by',db_index=True)
     driver = models.ForeignKey('CustomUser',on_delete=models.DO_NOTHING,related_name='deliver_by',null=True)
     order_number = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
+    STATE_PD = 'pd'
+    STATE_CO = 'co'
+    STATE_PR = 'pr'
+    STATE_RD = 'rd'
+    STATE_PU = 'pu'
+    STATE_DL = 'dl'
+    STATE_CD = 'cd'
+
+    __current_status = None
+
     SC = (
-        ('pd','Pending'),
-        ('co','Confiremd'),
-        ('pr','Preparing'),
-        ('rd','Ready'),
-        ('pu','Picked Up'),
-        ('dl','Delivered'),
-        ('cd','Cancelled'),
+        (STATE_PD,'Pending'),
+        (STATE_CO,'Confiremd'),
+        (STATE_PR,'Preparing'),
+        (STATE_RD,'Ready'),
+        (STATE_PU,'Picked Up'),
+        (STATE_DL,'Delivered'),
+        (STATE_CD,'Cancelled'),
     )
+    TRANSITIONS = {
+        STATE_PD: STATE_CO,
+        STATE_PD: STATE_CD,
+        STATE_CO: STATE_PR,
+        STATE_PR: STATE_RD,
+        STATE_RD: STATE_PU,
+        STATE_PU: STATE_DL,
+        STATE_DL: STATE_CD,
+    }
+
     status = models.CharField(
         max_length=2,
         choices= SC,
         help_text = 'Order Status',
         db_index=True,
+        default=STATE_PD,
     )
     delivery_address = models.ForeignKey('address',on_delete=models.DO_NOTHING,related_name='delivery_adress')
     #subtotal =
@@ -308,6 +329,66 @@ class Order(TimestampedModel):
     #actual delivery time
     def calculate_total(self):
         total = None
+
+    def __init__(self,*args,**kwargs):
+        super().__init__(*args,**kwargs)
+        self.__current_status = self.status #INTIATED WITH PENDING ORDER STATUS
+    
+    #save called,
+    def save(self, 
+             force_insert=False, #Forces an SQL INSERT if true
+             force_update=False, # Forces an SQL UPDATE
+             using=None,#Specifies which database to use
+             update_fields=None): #Specifies which fields to update
+        #next allowed is -> confirmed or cancelled
+
+        allowed_next = self.TRANSITIONS[self.__current_status] 
+        
+
+        # CHECKS IF THE MODEL IS BEING CREATED OR UPDATED
+        #IF THE STATE IS CHANGED ITS UPDATED HENCE SKIP VALIDATION
+        # self.status(pending) != self.__current_status(pending) which means it is not updated yet hence False(Not Updated)
+        updated = self.status != self.__current_status
+
+
+        if self.pk and updated and allowed_next != self.status:
+            raise Exception("Invalid Transition.",self.status,allowed_next)
+        
+        if self.pk and updated:
+            self.__current_status = allowed_next
+
+        return super().save(
+            force_insert=force_insert,
+            force_update=force_update,
+            using=using,
+            update_fields=update_fields,
+        )
+    
+    def _transition(self):
+        next_status = self.TRANSITIONS[self.status]
+        self.status = next_status
+        self.save()
+
+    def raccept(self,driver):
+        self._transition(self.STATE_CO)
+    
+    def rreject(self):
+        self._transition(self.STATE_CD)
+
+    def confiremd(self):
+        self._transition(self.STATE_PR)
+    
+    def readytop(self):
+        self._transition(self.STATE_RD)
+
+
+class CartItem(models.Model):
+    user = models.ForeignKey('CustomUser',on_delete=models.CASCADE,related_name='user_cart')
+    menu_item = models.ForeignKey('MenuItem',on_delete=models.DO_NOTHING,related_name='added_item')
+    quantity = models.PositiveIntegerField()
+
+    def __str__(self):
+        return f"This is {self.user}'s cart for - {self.menu_item} with quantity {self.quantity}"
 
 
 

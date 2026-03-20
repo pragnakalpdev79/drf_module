@@ -24,3 +24,19 @@ class OrderViewSet(viewsets.ModelViewSet):
             "message" : "It works",
             "delivery address" : dadr, 
         })
+    
+
+class CartViewSet(viewsets.ModelViewSet):
+    queryset = CartItem.objects.all()
+    serializer_class = CartItemSerializer
+
+    @action(detail=False,methods=['post'],permission_classes=[IsCustomer],serializer_class=CartItemSerializer)
+    def addtocart(self,request):
+        user = request.user.first_name
+        serializer = CartItemSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        print(serializer.data)
+        return Response({
+            'message' : 'Product added to cart',
+            'user' : user,
+        })

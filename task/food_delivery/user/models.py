@@ -304,14 +304,15 @@ class Order(TimestampedModel):
         (STATE_CD,'Cancelled'),
     )
     TRANSITIONS = {
-        STATE_PD: STATE_CO,
-        STATE_PD: STATE_CD,
-        STATE_CO: STATE_PR,
-        STATE_PR: STATE_RD,
-        STATE_RD: STATE_PU,
-        STATE_PU: STATE_DL,
-        STATE_DL: STATE_CD,
+        STATE_PD: [STATE_CO,STATE_CD],
+        STATE_CO: [STATE_PR,STATE_CD],
+        STATE_PR: [STATE_RD,STATE_CD],
+        STATE_RD: [STATE_PU,STATE_CD],
+        STATE_PU: [STATE_DL],
+        STATE_DL: [],
+        STATE_CD: [],
     }
+
 
     status = models.CharField(
         max_length=2,
@@ -321,14 +322,24 @@ class Order(TimestampedModel):
         default=STATE_PD,
     )
     delivery_address = models.ForeignKey('address',on_delete=models.DO_NOTHING,related_name='delivery_adress')
-    #subtotal =
-    tax = models.DecimalField(max_digits=4,decimal_places=2,default=30)
-    #total_amount
+    subtotal = models.DecimalField(max_digits=10,decimal_places=2,default=Decimal('0.00'))
+    delivery_fee = models.DecimalField(max_digits=6,decimal_places=2,default=Decimal('0.00'))
+    tax = models.DecimalField(max_digits=6,decimal_places=2,default=Decimal('0.00'))
+    total_amount = models.DecimalField(max_digits=10,decimal_places=2,default=Decimal('0.00'))
     special_instructions = models.TextField(null=True,blank=True)
-    #estimated delivery time
-    #actual delivery time
-    def calculate_total(self):
-        total = None
+    estimated_delivery_time = models.DateTimeField(null=True,blank=True)
+    actual_delivery_time = models.DateTimeField(null=True,blank=True)
+
+    def calculate_total(self,tax_rate=Decimal('0.05')):
+        self.subtotal = self.item_for.aggregate(
+            total=Sum(F('uprice') * F('quantity'))
+        )['total'] or Decimal('0.00')
+        self.delivery_fee = self.restaurant.delivery_fee
+        self.tax = (self.subtotal * tax_rate).quantize(Decimal('0.01'))
+        self.total_amount = self.subtotal + self.delivery_fee + self.tax
+        self.save(update_fields=['subtotal','delivery_fee','tax','total_amount'])
+        logger.info(f"Order total:-- sub = {self.subtotal} ---- tax={self.tax} ----- total={self.total_amount}")
+
 
     def __init__(self,*args,**kwargs):
         super().__init__(*args,**kwargs)
@@ -340,23 +351,24 @@ class Order(TimestampedModel):
              force_update=False, # Forces an SQL UPDATE
              using=None,#Specifies which database to use
              update_fields=None): #Specifies which fields to update
-        #next allowed is -> confirmed or cancelled
-
-        allowed_next = self.TRANSITIONS[self.__current_status] 
+        #next allowed is ---> confirmed or cancelled
+        logger.info("step1")
+        allowed_next = self.TRANSITIONS.get(self.__current_status,[]) 
         
-
+        logger.info("step2")
         # CHECKS IF THE MODEL IS BEING CREATED OR UPDATED
         #IF THE STATE IS CHANGED ITS UPDATED HENCE SKIP VALIDATION
-        # self.status(pending) != self.__current_status(pending) which means it is not updated yet hence False(Not Updated)
+        # self.status(pending) != self.__current_status(pending) which means it is not updated yet. hence False(Not Updated)
         updated = self.status != self.__current_status
 
-
-        if self.pk and updated and allowed_next != self.status:
+        logger.info("step3")
+        if self.pk and updated and self.status not in allowed_next:
             raise Exception("Invalid Transition.",self.status,allowed_next)
-        
+        logger.info("step4")
         if self.pk and updated:
             self.__current_status = allowed_next
 
+        logger.info("step5")
         return super().save(
             force_insert=force_insert,
             force_update=force_update,
@@ -364,22 +376,41 @@ class Order(TimestampedModel):
             update_fields=update_fields,
         )
     
-    def _transition(self):
-        next_status = self.TRANSITIONS[self.status]
+    def _transition(self,next_status):
+        logger.info("step6")
         self.status = next_status
+        logger.info("step7")
+        if next_status == self.STATE_DL:
+            self.actual_delivery_time = timezone.now()
         self.save()
+        logger.info(f"Order {self.order_number} transitioned to {next_status}")
 
-    def raccept(self,driver):
+    def raccept(self,driver=None):
         self._transition(self.STATE_CO)
-    
+
     def rreject(self):
         self._transition(self.STATE_CD)
 
     def confiremd(self):
         self._transition(self.STATE_PR)
-    
+
     def readytop(self):
         self._transition(self.STATE_RD)
+
+    def pickedup(self):
+        self._transition(self.STATE_PU)
+
+    def delivered(self):
+        self._transition(self.STATE_DL)
+
+    @property
+    def is_cancellable(self):
+        return self.status in [self.STATE_PD,self.STATE_CO,self.STATE_PR,self.STATE_RD]
+
+    @property
+    def is_completed(self):
+        return self.status in [self.STATE_DL,self.STATE_CD]
+
 
 
 class CartItem(models.Model):
@@ -389,6 +420,7 @@ class CartItem(models.Model):
 
     def __str__(self):
         return f"This is {self.user}'s cart for - {self.menu_item} with quantity {self.quantity}"
+
 
 
 

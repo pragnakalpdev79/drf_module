@@ -54,6 +54,10 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'orders',
     'silk',
+    'django_celery_beat',
+    'django_celery_results',
+    'channels',
+    'channels_redis',
 ]
 
 MIDDLEWARE = [
@@ -87,7 +91,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'food_delivery.wsgi.application'
 
+ASGI_APPLICATION = 'food_delivery.asgi.application'
 
+CHANNEL_LAYERS = {
+    'default':{
+        'BACKEND' : 'channels_redis.core.RedisChannelLayer',
+        'CONFIG' :
+        {
+            'hosts' : [('127.0.0.1',6379)],
+            'capacity': 1500,
+        }
+
+    }
+}
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
@@ -244,3 +260,10 @@ DEBUG_TOOLBAR_PANELS = [
 ]
 
 SILKY_PYTHON_PROFILER = True 
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'

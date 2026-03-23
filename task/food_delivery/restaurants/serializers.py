@@ -11,7 +11,7 @@ class RestoListSerializer(serializers.ModelSerializer):
     is_open_now = serializers.SerializerMethodField()
     class Meta:
         model = RestrauntModel
-        fields = ['name','description','cuisine_type','address',
+        fields = ['id','name','description','cuisine_type','address',
                   'phone_number','email','logo','banner','delivery_fee',
                   'minimum_order','is_open_now','minimum_order',
                   'average_rating','total_reviews']

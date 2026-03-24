@@ -103,6 +103,7 @@ class CartViewSet(viewsets.ModelViewSet):
         #get delivery address
         try:
             dadr = request.user.customer_profile.default_adress
+            tadr = dadr.address
         except Exception:
             return Response({'error':'please set a default address first'},status=status.HTTP_400_BAD_REQUEST)
 
@@ -126,6 +127,7 @@ class CartViewSet(viewsets.ModelViewSet):
             restaurant=restaurant,
             delivery_address=dadr,
             special_instructions=special,
+            adratorder=tadr,
         )
 
         #converting cart items to order items

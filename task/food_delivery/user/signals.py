@@ -6,10 +6,11 @@ from django.conf import settings
 from django.dispatch import receiver
 from .models import *
 from .tasks import assign_order_driver
-from django_q.tasks import async_task
+from channels.layers import get_channel_layer
 import asyncio
-import aiohttp
-
+import websockets
+import ssl
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -50,6 +51,17 @@ def assignorder_driver():
         j += 1 
         pending_orders[j].save(update_fields=['driver'])
 
+async def hello():
+    async with websockets.connect('ws://127.0.0.1:8000/ws/chatapp/orders/', close_timeout=500) as websocket:
+        message = 'weird'
+        data = {
+                "type": "chat.message",
+                "message" : message
+            }
+        await websocket.send(json.dumps(data))
+
+        print(f"sent data {data}" )
+
 @receiver(pre_save,sender=Order)
 def order_status_changed(sender,instance,**kwargs):
     if not instance.pk:
@@ -77,7 +89,7 @@ def order_status_changed(sender,instance,**kwargs):
             logger.info(drivers)
             
             logger.info("function complete")
-            async_task(assignorder_driver)
+            #async_task(assignorder_driver)
             #assign_order_driver.delay()
             #logger.info(f"celery result -- {result} ")
             logger.info("celery task called")

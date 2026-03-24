@@ -321,6 +321,7 @@ class Order(TimestampedModel):
         db_index=True,
         default=STATE_PD,
     )
+    adratorder = models.TextField()
     delivery_address = models.ForeignKey('address',on_delete=models.DO_NOTHING,related_name='delivery_adress')
     subtotal = models.DecimalField(max_digits=10,decimal_places=2,default=Decimal('0.00'))
     delivery_fee = models.DecimalField(max_digits=6,decimal_places=2,default=Decimal('0.00'))

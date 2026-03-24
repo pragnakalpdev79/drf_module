@@ -4706,3 +4706,38 @@
 {"message": "in serializer", "module": "serializers", "asctime": "2026-03-23 17:19:46,665"}
 {"message": "in serializer", "module": "serializers", "asctime": "2026-03-23 17:19:55,537"}
 {"message": "in serializer", "module": "serializers", "asctime": "2026-03-23 17:20:09,505"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-24 10:16:47,663"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-24 10:24:27,475"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-24 10:27:11,999"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-24 10:27:24,002"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-24 10:27:31,816"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-24 10:39:36,524"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-24 10:40:05,259"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-24 10:41:57,174"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-24 10:42:11,677"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-24 10:42:11,793"}
+{"message": "p2.0.1  Result of authentication function == wedtest1f wedtestl - wedtest1@test.com", "module": "serializers", "asctime": "2026-03-24 10:42:14,349"}
+{"message": "p2.0.1  User object to be returned to the view : - [ wedtest1f wedtestl - wedtest1@test.com ]     ", "module": "serializers", "asctime": "2026-03-24 10:42:14,350"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-24 10:42:14,350"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-24 10:42:14,351"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-24 10:42:14,351"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-24 10:42:47,547"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-03-24 10:42:47,558"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-03-24 10:42:47,561"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-03-24 10:42:47,620"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-24 10:43:04,709"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-24 10:43:04,716"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-24 10:43:04,816"}
+{"message": "step1", "module": "models", "asctime": "2026-03-24 10:43:04,817"}
+{"message": "step2", "module": "models", "asctime": "2026-03-24 10:43:04,818"}
+{"message": "step3", "module": "models", "asctime": "2026-03-24 10:43:04,818"}
+{"message": "step4", "module": "models", "asctime": "2026-03-24 10:43:04,819"}
+{"message": "step5", "module": "models", "asctime": "2026-03-24 10:43:04,819"}
+{"message": "item: Sabji * 1 at the price 200.00", "module": "views", "asctime": "2026-03-24 10:43:04,855"}
+{"message": "step1", "module": "models", "asctime": "2026-03-24 10:43:04,873"}
+{"message": "step2", "module": "models", "asctime": "2026-03-24 10:43:04,873"}
+{"message": "step3", "module": "models", "asctime": "2026-03-24 10:43:04,874"}
+{"message": "step4", "module": "models", "asctime": "2026-03-24 10:43:04,874"}
+{"message": "step5", "module": "models", "asctime": "2026-03-24 10:43:04,875"}
+{"message": "Order total:-- sub = 200.00 ---- tax=10.00 ----- total=220.00", "module": "models", "asctime": "2026-03-24 10:43:04,904"}
+{"message": "===order 3166ad77-0618-42a8-b877-8dab07cbe164 placed, cart cleared===", "module": "views", "asctime": "2026-03-24 10:43:04,918"}

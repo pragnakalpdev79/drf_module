@@ -11,18 +11,11 @@ import asyncio
 import websockets
 import ssl
 import json
+import logging
 
 logger = logging.getLogger(__name__)
 
-def notify_user(message):
-    channel_layer = get_channel_layer()
-    async_to_sync(channel_layer.group_send)(
-        "customer",
-        {
-            "type" : "send_notification",
-            "message" : message,
-        }
-    )
+
 
 @receiver(post_save,sender=CustomUser)
 def post_save_user(sender,instance,created,**kwargs):
@@ -51,16 +44,32 @@ def assignorder_driver():
         j += 1 
         pending_orders[j].save(update_fields=['driver'])
 
-async def hello():
-    async with websockets.connect('ws://127.0.0.1:8000/ws/chatapp/orders/', close_timeout=500) as websocket:
-        message = 'weird'
-        data = {
-                "type": "chat.message",
-                "message" : message
-            }
-        await websocket.send(json.dumps(data))
+def send_noti_user(message,orderid,room):
+    if room == 'customer':
+        gc = f"customer_{orderid}"
 
-        print(f"sent data {data}" )
+    channel_layer = get_channel_layer()
+    print("--------------------Sending notification!!----------------------")
+    async_to_sync(channel_layer.group_send)(
+        gc,{
+            "type"  : "chat.message",
+            "message": message,
+        }
+    )
+
+@receiver(post_save,sender=Order)
+def new_order(sender,instance,**kwargs):
+    if instance.status == 'pd':
+        # 1. Resto
+        message = f"New Order for {instance.total_amount}"
+        room = 'restaurant'
+        restoid = instance.restaurant
+        send_noti_user(message,restoid,room)
+        #2. Customer
+        message = "Your Order has been placed"
+        room = 'customer'
+        custid = instance.customer.pk
+        send_noti_user(message,custid,room)    
 
 @receiver(pre_save,sender=Order)
 def order_status_changed(sender,instance,**kwargs):
@@ -71,7 +80,38 @@ def order_status_changed(sender,instance,**kwargs):
     except sender.DoesNotExist:
         return
     if old.status != instance.status:
+        print("1.order status changed!!----------------------")
         logger.info(f"Order {instance.order_number}: {old.status} -> {instance.status}")
+        message = f"status updated {instance.order_number}: {old.status} -> {instance.status} "
+        orderid = instance.customer.pk
+        room = 'customer'
+        send_noti_user(message,orderid,room)
+
+        if instance.status == 'pd':
+            # 1. Resto
+            message = f"New Order for {instance.total_amount}"
+            room = 'restaurant'
+            restoid = instance.resaturant
+            send_noti_user(message,restoid,room)
+            #2. Customer
+            message = "Your Order has been placed"
+            room = 'customer'
+            custid = instance.customer.pk
+            send_noti_user(message,custid,room)
+        
+        if instance.status == 'co':
+            #1. Customer
+            message = "Your Order has been accepted by restaurant"
+            room = 'customer'
+            custid = instance.customer.pk
+            send_noti_user(message,custid,room)
+            #2. Driver
+            message = f"New Delivery {instance.customer.pk} for amount {instance.total_amount}"
+            room = 'customer'
+            ordid = instance.customer.pk
+            send_noti_user(message,ordid,room)
+
+
         
         #add loyalty points on delivery
         if instance.status == 'dl' and hasattr(instance.customer,'customer_profile'):
@@ -81,34 +121,3 @@ def order_status_changed(sender,instance,**kwargs):
             profile.save(update_fields=['loyalty_points'])
             logger.info(f"Added {points} loyalty points to {instance.customer.email}")
 
-        if instance.status == 'rd':
-            print(old)
-            logger.info(f"+++++++++++++++++++++++++++++++++++++++++++++")
-            logger.info(f"Assign driver request for order -- {old}")
-            drivers = DriverProfile.objects.filter(is_available=True)
-            logger.info(drivers)
-            
-            logger.info("function complete")
-            #async_task(assignorder_driver)
-            #assign_order_driver.delay()
-            #logger.info(f"celery result -- {result} ")
-            logger.info("celery task called")
-            #logger.info(drivers.driver_profile.is_available)
-
-
-
-#===========================================================
-# TO SEND EMAIL UPON REGISTRATION
-            #print(newprofile)
-            # logger.info(f"New Customer Profile for {instance.email} Completed!!")
-            # try:
-            #     send_mail(
-            #         subject="Registration Confirmation Food Delivery Sys",
-            #         message=f"Your customer acount has been registered with us,with username : {instance.username} with email : {instance.email}  Upload your profile picture and update adress by using your profile ",
-            #         from_email=settings.DEFAULT_FROM_EMAIL,
-            #         recipient_list=[instance.email]
-            #         fail_silently=True
-            #              )
-            #     logger.info(f"email sent to {instance.email}")
-            # except Exception as e :
-            #      logger.error(f"mail not sent error: -  {e}")

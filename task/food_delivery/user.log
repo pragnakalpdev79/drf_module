@@ -4741,3 +4741,923 @@
 {"message": "step5", "module": "models", "asctime": "2026-03-24 10:43:04,875"}
 {"message": "Order total:-- sub = 200.00 ---- tax=10.00 ----- total=220.00", "module": "models", "asctime": "2026-03-24 10:43:04,904"}
 {"message": "===order 3166ad77-0618-42a8-b877-8dab07cbe164 placed, cart cleared===", "module": "views", "asctime": "2026-03-24 10:43:04,918"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:37:33,282"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:38:10,303"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:38:28,371"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:40:21,751"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:41:42,155"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:41:47,638"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:41:54,431"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:42:49,460"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:43:20,779"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:44:06,075"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:44:22,392"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:54:25,589"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:57:27,435"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:58:31,022"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 10:59:34,318"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:01:43,273"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:01:57,685"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:02:10,963"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:02:21,986"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:02:49,371"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:02:56,437"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:03:11,134"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:03:24,303"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:03:32,452"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:03:52,329"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:03:59,560"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:04:06,097"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:04:12,448"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:04:25,519"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:04:41,620"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:04:48,367"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:04:57,162"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:05:05,034"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:05:15,916"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:05:22,767"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:05:29,131"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:05:45,468"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:06:00,704"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:06:23,742"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:07:06,055"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:07:17,833"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:13:48,461"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:13:58,084"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:14:15,297"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:14:43,270"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:18:42,874"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:19:19,722"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:19:37,074"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:19:43,828"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:19:57,087"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:20:08,160"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:20:13,822"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:20:19,449"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:21:10,419"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:21:41,891"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:21:48,457"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:22:00,493"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:22:05,887"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:22:14,572"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:22:29,762"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:22:35,456"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:22:41,294"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:23:31,339"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:23:37,194"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:23:42,862"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:26:09,398"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:26:22,594"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:29:30,313"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:31:00,079"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:31:08,396"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:31:23,914"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:31:30,708"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:31:37,370"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:31:43,787"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:31:51,416"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:31:57,823"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:32:13,609"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:33:12,669"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:33:25,508"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:33:44,036"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:34:12,388"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:34:24,383"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:34:56,807"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:36:27,340"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:36:36,073"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:36:42,583"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:38:00,095"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:49:14,531"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:54:27,487"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:54:47,295"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:55:25,338"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:55:34,712"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:57:37,679"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:57:52,282"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:57:58,624"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:59:37,314"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:59:45,175"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 11:59:51,926"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:00:25,707"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:01:34,583"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:02:01,437"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:04:54,765"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:05:02,690"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:05:16,220"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:05:31,145"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:05:40,193"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:05:47,760"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:08:26,265"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:09:11,180"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:12:36,090"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:12:44,189"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:12:53,234"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:13:49,256"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:14:49,454"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:15:25,557"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:16:32,699"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:19:43,886"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:19:58,632"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:20:22,724"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:22:00,169"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:22:13,384"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:25:34,305"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:25:47,546"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:26:03,146"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:28:20,728"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:29:40,957"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:30:29,861"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:35:58,384"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:36:58,104"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:37:10,583"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:37:16,277"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 12:38:17,303"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 12:38:17,475"}
+{"message": "p2.0.1  Result of authentication function == wedtest1f wedtestl - wedtest1@test.com", "module": "serializers", "asctime": "2026-03-25 12:38:19,963"}
+{"message": "p2.0.1  User object to be returned to the view : - [ wedtest1f wedtestl - wedtest1@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 12:38:19,964"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 12:38:19,964"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 12:38:19,964"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 12:38:19,965"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 12:38:36,761"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-03-25 12:38:36,771"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-03-25 12:38:36,775"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-03-25 12:38:36,818"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 12:38:52,226"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 12:38:52,236"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 12:38:52,356"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 12:38:52,361"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 12:38:52,362"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 12:38:52,362"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 12:38:52,362"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 12:38:52,363"}
+{"message": "item: Sabji * 1 at the price 200.00", "module": "views", "asctime": "2026-03-25 12:38:52,409"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 12:38:52,430"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 12:38:52,430"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 12:38:52,431"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 12:38:52,432"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 12:38:52,432"}
+{"message": "Order total:-- sub = 200.00 ---- tax=10.00 ----- total=220.00", "module": "models", "asctime": "2026-03-25 12:38:52,460"}
+{"message": "===order b9f8388e-ef27-4a54-bc6b-f61ce70b867a placed, cart cleared===", "module": "views", "asctime": "2026-03-25 12:38:52,473"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 12:39:38,435"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 12:39:38,440"}
+{"message": "p2.0.1  Result of authentication function == test34f test34l - test34@test.com", "module": "serializers", "asctime": "2026-03-25 12:39:40,923"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test34f test34l - test34@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 12:39:40,923"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 12:39:40,923"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 12:39:40,924"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 12:39:40,924"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 12:40:32,610"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 12:40:32,612"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 12:40:32,613"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 12:40:32,614"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 12:40:32,614"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 12:40:32,615"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 12:40:32,615"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 12:40:32,615"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 12:40:32,616"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 12:40:32,616"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 12:40:32,616"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 12:40:32,617"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 12:40:32,617"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 12:40:32,618"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a: pd -> co", "module": "signals", "asctime": "2026-03-25 12:40:32,634"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a transitioned to co", "module": "models", "asctime": "2026-03-25 12:40:32,649"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 12:40:32,650"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 12:41:47,078"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 12:41:47,081"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 12:41:47,081"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 12:41:47,083"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 12:41:47,083"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 12:41:47,083"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 12:41:47,084"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 12:41:47,084"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 12:41:47,084"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 12:41:47,085"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 12:41:47,085"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 12:41:47,085"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 12:41:47,086"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 12:41:47,086"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a: co -> pr", "module": "signals", "asctime": "2026-03-25 12:41:47,099"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a transitioned to pr", "module": "models", "asctime": "2026-03-25 12:41:47,118"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 12:41:47,119"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:42:24,978"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 12:42:30,677"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 12:42:30,681"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 12:42:30,682"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 12:42:30,683"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 12:42:30,684"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 12:42:30,685"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 12:42:30,685"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 12:42:30,685"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 12:42:30,686"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 12:42:30,686"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 12:42:30,686"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 12:42:30,687"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 12:42:30,687"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 12:42:30,687"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a: pr -> rd", "module": "signals", "asctime": "2026-03-25 12:42:30,710"}
+{"message": "+++++++++++++++++++++++++++++++++++++++++++++", "module": "signals", "asctime": "2026-03-25 12:42:30,712"}
+{"message": "Assign driver request for order -- Order object (b9f8388e-ef27-4a54-bc6b-f61ce70b867a)", "module": "signals", "asctime": "2026-03-25 12:42:30,715"}
+{"message": "order is ready sending notification", "module": "signals", "asctime": "2026-03-25 12:42:30,716"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a transitioned to rd", "module": "models", "asctime": "2026-03-25 12:42:31,926"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 12:42:31,927"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:44:13,791"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:45:03,064"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 12:45:11,021"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 12:46:06,518"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 12:46:06,521"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 12:46:06,522"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 12:46:47,616"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 12:46:47,619"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 12:46:47,620"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 12:47:12,894"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 12:47:12,896"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 12:47:12,897"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 12:47:41,412"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 12:47:41,415"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 12:47:41,415"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 12:47:41,416"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 12:47:41,417"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 12:47:41,417"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 12:47:41,417"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 12:47:41,418"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 12:47:41,418"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 12:47:41,418"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 12:47:41,419"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 12:47:41,419"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 12:47:41,419"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 12:47:41,419"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a: pd -> co", "module": "signals", "asctime": "2026-03-25 12:47:41,433"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a transitioned to co", "module": "models", "asctime": "2026-03-25 12:47:42,256"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 12:47:42,257"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 12:48:10,867"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 12:48:10,869"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 12:48:10,870"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 12:48:10,871"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 12:48:10,871"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 12:48:10,872"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 12:48:10,872"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 12:48:10,873"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 12:48:10,873"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 12:48:10,873"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 12:48:10,874"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 12:48:10,874"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 12:48:10,874"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 12:48:10,875"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a: co -> pr", "module": "signals", "asctime": "2026-03-25 12:48:10,891"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a transitioned to pr", "module": "models", "asctime": "2026-03-25 12:48:10,936"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 12:48:10,937"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:09:51,520"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:10:04,355"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:10:24,296"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:10:39,968"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:11:49,014"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:13:24,854"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:14:30,488"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:15:26,474"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:15:40,994"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:15:49,905"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:16:28,563"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:16:53,245"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:17:24,761"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:18:04,722"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:21:56,598"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:23:47,653"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:24:19,333"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:24:38,015"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:24:49,981"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:25:45,667"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:26:35,876"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:26:42,644"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:28:10,035"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:28:21,145"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:28:53,933"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:29:31,331"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:29:38,299"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:36:53,252"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:37:01,146"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 13:38:01,489"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 13:38:01,607"}
+{"message": "p2.0.1  Result of authentication function == wedtest1f wedtestl - wedtest1@test.com", "module": "serializers", "asctime": "2026-03-25 13:38:04,115"}
+{"message": "p2.0.1  User object to be returned to the view : - [ wedtest1f wedtestl - wedtest1@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 13:38:04,115"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 13:38:04,115"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 13:38:04,116"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 13:38:04,116"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:39:01,595"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:39:10,962"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:41:40,973"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:43:01,678"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:48:39,163"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:49:27,666"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:49:37,824"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:49:45,660"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:50:35,414"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:52:51,111"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 13:53:08,135"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 13:55:01,975"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 13:55:02,140"}
+{"message": "p2.0.1  Result of authentication function == wedtest1f wedtestl - wedtest1@test.com", "module": "serializers", "asctime": "2026-03-25 13:55:04,628"}
+{"message": "p2.0.1  User object to be returned to the view : - [ wedtest1f wedtestl - wedtest1@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 13:55:04,628"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 13:55:04,629"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 13:55:04,629"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 13:55:04,629"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:02:50,736"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:03:07,372"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:03:14,468"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:03:21,300"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:03:34,615"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:04:57,258"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:05:07,356"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:05:49,335"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 14:07:52,438"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 14:07:52,556"}
+{"message": "p2.0.1  Result of authentication function == test34f test34l - test34@test.com", "module": "serializers", "asctime": "2026-03-25 14:07:54,995"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test34f test34l - test34@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 14:07:54,996"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 14:07:54,996"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 14:07:54,996"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 14:07:54,997"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 14:08:16,557"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 14:08:16,559"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 14:08:16,560"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 14:08:16,561"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 14:08:16,561"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 14:08:16,562"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 14:08:16,562"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 14:08:16,563"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 14:08:16,563"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 14:08:16,563"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 14:08:16,564"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 14:08:16,564"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 14:08:16,564"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 14:08:16,565"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a: pr -> rd", "module": "signals", "asctime": "2026-03-25 14:08:16,580"}
+{"message": "+++++++++++++++++++++++++++++++++++++++++++++", "module": "signals", "asctime": "2026-03-25 14:08:16,593"}
+{"message": "Assign driver request for order -- Order object (b9f8388e-ef27-4a54-bc6b-f61ce70b867a)", "module": "signals", "asctime": "2026-03-25 14:08:16,594"}
+{"message": "order is ready sending notification", "module": "signals", "asctime": "2026-03-25 14:08:16,596"}
+{"message": "did not work", "module": "views", "asctime": "2026-03-25 14:08:16,596"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:08:51,843"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 14:09:02,094"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 14:09:36,619"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 14:09:36,623"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 14:09:36,623"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 14:09:45,540"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 14:09:45,543"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 14:09:45,543"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 14:09:45,545"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 14:09:45,545"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 14:09:45,546"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 14:09:45,547"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 14:09:45,547"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 14:09:45,548"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 14:09:45,548"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 14:09:45,549"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 14:09:45,549"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 14:09:45,550"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 14:09:45,550"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a: pd -> co", "module": "signals", "asctime": "2026-03-25 14:09:45,572"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a transitioned to co", "module": "models", "asctime": "2026-03-25 14:09:46,185"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 14:09:46,185"}
+{"message": "===status update for order b9f8388e-ef27-4a54-bc6b-f61ce70b867a===", "module": "views", "asctime": "2026-03-25 14:10:10,486"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 14:10:10,489"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 14:10:10,490"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 14:10:10,491"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 14:10:10,491"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 14:10:10,492"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 14:10:10,492"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 14:10:10,493"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 14:10:10,493"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 14:10:10,493"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 14:10:10,493"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 14:10:10,494"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 14:10:10,494"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 14:10:10,494"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a: co -> pr", "module": "signals", "asctime": "2026-03-25 14:10:10,509"}
+{"message": "Order b9f8388e-ef27-4a54-bc6b-f61ce70b867a transitioned to pr", "module": "models", "asctime": "2026-03-25 14:10:10,551"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 14:10:10,551"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:14:15,186"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:14:24,370"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:14:31,153"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:14:42,998"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:14:52,953"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:15:06,259"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:15:16,443"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:15:29,262"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:15:56,890"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:16:05,015"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:16:57,176"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:17:09,093"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:24:13,352"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:24:20,167"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:24:27,132"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:24:34,024"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:24:40,958"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:24:51,225"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:25:05,748"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:25:12,581"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:25:26,995"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:25:37,321"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:25:46,671"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:26:07,164"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 15:27:20,670"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 15:27:20,793"}
+{"message": "p2.0.1  Result of authentication function == test34f test34l - test34@test.com", "module": "serializers", "asctime": "2026-03-25 15:27:23,142"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test34f test34l - test34@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 15:27:23,142"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 15:27:23,143"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 15:27:23,143"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 15:27:23,143"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:29:04,389"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:30:13,877"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:31:36,534"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:31:43,732"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:32:51,183"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:33:19,889"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:33:42,137"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:33:50,295"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:34:04,782"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:36:24,190"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:36:32,933"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:37:01,316"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:37:09,202"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:37:21,454"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:37:43,416"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:37:51,397"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:38:09,317"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:39:00,662"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:39:10,666"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:39:17,346"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:43:55,463"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:44:18,562"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:44:28,876"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:44:38,884"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:44:59,398"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:45:11,327"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:45:25,866"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:45:37,336"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:45:47,446"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:45:55,285"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:46:03,010"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:46:20,494"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:46:29,650"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:46:41,031"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:46:58,411"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:47:05,542"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:47:12,499"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:47:19,786"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:47:28,930"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:47:35,453"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:47:42,188"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:47:52,243"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:48:00,233"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:48:09,064"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:48:40,721"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:48:47,415"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:49:11,250"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:49:33,669"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:49:46,145"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:50:16,806"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 15:50:23,550"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 15:56:55,313"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 15:56:55,434"}
+{"message": "p2.0.1  Result of authentication function == test34f test34l - test34@test.com", "module": "serializers", "asctime": "2026-03-25 15:56:57,747"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test34f test34l - test34@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 15:56:57,747"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 15:56:57,748"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 15:56:57,748"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 15:56:57,748"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:13:39,517"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:13:39,520"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:13:39,520"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:14:00,792"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:14:00,794"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:14:00,795"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 16:14:00,796"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 16:14:00,796"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 16:14:00,797"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 16:14:00,797"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 16:14:00,797"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 16:14:00,798"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 16:14:00,798"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 16:14:00,798"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 16:14:00,799"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 16:14:00,799"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 16:14:00,800"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015: pd -> co", "module": "signals", "asctime": "2026-03-25 16:14:00,817"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015 transitioned to co", "module": "models", "asctime": "2026-03-25 16:14:00,841"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 16:14:00,841"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 16:21:11,108"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:21:31,200"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:21:31,204"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:21:31,205"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 16:21:31,206"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 16:21:31,206"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 16:21:31,207"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 16:21:31,207"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 16:21:31,208"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 16:21:31,209"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 16:21:31,209"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 16:21:31,210"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 16:21:31,211"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 16:21:31,211"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 16:21:31,212"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015: co -> pr", "module": "signals", "asctime": "2026-03-25 16:21:31,234"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015 transitioned to pr", "module": "models", "asctime": "2026-03-25 16:21:31,270"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 16:21:31,271"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 16:23:40,275"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 16:23:40,402"}
+{"message": "p2.0.1  Result of authentication function == wedtest1f wedtestl - wedtest1@test.com", "module": "serializers", "asctime": "2026-03-25 16:23:42,822"}
+{"message": "p2.0.1  User object to be returned to the view : - [ wedtest1f wedtestl - wedtest1@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 16:23:42,823"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 16:23:42,823"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 16:23:42,824"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 16:23:42,824"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 16:26:06,418"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:26:18,808"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:26:18,812"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:26:18,813"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:26:30,863"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:26:30,866"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:26:30,867"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 16:26:30,868"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 16:26:30,868"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 16:26:30,869"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 16:26:30,869"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 16:26:30,870"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 16:26:30,870"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 16:26:30,871"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 16:26:30,871"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 16:26:30,871"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 16:26:30,872"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 16:26:30,872"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015: pr -> rd", "module": "signals", "asctime": "2026-03-25 16:26:30,921"}
+{"message": "+++++++++++++++++++++++++++++++++++++++++++++", "module": "signals", "asctime": "2026-03-25 16:26:30,928"}
+{"message": "Assign driver request for order -- Order object (b9186e26-7295-4c2a-830d-777b6ad52015)", "module": "signals", "asctime": "2026-03-25 16:26:30,929"}
+{"message": "order is ready sending notification", "module": "signals", "asctime": "2026-03-25 16:26:30,931"}
+{"message": "did not work", "module": "views", "asctime": "2026-03-25 16:26:30,931"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:28:33,756"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:28:33,759"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:28:33,759"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:28:42,862"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:28:42,865"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:28:42,866"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 16:28:42,868"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 16:28:42,868"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 16:28:42,869"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 16:28:42,869"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 16:28:42,870"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 16:28:42,870"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 16:28:42,870"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 16:28:42,871"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 16:28:42,873"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 16:28:42,873"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 16:28:42,874"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015: co -> pr", "module": "signals", "asctime": "2026-03-25 16:28:42,889"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015 transitioned to pr", "module": "models", "asctime": "2026-03-25 16:28:42,918"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 16:28:42,919"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 16:29:55,836"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:30:34,720"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:30:34,725"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:30:34,726"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 16:30:34,728"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 16:30:34,728"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 16:30:34,729"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 16:30:34,729"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 16:30:34,730"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 16:30:34,730"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 16:30:34,731"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 16:30:34,732"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 16:30:34,732"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 16:30:34,733"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 16:30:34,733"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015: co -> pr", "module": "signals", "asctime": "2026-03-25 16:30:34,766"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015 transitioned to pr", "module": "models", "asctime": "2026-03-25 16:30:34,809"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 16:30:34,810"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 16:31:27,073"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:31:52,207"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:31:52,214"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:31:52,218"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 16:31:52,220"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 16:31:52,227"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 16:31:52,227"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 16:31:52,228"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 16:31:52,230"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 16:31:52,230"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 16:31:52,231"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 16:31:52,232"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 16:31:52,232"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 16:31:52,233"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 16:31:52,234"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015: co -> pr", "module": "signals", "asctime": "2026-03-25 16:31:52,261"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015 transitioned to pr", "module": "models", "asctime": "2026-03-25 16:31:53,293"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 16:31:53,293"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:32:21,504"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:32:21,507"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:32:21,507"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 16:32:21,509"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 16:32:21,509"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 16:32:21,509"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 16:32:21,510"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 16:32:21,510"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 16:32:21,511"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 16:32:21,511"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 16:32:21,511"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 16:32:21,512"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 16:32:21,512"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 16:32:21,512"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015: co -> pr", "module": "signals", "asctime": "2026-03-25 16:32:21,528"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015 transitioned to pr", "module": "models", "asctime": "2026-03-25 16:32:21,571"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 16:32:21,573"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 16:38:55,251"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 16:39:05,448"}
+{"message": "===status update for order b9186e26-7295-4c2a-830d-777b6ad52015===", "module": "views", "asctime": "2026-03-25 16:39:29,179"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 16:39:29,183"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 16:39:29,184"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 16:39:29,187"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 16:39:29,187"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 16:39:29,188"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 16:39:29,189"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 16:39:29,189"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 16:39:29,190"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 16:39:29,190"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 16:39:29,190"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 16:39:29,191"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 16:39:29,191"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 16:39:29,191"}
+{"message": "Order b9186e26-7295-4c2a-830d-777b6ad52015: pr -> rd", "module": "signals", "asctime": "2026-03-25 16:39:29,212"}
+{"message": "+++++++++++++++++++++++++++++++++++++++++++++", "module": "signals", "asctime": "2026-03-25 16:39:29,224"}
+{"message": "Assign driver request for order -- Order object (b9186e26-7295-4c2a-830d-777b6ad52015)", "module": "signals", "asctime": "2026-03-25 16:39:29,226"}
+{"message": "order is ready sending notification", "module": "signals", "asctime": "2026-03-25 16:39:29,230"}
+{"message": "did not work", "module": "views", "asctime": "2026-03-25 16:39:29,231"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:00:07,338"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:00:12,796"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:04:44,084"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:07:19,836"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:07:29,087"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:08:05,097"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:08:11,073"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:08:25,511"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:08:32,420"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:08:52,964"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:09:43,832"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:09:50,772"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:09:56,983"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:10:02,553"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:10:08,114"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:10:19,184"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:10:34,746"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:10:44,701"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:10:52,626"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:11:07,344"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:11:14,448"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:11:20,097"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:11:28,599"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:11:34,114"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:11:51,146"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:12:23,806"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:12:30,861"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:12:39,979"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:13:23,342"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:13:29,042"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:13:36,076"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:13:50,632"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:14:09,503"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:14:16,173"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:14:24,490"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 17:15:13,116"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 17:15:13,295"}
+{"message": "p2.0.1  Result of authentication function == wedtest1f wedtestl - wedtest1@test.com", "module": "serializers", "asctime": "2026-03-25 17:15:15,811"}
+{"message": "p2.0.1  User object to be returned to the view : - [ wedtest1f wedtestl - wedtest1@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 17:15:15,812"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 17:15:15,812"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 17:15:15,812"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 17:15:15,813"}
+{"message": "======================17:15:42.944026=================", "module": "serializers", "asctime": "2026-03-25 17:15:42,944"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-25 17:15:42,944"}
+{"message": "======================17:15:42.945803=================", "module": "serializers", "asctime": "2026-03-25 17:15:42,945"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-25 17:15:42,946"}
+{"message": "======================17:15:42.947131=================", "module": "serializers", "asctime": "2026-03-25 17:15:42,947"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-25 17:15:42,947"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-25 17:15:42,948"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:16:12,541"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:16:29,899"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-03-25 17:16:29,908"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-03-25 17:16:29,911"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-03-25 17:16:29,955"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:16:54,133"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:17:21,745"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 17:17:21,754"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:17:44,118"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 17:17:44,127"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 17:17:44,214"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:17:44,215"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:17:44,216"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:17:44,216"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:17:44,216"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:17:44,217"}
+{"message": "item: Sabji * 1 at the price 200.00", "module": "views", "asctime": "2026-03-25 17:17:44,254"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:17:44,270"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:17:44,271"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:17:44,271"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:17:44,272"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:17:44,272"}
+{"message": "Order total:-- sub = 200.00 ---- tax=10.00 ----- total=220.00", "module": "models", "asctime": "2026-03-25 17:17:44,298"}
+{"message": "===order 4bb22af0-8b55-435f-ab4d-6ae4b6de022e placed, cart cleared===", "module": "views", "asctime": "2026-03-25 17:17:44,310"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:19:49,367"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-25 17:24:20,022"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-25 17:24:20,161"}
+{"message": "p2.0.1  Result of authentication function == test34f test34l - test34@test.com", "module": "serializers", "asctime": "2026-03-25 17:24:22,614"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test34f test34l - test34@test.com ]     ", "module": "serializers", "asctime": "2026-03-25 17:24:22,615"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-25 17:24:22,615"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-25 17:24:22,615"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-25 17:24:22,615"}
+{"message": "===status update for order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc===", "module": "views", "asctime": "2026-03-25 17:26:07,815"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 17:26:07,818"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 17:26:07,819"}
+{"message": "===status update for order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc===", "module": "views", "asctime": "2026-03-25 17:26:32,859"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 17:26:32,862"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 17:26:32,862"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 17:26:32,863"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 17:26:32,864"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 17:26:32,864"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 17:26:32,864"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 17:26:32,865"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 17:26:32,865"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:26:32,865"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:26:32,866"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:26:32,866"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:26:32,866"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:26:32,867"}
+{"message": "Order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc: co -> pr", "module": "signals", "asctime": "2026-03-25 17:26:32,883"}
+{"message": "Order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc transitioned to pr", "module": "models", "asctime": "2026-03-25 17:26:32,925"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 17:26:32,925"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:33:39,834"}
+{"message": "===status update for order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc===", "module": "views", "asctime": "2026-03-25 17:33:51,963"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 17:33:51,967"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 17:33:51,967"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 17:33:51,969"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 17:33:51,969"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 17:33:51,970"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 17:33:51,970"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 17:33:51,970"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 17:33:51,971"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:33:51,971"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:33:51,972"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:33:51,972"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:33:51,973"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:33:51,973"}
+{"message": "Order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc: pr -> rd", "module": "signals", "asctime": "2026-03-25 17:33:52,006"}
+{"message": "Order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc transitioned to rd", "module": "models", "asctime": "2026-03-25 17:33:53,214"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 17:33:53,215"}
+{"message": "===status update for order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc===", "module": "views", "asctime": "2026-03-25 17:34:58,132"}
+{"message": " 1.1 **********************************************8", "module": "views", "asctime": "2026-03-25 17:34:58,135"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-03-25 17:34:58,136"}
+{"message": "1.2 **********************************************8", "module": "views", "asctime": "2026-03-25 17:34:58,137"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-03-25 17:34:58,137"}
+{"message": "1.3 **********************************************8", "module": "views", "asctime": "2026-03-25 17:34:58,138"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-03-25 17:34:58,138"}
+{"message": "step6", "module": "models", "asctime": "2026-03-25 17:34:58,138"}
+{"message": "step7", "module": "models", "asctime": "2026-03-25 17:34:58,139"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:34:58,139"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:34:58,140"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:34:58,140"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:34:58,140"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:34:58,141"}
+{"message": "Order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc: pd -> co", "module": "signals", "asctime": "2026-03-25 17:34:58,155"}
+{"message": "Order 10d8d7a2-2297-4a54-bf29-9b2f88a4cccc transitioned to co", "module": "models", "asctime": "2026-03-25 17:34:58,228"}
+{"message": "worked", "module": "views", "asctime": "2026-03-25 17:34:58,228"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:36:40,409"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-03-25 17:36:40,418"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-03-25 17:36:40,421"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-03-25 17:36:40,466"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:36:45,659"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 17:36:45,668"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:36:55,892"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 17:36:55,900"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 17:36:55,984"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:36:55,986"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:36:55,986"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:36:55,987"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:36:55,987"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:36:55,987"}
+{"message": "item: Sabji * 1 at the price 200.00", "module": "views", "asctime": "2026-03-25 17:36:56,030"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:36:56,044"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:36:56,045"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:36:56,045"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:36:56,045"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:36:56,046"}
+{"message": "Order total:-- sub = 200.00 ---- tax=10.00 ----- total=220.00", "module": "models", "asctime": "2026-03-25 17:36:56,075"}
+{"message": "===order e33d0a2d-0983-47ca-a0a3-34ae30d1bfb7 placed, cart cleared===", "module": "views", "asctime": "2026-03-25 17:36:56,088"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:37:44,114"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:38:03,570"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 17:38:03,580"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:38:11,013"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-03-25 17:38:11,022"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-03-25 17:38:11,026"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-03-25 17:38:11,063"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:38:16,173"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 17:38:16,181"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 17:38:16,261"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:38:16,262"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:38:16,262"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:38:16,263"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:38:16,263"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:38:16,263"}
+{"message": "item: Sabji * 1 at the price 200.00", "module": "views", "asctime": "2026-03-25 17:38:16,298"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:38:16,312"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:38:16,312"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:38:16,313"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:38:16,313"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:38:16,314"}
+{"message": "Order total:-- sub = 200.00 ---- tax=10.00 ----- total=220.00", "module": "models", "asctime": "2026-03-25 17:38:16,338"}
+{"message": "===order 90fa39ad-8abc-4e44-be7f-a8b1e89b2365 placed, cart cleared===", "module": "views", "asctime": "2026-03-25 17:38:16,349"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:38:39,613"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-03-25 17:38:39,622"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-03-25 17:38:39,625"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-03-25 17:38:39,666"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:38:45,205"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 17:38:45,213"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 17:38:45,287"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:38:45,288"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:38:45,288"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:38:45,289"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:38:45,289"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:38:45,289"}
+{"message": "item: Sabji * 1 at the price 200.00", "module": "views", "asctime": "2026-03-25 17:38:45,322"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:38:45,335"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:38:45,335"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:38:45,336"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:38:45,336"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:38:45,336"}
+{"message": "Order total:-- sub = 200.00 ---- tax=10.00 ----- total=220.00", "module": "models", "asctime": "2026-03-25 17:38:45,359"}
+{"message": "===order 1d57686c-db03-40eb-8ee6-6b97db134973 placed, cart cleared===", "module": "views", "asctime": "2026-03-25 17:38:45,369"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:52:41,894"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:55:04,446"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:55:16,847"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-03-25 17:55:16,862"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-03-25 17:55:16,867"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-03-25 17:55:16,916"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:55:23,881"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 17:55:23,889"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 17:55:23,978"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:55:23,979"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:55:23,980"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:55:23,980"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:55:23,980"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:55:23,981"}
+{"message": "item: Sabji * 1 at the price 200.00", "module": "views", "asctime": "2026-03-25 17:55:24,020"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:55:24,037"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:55:24,038"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:55:24,038"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:55:24,039"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:55:24,039"}
+{"message": "Order total:-- sub = 200.00 ---- tax=10.00 ----- total=220.00", "module": "models", "asctime": "2026-03-25 17:55:24,069"}
+{"message": "===order b374bf17-e84e-4952-896e-d0bedd1dd97d placed, cart cleared===", "module": "views", "asctime": "2026-03-25 17:55:24,081"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:55:43,429"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-03-25 17:55:43,437"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-03-25 17:55:43,439"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-03-25 17:55:43,476"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 17:55:49,353"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 17:55:49,364"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 17:55:49,443"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:55:49,444"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:55:49,444"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:55:49,445"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:55:49,445"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:55:49,445"}
+{"message": "item: Sabji * 1 at the price 200.00", "module": "views", "asctime": "2026-03-25 17:55:49,480"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 17:55:49,495"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 17:55:49,496"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 17:55:49,496"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 17:55:49,496"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 17:55:49,497"}
+{"message": "Order total:-- sub = 200.00 ---- tax=10.00 ----- total=220.00", "module": "models", "asctime": "2026-03-25 17:55:49,525"}
+{"message": "===order 9dfa9fcd-7f14-4ad1-946a-3fffb54dffa0 placed, cart cleared===", "module": "views", "asctime": "2026-03-25 17:55:49,537"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 17:57:07,328"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 18:00:19,183"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 18:00:36,014"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-03-25 18:00:36,024"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-03-25 18:00:36,027"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-03-25 18:00:36,074"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 18:00:43,753"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 18:00:43,761"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 18:00:43,842"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 18:00:43,843"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 18:00:43,844"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 18:00:43,844"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 18:00:43,845"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 18:00:43,845"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 18:01:06,779"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 18:01:09,902"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 18:01:09,911"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 18:01:10,018"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 18:01:10,019"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 18:01:10,019"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 18:01:10,020"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 18:01:10,020"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 18:01:10,020"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 18:01:44,025"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-25 18:02:15,079"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-03-25 18:02:21,574"}
+{"message": "===checkout started for wedtest1@test.com===", "module": "views", "asctime": "2026-03-25 18:02:21,583"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-03-25 18:02:21,666"}
+{"message": "step1", "module": "models", "asctime": "2026-03-25 18:02:21,668"}
+{"message": "step2", "module": "models", "asctime": "2026-03-25 18:02:21,668"}
+{"message": "step3", "module": "models", "asctime": "2026-03-25 18:02:21,668"}
+{"message": "step4", "module": "models", "asctime": "2026-03-25 18:02:21,669"}
+{"message": "step5", "module": "models", "asctime": "2026-03-25 18:02:21,669"}

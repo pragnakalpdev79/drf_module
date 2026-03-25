@@ -4,6 +4,7 @@ from . import consumers
 
 websocket_urlpatterns = [
     re_path(r"ws/chatapp/(?P<room_name>\w+)/$", consumers.ChatConsumer.as_asgi()),
+    #ws://localhost/ws/chatapp/<variable>/
 ]
 
 # # api/routing.py

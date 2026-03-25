@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'profiles',
     'debug_toolbar',
     'orders',
+    'notification',
     'silk',
     'django_celery_beat',
     'django_celery_results',

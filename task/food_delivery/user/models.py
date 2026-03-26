@@ -71,8 +71,8 @@ class CustomUser(AbstractUser):
 
     USER_TYPE = ( 
         ('c','Customer'),
-        ('r','Restaurant'),
-        ('d','Driver'),
+        ('r','Restaurant Owner'),
+        ('d','Delivery Driver   '),
     )
     utype = models.CharField(max_length=1,choices=USER_TYPE,blank=True,default='c',help_text='User Type') #USER TYPE
 
@@ -190,7 +190,7 @@ class CustomerProfile(TimestampedModel):
 ############################################################################
 #  4.DRIVER PROFILE
 class DriverProfile(TimestampedModel):
-    user = models.ForeignKey('CustomUser',on_delete=models.RESTRICT,related_name='driver_profile')
+    user = models.OneToOneField('CustomUser',on_delete=models.RESTRICT,related_name='driver_profile')
     avatar = models.ImageField(upload_to='user_avatars/',blank=True,null=True)
     VTYPE = (
         ('b','Bike'),
@@ -198,9 +198,9 @@ class DriverProfile(TimestampedModel):
         ('c','Car'),
     )
     vehicle_type = models.CharField(max_length=1,choices=VTYPE,blank=True,default='b',help_text="Delivery partner's Vehicle Type")
-    vehicle_number = models.CharField(max_length=10)
-    license_number = models.CharField(max_length=10)
-    is_available = models.BooleanField(default=False)
+    vehicle_number = models.CharField(max_length=10,unique=True)
+    license_number = models.CharField(max_length=10,unique=True)
+    is_available = models.BooleanField(default=True)
     total_deliveries = models.IntegerField(blank=True,null=True)
     average_rating = models.DecimalField(max_digits=2,decimal_places=1,default=0)
 

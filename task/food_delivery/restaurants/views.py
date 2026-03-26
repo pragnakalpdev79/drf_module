@@ -1,6 +1,7 @@
 import logging
 from django.shortcuts import render
 from django.contrib.auth.mixins import UserPassesTestMixin
+from django.core.cache import cache
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import generics,status,viewsets,permissions,renderers,filters
 from rest_framework.decorators import action
@@ -10,6 +11,7 @@ from rest_framework.views import APIView
 from user.models import RestrauntModel
 from user.permissions import IsRestaurantOwner
 from .serializers import *
+from .pagination import RestoPagination
 
 logger = logging.getLogger('user')
 
@@ -18,6 +20,7 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     http_method_names = ['get', 'post','patch']
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['cuisine_type','is_open']
+    pagination_class = RestoPagination
 
     def get_serializer_class(self):
         if self.action == 'list':
@@ -42,23 +45,44 @@ class RestaurantViewSet(viewsets.ModelViewSet):
 #==============================================================================
 # 1. GET ALL RESTAURANTS BY GET METHOOD
     def list(self,request): #list does not have incoming data,so not passing data into serializer
+        if request.version == 'v2':
+            # ZERO QUERIES AFTER FIRST RUN
+            logger.info("using v2")
+            #ADDING REDIS CACHE IN VERSION 2
+            self.cache_key = 'resto_list'
+            self.cached_data = cache.get(self.cache_key)
+            if self.cached_data is None:
+                logger.info("not cached yet")
+                queryset = self.filter_queryset(self.get_queryset())
+                serializer = self.get_serializer(queryset,many=True)
+                self.cached_data = serializer.data
+                cache.set(self.cache_key,self.cached_data,300)
+            return Response(self.cached_data)
+        # by defualt v1
+        logger.info("using v1")
         queryset = self.get_queryset()
         serializer = self.get_serializer(queryset,many=True) #this tells drf that the queryset contains multiple items
-        # serializer.is_valid(raise_exception=True)
         logger.info(f"Listing all rests : -  {serializer.data}")
-        filter_backends = [DjangoFilterBackend]
-        filterset_fields = ['cuisine_type','is_open']
-        #serializer(self.queryset)
-        return Response(serializer.data)    # def has_permission(self, request, view):
-    #     logger.info("test!!")
-    #     logger.info(request.user.has_perm("add_restrauntmodel"))
-    #     return False
+        print(self.get_paginated_response(serializer.data))
+        return Response(serializer.data)
+    
 #==============================================================================
 # 2. GET ONE RESTAURANT BY ITS ID
     def retrieve(self, request, pk=None):
+        if request.version == 'v2':
+            logger.info("using v2")
+            self.cache_key = f"resto_{pk}"
+            self.cached_data = cache.get(self.cache_key)
+            if self.cached_data is None:
+                resto = RestrauntModel.objects.prefetch_related('menu','review_for').get(id=pk)
+                serializer = self.get_serializer(resto)
+                return Response({
+                    "message" : "Here are the restaurant details",
+                    "resto_id" : pk,
+                    'details' : serializer.data,
+                })
         resto = RestrauntModel.objects.prefetch_related('menu','review_for').get(id=pk)
         serializer = self.get_serializer(resto)
-        #print(resto.menu)
         return Response({
             "message" : "Here are the restaurant details",
             "resto_id" : pk,
@@ -71,6 +95,8 @@ class RestaurantViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         self.perform_create(serializer)
+        if self.cached_data:
+            logger("updating cached data")
         return Response(
             {
             'success': True,

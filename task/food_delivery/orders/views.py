@@ -5,6 +5,7 @@ from rest_framework import status,viewsets
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from .throttles import *
 from user.models import *
 from user.permissions import IsRestaurantOwner,IsCustomer,IsDriver
 from .serializers import *
@@ -16,6 +17,8 @@ logger = logging.getLogger('user')
 class CartViewSet(viewsets.ModelViewSet):
     serializer_class = CartItemSerializer
     permission_classes = [IsCustomer]
+    throttle_classes = [OrderCreateT]
+    throttle_scope = 'checkout'
 
     def get_queryset(self):
         return CartItem.objects.filter(user=self.request.user).select_related('menu_item')
@@ -254,6 +257,7 @@ class OrderViewSet(viewsets.ModelViewSet):
 class ReviewViewSet(viewsets.ModelViewSet):
     serializer_class = ReviewSerializer
     permission_classes = [IsAuthenticated]
+    throttle_classes = [ReviewCreateT]
 
     def get_queryset(self):
         qs = Review.objects.select_related('customer','restaurant','menu_item','order')

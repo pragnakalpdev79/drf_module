@@ -5661,3 +5661,836 @@
 {"message": "step3", "module": "models", "asctime": "2026-03-25 18:02:21,668"}
 {"message": "step4", "module": "models", "asctime": "2026-03-25 18:02:21,669"}
 {"message": "step5", "module": "models", "asctime": "2026-03-25 18:02:21,669"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 10:45:38,245"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 10:48:10,603"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 10:48:39,862"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 11:32:34,574"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 11:32:44,078"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 12:42:40,465"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 12:42:53,804"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 12:43:07,880"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 12:44:31,169"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 12:44:44,650"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 12:46:32,534"}
+{"message": "======================12:46:44.495793=================", "module": "serializers", "asctime": "2026-03-26 12:46:44,495"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:46:44,496"}
+{"message": "======================12:46:44.496281=================", "module": "serializers", "asctime": "2026-03-26 12:46:44,496"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:46:44,496"}
+{"message": "======================12:46:44.496610=================", "module": "serializers", "asctime": "2026-03-26 12:46:44,496"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:46:44,496"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 12:46:44,496"}
+{"message": "======================12:47:14.462565=================", "module": "serializers", "asctime": "2026-03-26 12:47:14,462"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:47:14,462"}
+{"message": "======================12:47:14.463025=================", "module": "serializers", "asctime": "2026-03-26 12:47:14,463"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:47:14,463"}
+{"message": "======================12:47:14.463356=================", "module": "serializers", "asctime": "2026-03-26 12:47:14,463"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:47:14,463"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 12:47:14,463"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 12:48:33,669"}
+{"message": "======================12:48:40.815840=================", "module": "serializers", "asctime": "2026-03-26 12:48:40,815"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:48:40,816"}
+{"message": "======================12:48:40.816317=================", "module": "serializers", "asctime": "2026-03-26 12:48:40,816"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:48:40,816"}
+{"message": "======================12:48:40.816639=================", "module": "serializers", "asctime": "2026-03-26 12:48:40,816"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:48:40,816"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 12:48:40,816"}
+{"message": "======================12:48:40.824071=================", "module": "serializers", "asctime": "2026-03-26 12:48:40,824"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:48:40,824"}
+{"message": "======================12:48:40.824427=================", "module": "serializers", "asctime": "2026-03-26 12:48:40,824"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:48:40,824"}
+{"message": "======================12:48:40.824721=================", "module": "serializers", "asctime": "2026-03-26 12:48:40,824"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:48:40,824"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 12:49:35,384"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 12:49:46,398"}
+{"message": "======================12:50:54.450212=================", "module": "serializers", "asctime": "2026-03-26 12:50:54,450"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:50:54,450"}
+{"message": "======================12:50:54.450651=================", "module": "serializers", "asctime": "2026-03-26 12:50:54,450"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:50:54,450"}
+{"message": "======================12:50:54.451024=================", "module": "serializers", "asctime": "2026-03-26 12:50:54,451"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 12:50:54,451"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 12:50:54,451"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:11:24,897"}
+{"message": "======================13:11:27.642485=================", "module": "serializers", "asctime": "2026-03-26 13:11:27,642"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:11:27,642"}
+{"message": "======================13:11:27.643087=================", "module": "serializers", "asctime": "2026-03-26 13:11:27,643"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:11:27,643"}
+{"message": "======================13:11:27.643720=================", "module": "serializers", "asctime": "2026-03-26 13:11:27,643"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:11:27,643"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 13:11:27,644"}
+{"message": "not cached yet", "module": "views", "asctime": "2026-03-26 13:11:27,645"}
+{"message": "======================13:11:27.652200=================", "module": "serializers", "asctime": "2026-03-26 13:11:27,652"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:11:27,652"}
+{"message": "======================13:11:27.652691=================", "module": "serializers", "asctime": "2026-03-26 13:11:27,652"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:11:27,652"}
+{"message": "======================13:11:27.653368=================", "module": "serializers", "asctime": "2026-03-26 13:11:27,653"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:11:27,653"}
+{"message": "===========================================p2 -entering the Login-view ======================================================", "module": "views", "asctime": "2026-03-26 13:11:44,866"}
+{"message": "p2.0.1  checking if user is registered or not     ", "module": "serializers", "asctime": "2026-03-26 13:11:44,903"}
+{"message": "p2.0.1  Result of authentication function == test34f test34l - test34@test.com", "module": "serializers", "asctime": "2026-03-26 13:11:45,635"}
+{"message": "p2.0.1  User object to be returned to the view : - [ test34f test34l - test34@test.com ]     ", "module": "serializers", "asctime": "2026-03-26 13:11:45,635"}
+{"message": "p2.1   DATA FROM REQUEST VALIDATED AND IS VALID        ", "module": "views", "asctime": "2026-03-26 13:11:45,635"}
+{"message": "p2.2   authentication request for the following user  {serializer.validated_data['user']}      ", "module": "views", "asctime": "2026-03-26 13:11:45,636"}
+{"message": "p2.2         ", "module": "views", "asctime": "2026-03-26 13:11:45,636"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 13:13:45,864"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 13:13:45,879"}
+{"message": "False", "module": "views", "asctime": "2026-03-26 13:13:45,882"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-03-26 13:13:45,885"}
+{"message": "======================13:14:58.518931=================", "module": "serializers", "asctime": "2026-03-26 13:14:58,518"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:14:58,519"}
+{"message": "======================13:14:58.519379=================", "module": "serializers", "asctime": "2026-03-26 13:14:58,519"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:14:58,519"}
+{"message": "======================13:14:58.519694=================", "module": "serializers", "asctime": "2026-03-26 13:14:58,519"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:14:58,519"}
+{"message": "======================13:14:58.520004=================", "module": "serializers", "asctime": "2026-03-26 13:14:58,520"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:14:58,520"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 13:14:58,520"}
+{"message": "======================13:16:04.479937=================", "module": "serializers", "asctime": "2026-03-26 13:16:04,480"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:04,480"}
+{"message": "======================13:16:04.480615=================", "module": "serializers", "asctime": "2026-03-26 13:16:04,480"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:04,480"}
+{"message": "======================13:16:04.481103=================", "module": "serializers", "asctime": "2026-03-26 13:16:04,481"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:04,481"}
+{"message": "======================13:16:04.481583=================", "module": "serializers", "asctime": "2026-03-26 13:16:04,481"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:04,481"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 13:16:04,481"}
+{"message": "======================13:16:26.877531=================", "module": "serializers", "asctime": "2026-03-26 13:16:26,877"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:26,877"}
+{"message": "======================13:16:26.877978=================", "module": "serializers", "asctime": "2026-03-26 13:16:26,878"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:26,878"}
+{"message": "======================13:16:26.878306=================", "module": "serializers", "asctime": "2026-03-26 13:16:26,878"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:26,878"}
+{"message": "======================13:16:26.878618=================", "module": "serializers", "asctime": "2026-03-26 13:16:26,878"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:26,878"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 13:16:26,878"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:16:46,443"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:16:50,151"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:16:52,767"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:16:56,517"}
+{"message": "======================13:16:58.526663=================", "module": "serializers", "asctime": "2026-03-26 13:16:58,526"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:58,526"}
+{"message": "======================13:16:58.527135=================", "module": "serializers", "asctime": "2026-03-26 13:16:58,527"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:58,527"}
+{"message": "======================13:16:58.527460=================", "module": "serializers", "asctime": "2026-03-26 13:16:58,527"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:58,527"}
+{"message": "======================13:16:58.527778=================", "module": "serializers", "asctime": "2026-03-26 13:16:58,527"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:16:58,527"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 13:16:58,528"}
+{"message": "======================13:17:00.545578=================", "module": "serializers", "asctime": "2026-03-26 13:17:00,545"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:17:00,545"}
+{"message": "======================13:17:00.546144=================", "module": "serializers", "asctime": "2026-03-26 13:17:00,546"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:17:00,546"}
+{"message": "======================13:17:00.546472=================", "module": "serializers", "asctime": "2026-03-26 13:17:00,546"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:17:00,546"}
+{"message": "======================13:17:00.546778=================", "module": "serializers", "asctime": "2026-03-26 13:17:00,546"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:17:00,546"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 13:17:00,547"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:17:52,243"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:17:55,938"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:18:00,822"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:18:09,664"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:18:14,413"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:18:18,070"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:18:24,861"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:18:50,413"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:18:56,127"}
+{"message": "not cached yet", "module": "views", "asctime": "2026-03-26 13:19:04,150"}
+{"message": "======================13:19:04.159540=================", "module": "serializers", "asctime": "2026-03-26 13:19:04,159"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:19:04,159"}
+{"message": "======================13:19:04.159964=================", "module": "serializers", "asctime": "2026-03-26 13:19:04,159"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:19:04,160"}
+{"message": "======================13:19:04.160315=================", "module": "serializers", "asctime": "2026-03-26 13:19:04,160"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:19:04,160"}
+{"message": "======================13:19:04.160636=================", "module": "serializers", "asctime": "2026-03-26 13:19:04,160"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:19:04,160"}
+{"message": "======================13:19:04.166582=================", "module": "serializers", "asctime": "2026-03-26 13:19:04,166"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:19:04,166"}
+{"message": "======================13:19:04.166940=================", "module": "serializers", "asctime": "2026-03-26 13:19:04,166"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:19:04,167"}
+{"message": "======================13:19:04.167272=================", "module": "serializers", "asctime": "2026-03-26 13:19:04,167"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:19:04,167"}
+{"message": "======================13:19:04.167590=================", "module": "serializers", "asctime": "2026-03-26 13:19:04,167"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:19:04,167"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 13:19:04,167"}
+{"message": "======================13:20:26.976963=================", "module": "serializers", "asctime": "2026-03-26 13:20:26,977"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:20:26,977"}
+{"message": "======================13:20:26.977474=================", "module": "serializers", "asctime": "2026-03-26 13:20:26,977"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:20:26,977"}
+{"message": "======================13:20:26.977825=================", "module": "serializers", "asctime": "2026-03-26 13:20:26,977"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:20:26,977"}
+{"message": "======================13:20:26.978201=================", "module": "serializers", "asctime": "2026-03-26 13:20:26,978"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 13:20:26,978"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 13:20:26,978"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:20:56,965"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:22:06,849"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:22:34,111"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:22:57,335"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:23:01,998"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:23:12,846"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:24:11,495"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:24:19,356"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:24:29,242"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:24:31,818"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:24:37,622"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:24:41,261"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:24:48,211"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:24:52,915"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:25:00,777"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:25:08,648"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:25:11,294"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:25:51,250"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:25:53,915"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:25:58,609"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:26:05,354"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:26:11,149"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:26:19,974"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:26:28,866"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:26:33,553"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:26:42,898"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:28:04,815"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:28:12,660"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 13:28:16,261"}
+{"message": "======================14:55:34.954648=================", "module": "serializers", "asctime": "2026-03-26 14:55:34,954"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 14:55:34,954"}
+{"message": "======================14:55:34.955360=================", "module": "serializers", "asctime": "2026-03-26 14:55:34,955"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 14:55:34,955"}
+{"message": "======================14:55:34.955809=================", "module": "serializers", "asctime": "2026-03-26 14:55:34,955"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 14:55:34,955"}
+{"message": "======================14:55:34.956249=================", "module": "serializers", "asctime": "2026-03-26 14:55:34,956"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 14:55:34,956"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 14:55:34,956"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 14:55:53,358"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 14:55:56,795"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 14:56:01,125"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 14:56:24,793"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 14:57:16,627"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:07:24,826"}
+{"message": "using v2", "module": "views", "asctime": "2026-03-26 15:07:29,686"}
+{"message": "======================15:07:29.693427=================", "module": "serializers", "asctime": "2026-03-26 15:07:29,693"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:07:29,693"}
+{"message": "======================15:07:29.693882=================", "module": "serializers", "asctime": "2026-03-26 15:07:29,693"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:07:29,694"}
+{"message": "======================15:07:29.694198=================", "module": "serializers", "asctime": "2026-03-26 15:07:29,694"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:07:29,694"}
+{"message": "======================15:07:29.694489=================", "module": "serializers", "asctime": "2026-03-26 15:07:29,694"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:07:29,694"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:07:29,694"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:07:53,484"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:07:59,276"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:08:01,950"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:08:10,796"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:08:12,041"}
+{"message": "======================15:08:12.048510=================", "module": "serializers", "asctime": "2026-03-26 15:08:12,048"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:08:12,048"}
+{"message": "======================15:08:12.048879=================", "module": "serializers", "asctime": "2026-03-26 15:08:12,048"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:08:12,048"}
+{"message": "======================15:08:12.049190=================", "module": "serializers", "asctime": "2026-03-26 15:08:12,049"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:08:12,049"}
+{"message": "======================15:08:12.049484=================", "module": "serializers", "asctime": "2026-03-26 15:08:12,049"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:08:12,049"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:08:12,049"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:08:52,519"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:08:57,906"}
+{"message": "======================15:08:57.912701=================", "module": "serializers", "asctime": "2026-03-26 15:08:57,912"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:08:57,912"}
+{"message": "======================15:08:57.913084=================", "module": "serializers", "asctime": "2026-03-26 15:08:57,913"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:08:57,913"}
+{"message": "======================15:08:57.913398=================", "module": "serializers", "asctime": "2026-03-26 15:08:57,913"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:08:57,913"}
+{"message": "======================15:08:57.913692=================", "module": "serializers", "asctime": "2026-03-26 15:08:57,913"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:08:57,913"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:08:57,913"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:10:04,170"}
+{"message": "======================15:10:04.176286=================", "module": "serializers", "asctime": "2026-03-26 15:10:04,176"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:10:04,176"}
+{"message": "======================15:10:04.176739=================", "module": "serializers", "asctime": "2026-03-26 15:10:04,176"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:10:04,176"}
+{"message": "======================15:10:04.177065=================", "module": "serializers", "asctime": "2026-03-26 15:10:04,177"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:10:04,177"}
+{"message": "======================15:10:04.177369=================", "module": "serializers", "asctime": "2026-03-26 15:10:04,177"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:10:04,177"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:10:04,177"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:10:59,732"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:11:08,633"}
+{"message": "v1", "module": "views", "asctime": "2026-03-26 15:11:16,032"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:11:16,032"}
+{"message": "======================15:11:16.039586=================", "module": "serializers", "asctime": "2026-03-26 15:11:16,039"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:11:16,039"}
+{"message": "======================15:11:16.039975=================", "module": "serializers", "asctime": "2026-03-26 15:11:16,039"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:11:16,040"}
+{"message": "======================15:11:16.040309=================", "module": "serializers", "asctime": "2026-03-26 15:11:16,040"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:11:16,040"}
+{"message": "======================15:11:16.040616=================", "module": "serializers", "asctime": "2026-03-26 15:11:16,040"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:11:16,040"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:11:16,040"}
+{"message": "using v2", "module": "views", "asctime": "2026-03-26 15:12:18,112"}
+{"message": "not cached yet", "module": "views", "asctime": "2026-03-26 15:12:18,113"}
+{"message": "======================15:12:18.120639=================", "module": "serializers", "asctime": "2026-03-26 15:12:18,120"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:12:18,120"}
+{"message": "======================15:12:18.121120=================", "module": "serializers", "asctime": "2026-03-26 15:12:18,121"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:12:18,121"}
+{"message": "======================15:12:18.121451=================", "module": "serializers", "asctime": "2026-03-26 15:12:18,121"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:12:18,121"}
+{"message": "======================15:12:18.121775=================", "module": "serializers", "asctime": "2026-03-26 15:12:18,121"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:12:18,121"}
+{"message": "using v2", "module": "views", "asctime": "2026-03-26 15:13:54,771"}
+{"message": "v1", "module": "views", "asctime": "2026-03-26 15:14:02,791"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:14:02,792"}
+{"message": "======================15:14:02.803570=================", "module": "serializers", "asctime": "2026-03-26 15:14:02,803"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:14:02,803"}
+{"message": "======================15:14:02.804202=================", "module": "serializers", "asctime": "2026-03-26 15:14:02,804"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:14:02,804"}
+{"message": "======================15:14:02.804726=================", "module": "serializers", "asctime": "2026-03-26 15:14:02,804"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:14:02,804"}
+{"message": "======================15:14:02.805225=================", "module": "serializers", "asctime": "2026-03-26 15:14:02,805"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:14:02,805"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:14:02,805"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:17:25,973"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:17:48,834"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:18:31,981"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:20:04,713"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:20:17,059"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:20:28,971"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:20:37,777"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:21:21,189"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:21:23,813"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:21:40,228"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:21:42,834"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:21:48,580"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:21:52,242"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:22:02,089"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:22:04,749"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:22:10,839"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:22:15,428"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:22:20,119"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:22:24,929"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:22:27,608"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:22:31,198"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:22:42,182"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:24:16,773"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:24:33,901"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:24:40,790"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:24:45,556"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:24:50,432"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:24:55,136"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:25:00,866"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:27:38,151"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:27:46,332"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:28:38,434"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:28:41,088"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:28:50,979"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:29:15,381"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:29:19,101"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:29:46,611"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:29:49,327"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:29:53,030"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:29:56,703"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:29:59,350"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:30:06,247"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:30:19,214"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:33:57,796"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:36:33,425"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:37:42,043"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:38:16,888"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:38:22,585"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:38:25,181"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:38:27,850"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:38:32,579"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:38:48,702"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:38:51,346"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:38:54,966"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:39:02,776"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:40:15,893"}
+{"message": "======================15:40:15.900710=================", "module": "serializers", "asctime": "2026-03-26 15:40:15,900"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:40:15,900"}
+{"message": "======================15:40:15.901130=================", "module": "serializers", "asctime": "2026-03-26 15:40:15,901"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:40:15,901"}
+{"message": "======================15:40:15.901443=================", "module": "serializers", "asctime": "2026-03-26 15:40:15,901"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:40:15,901"}
+{"message": "======================15:40:15.901743=================", "module": "serializers", "asctime": "2026-03-26 15:40:15,901"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:40:15,901"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:40:15,902"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:40:38,812"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:40:51,782"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:40:58,610"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:41:07,575"}
+{"message": "======================15:41:07.583433=================", "module": "serializers", "asctime": "2026-03-26 15:41:07,583"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:41:07,583"}
+{"message": "======================15:41:07.583993=================", "module": "serializers", "asctime": "2026-03-26 15:41:07,584"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:41:07,584"}
+{"message": "======================15:41:07.584447=================", "module": "serializers", "asctime": "2026-03-26 15:41:07,584"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:41:07,584"}
+{"message": "======================15:41:07.584804=================", "module": "serializers", "asctime": "2026-03-26 15:41:07,584"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:41:07,584"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:41:07,585"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:41:18,990"}
+{"message": "======================15:41:18.996076=================", "module": "serializers", "asctime": "2026-03-26 15:41:18,996"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:41:18,996"}
+{"message": "======================15:41:18.996518=================", "module": "serializers", "asctime": "2026-03-26 15:41:18,996"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:41:18,996"}
+{"message": "======================15:41:18.996849=================", "module": "serializers", "asctime": "2026-03-26 15:41:18,996"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:41:18,996"}
+{"message": "======================15:41:18.997160=================", "module": "serializers", "asctime": "2026-03-26 15:41:18,997"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:41:18,997"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:41:18,997"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:42:01,156"}
+{"message": "======================15:42:01.162447=================", "module": "serializers", "asctime": "2026-03-26 15:42:01,162"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:42:01,162"}
+{"message": "======================15:42:01.162873=================", "module": "serializers", "asctime": "2026-03-26 15:42:01,162"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:42:01,162"}
+{"message": "======================15:42:01.163200=================", "module": "serializers", "asctime": "2026-03-26 15:42:01,163"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:42:01,163"}
+{"message": "======================15:42:01.163507=================", "module": "serializers", "asctime": "2026-03-26 15:42:01,163"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:42:01,163"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:42:01,163"}
+{"message": "using v2", "module": "views", "asctime": "2026-03-26 15:42:08,747"}
+{"message": "not cached yet", "module": "views", "asctime": "2026-03-26 15:42:08,749"}
+{"message": "======================15:42:08.758080=================", "module": "serializers", "asctime": "2026-03-26 15:42:08,758"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:42:08,758"}
+{"message": "======================15:42:08.758475=================", "module": "serializers", "asctime": "2026-03-26 15:42:08,758"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:42:08,758"}
+{"message": "======================15:42:08.758792=================", "module": "serializers", "asctime": "2026-03-26 15:42:08,758"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:42:08,758"}
+{"message": "======================15:42:08.759161=================", "module": "serializers", "asctime": "2026-03-26 15:42:08,759"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:42:08,759"}
+{"message": "using v2", "module": "views", "asctime": "2026-03-26 15:42:14,172"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:42:29,394"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:43:39,788"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:44:05,486"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:44:08,083"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:44:12,760"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:44:31,796"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:44:38,563"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:44:41,344"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:44:50,158"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:44:52,778"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:45:11,516"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:45:15,221"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:45:23,028"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:45:33,129"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:45:37,907"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:45:51,864"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:45:56,515"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:46:00,133"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:46:02,788"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:46:28,764"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:48:29,143"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:48:45,784"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:49:02,208"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:49:05,883"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:49:08,571"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:49:12,284"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:50:30,471"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:50:33,094"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:50:39,859"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:50:43,518"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:50:46,174"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:51:59,097"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:52:01,790"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:52:07,493"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:52:12,323"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:52:18,147"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:52:32,199"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:52:36,874"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:52:45,687"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:52:57,568"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:56:54,649"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:57:00,325"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:57:08,058"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:57:14,922"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:57:21,694"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:57:26,339"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 15:57:35,185"}
+{"message": "using v2", "module": "views", "asctime": "2026-03-26 15:57:56,769"}
+{"message": "not cached yet", "module": "views", "asctime": "2026-03-26 15:57:56,771"}
+{"message": "======================15:57:56.779106=================", "module": "serializers", "asctime": "2026-03-26 15:57:56,779"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:57:56,779"}
+{"message": "======================15:57:56.779514=================", "module": "serializers", "asctime": "2026-03-26 15:57:56,779"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:57:56,779"}
+{"message": "======================15:57:56.779844=================", "module": "serializers", "asctime": "2026-03-26 15:57:56,779"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:57:56,779"}
+{"message": "======================15:57:56.780189=================", "module": "serializers", "asctime": "2026-03-26 15:57:56,780"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:57:56,780"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 15:58:00,508"}
+{"message": "======================15:58:00.514508=================", "module": "serializers", "asctime": "2026-03-26 15:58:00,514"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:58:00,514"}
+{"message": "======================15:58:00.514935=================", "module": "serializers", "asctime": "2026-03-26 15:58:00,514"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:58:00,515"}
+{"message": "======================15:58:00.515277=================", "module": "serializers", "asctime": "2026-03-26 15:58:00,515"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:58:00,515"}
+{"message": "======================15:58:00.515602=================", "module": "serializers", "asctime": "2026-03-26 15:58:00,515"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 15:58:00,515"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 15:58:00,515"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:26:04,000"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:26:42,043"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:26:44,701"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:26:54,757"}
+{"message": "======================16:26:54.765125=================", "module": "serializers", "asctime": "2026-03-26 16:26:54,765"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:26:54,765"}
+{"message": "======================16:26:54.765512=================", "module": "serializers", "asctime": "2026-03-26 16:26:54,765"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:26:54,765"}
+{"message": "======================16:26:54.765820=================", "module": "serializers", "asctime": "2026-03-26 16:26:54,765"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:26:54,765"}
+{"message": "======================16:26:54.766128=================", "module": "serializers", "asctime": "2026-03-26 16:26:54,766"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:26:54,766"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:26:54,766"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:27:05,078"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:27:07,334"}
+{"message": "======================16:27:07.341523=================", "module": "serializers", "asctime": "2026-03-26 16:27:07,341"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:27:07,341"}
+{"message": "======================16:27:07.341889=================", "module": "serializers", "asctime": "2026-03-26 16:27:07,341"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:27:07,342"}
+{"message": "======================16:27:07.342209=================", "module": "serializers", "asctime": "2026-03-26 16:27:07,342"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:27:07,342"}
+{"message": "======================16:27:07.342505=================", "module": "serializers", "asctime": "2026-03-26 16:27:07,342"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:27:07,342"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:27:07,342"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:27:21,085"}
+{"message": "======================16:27:21.091612=================", "module": "serializers", "asctime": "2026-03-26 16:27:21,091"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:27:21,091"}
+{"message": "======================16:27:21.092040=================", "module": "serializers", "asctime": "2026-03-26 16:27:21,092"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:27:21,092"}
+{"message": "======================16:27:21.092364=================", "module": "serializers", "asctime": "2026-03-26 16:27:21,092"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:27:21,092"}
+{"message": "======================16:27:21.092672=================", "module": "serializers", "asctime": "2026-03-26 16:27:21,092"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:27:21,092"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:27:21,092"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:27:21,094"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 16:27:21,094"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:27:21,098"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 16:27:21,099"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:28:23,910"}
+{"message": "======================16:28:23.917345=================", "module": "serializers", "asctime": "2026-03-26 16:28:23,917"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:28:23,917"}
+{"message": "======================16:28:23.917809=================", "module": "serializers", "asctime": "2026-03-26 16:28:23,917"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:28:23,917"}
+{"message": "======================16:28:23.918153=================", "module": "serializers", "asctime": "2026-03-26 16:28:23,918"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:28:23,918"}
+{"message": "======================16:28:23.918457=================", "module": "serializers", "asctime": "2026-03-26 16:28:23,918"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:28:23,918"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:28:23,918"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:28:23,919"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 16:28:23,919"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:28:23,922"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 16:28:23,922"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:29:00,092"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:29:02,756"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:29:08,459"}
+{"message": "======================16:29:08.470617=================", "module": "serializers", "asctime": "2026-03-26 16:29:08,470"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:29:08,470"}
+{"message": "======================16:29:08.471241=================", "module": "serializers", "asctime": "2026-03-26 16:29:08,471"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:29:08,471"}
+{"message": "======================16:29:08.471699=================", "module": "serializers", "asctime": "2026-03-26 16:29:08,471"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:29:08,471"}
+{"message": "======================16:29:08.472288=================", "module": "serializers", "asctime": "2026-03-26 16:29:08,472"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:29:08,472"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:29:08,472"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:29:08,479"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 16:29:08,479"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:29:08,485"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 16:29:08,485"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:35:46,288"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:36:52,480"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:36:57,335"}
+{"message": "======================16:36:57.346091=================", "module": "serializers", "asctime": "2026-03-26 16:36:57,346"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:36:57,346"}
+{"message": "======================16:36:57.346556=================", "module": "serializers", "asctime": "2026-03-26 16:36:57,346"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:36:57,346"}
+{"message": "======================16:36:57.347189=================", "module": "serializers", "asctime": "2026-03-26 16:36:57,347"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:36:57,347"}
+{"message": "======================16:36:57.347842=================", "module": "serializers", "asctime": "2026-03-26 16:36:57,347"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:36:57,348"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:36:57,348"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:37:02,738"}
+{"message": "======================16:37:02.745147=================", "module": "serializers", "asctime": "2026-03-26 16:37:02,745"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:02,745"}
+{"message": "======================16:37:02.745627=================", "module": "serializers", "asctime": "2026-03-26 16:37:02,745"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:02,745"}
+{"message": "======================16:37:02.746107=================", "module": "serializers", "asctime": "2026-03-26 16:37:02,746"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:02,746"}
+{"message": "======================16:37:02.746543=================", "module": "serializers", "asctime": "2026-03-26 16:37:02,746"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:02,746"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:37:02,746"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:37:02,748"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 16:37:02,749"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:37:02,753"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 16:37:02,753"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:37:15,789"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:37:26,843"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-03-26 16:37:26,844"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:37:43,115"}
+{"message": "======================16:37:43.121501=================", "module": "serializers", "asctime": "2026-03-26 16:37:43,121"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:43,121"}
+{"message": "======================16:37:43.121987=================", "module": "serializers", "asctime": "2026-03-26 16:37:43,122"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:43,122"}
+{"message": "======================16:37:43.122334=================", "module": "serializers", "asctime": "2026-03-26 16:37:43,122"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:43,122"}
+{"message": "======================16:37:43.122650=================", "module": "serializers", "asctime": "2026-03-26 16:37:43,122"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:43,122"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:37:43,122"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:37:53,038"}
+{"message": "======================16:37:53.045126=================", "module": "serializers", "asctime": "2026-03-26 16:37:53,045"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:53,045"}
+{"message": "======================16:37:53.045561=================", "module": "serializers", "asctime": "2026-03-26 16:37:53,045"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:53,045"}
+{"message": "======================16:37:53.045874=================", "module": "serializers", "asctime": "2026-03-26 16:37:53,045"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:53,045"}
+{"message": "======================16:37:53.046198=================", "module": "serializers", "asctime": "2026-03-26 16:37:53,046"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:37:53,046"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:37:53,046"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:38:15,186"}
+{"message": "======================16:38:15.193791=================", "module": "serializers", "asctime": "2026-03-26 16:38:15,193"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:15,193"}
+{"message": "======================16:38:15.194241=================", "module": "serializers", "asctime": "2026-03-26 16:38:15,194"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:15,194"}
+{"message": "======================16:38:15.194570=================", "module": "serializers", "asctime": "2026-03-26 16:38:15,194"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:15,194"}
+{"message": "======================16:38:15.194894=================", "module": "serializers", "asctime": "2026-03-26 16:38:15,194"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:15,195"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:38:15,195"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:38:28,818"}
+{"message": "======================16:38:28.824291=================", "module": "serializers", "asctime": "2026-03-26 16:38:28,824"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:28,824"}
+{"message": "======================16:38:28.824854=================", "module": "serializers", "asctime": "2026-03-26 16:38:28,824"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:28,824"}
+{"message": "======================16:38:28.825225=================", "module": "serializers", "asctime": "2026-03-26 16:38:28,825"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:28,825"}
+{"message": "======================16:38:28.825564=================", "module": "serializers", "asctime": "2026-03-26 16:38:28,825"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:28,825"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:38:28,825"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:38:37,555"}
+{"message": "======================16:38:37.561957=================", "module": "serializers", "asctime": "2026-03-26 16:38:37,562"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:37,562"}
+{"message": "======================16:38:37.562553=================", "module": "serializers", "asctime": "2026-03-26 16:38:37,562"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:37,562"}
+{"message": "======================16:38:37.562873=================", "module": "serializers", "asctime": "2026-03-26 16:38:37,562"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:37,562"}
+{"message": "======================16:38:37.563192=================", "module": "serializers", "asctime": "2026-03-26 16:38:37,563"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:38:37,563"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:38:37,563"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:38:52,237"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:39:11,699"}
+{"message": "======================16:39:11.705930=================", "module": "serializers", "asctime": "2026-03-26 16:39:11,705"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:39:11,706"}
+{"message": "======================16:39:11.706371=================", "module": "serializers", "asctime": "2026-03-26 16:39:11,706"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:39:11,706"}
+{"message": "======================16:39:11.706723=================", "module": "serializers", "asctime": "2026-03-26 16:39:11,706"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:39:11,706"}
+{"message": "======================16:39:11.707068=================", "module": "serializers", "asctime": "2026-03-26 16:39:11,707"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:39:11,707"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:39:11,707"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:40:41,504"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:40:43,776"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:40:51,551"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:40:53,886"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 16:40:57,402"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:41:01,923"}
+{"message": "======================16:41:01.930756=================", "module": "serializers", "asctime": "2026-03-26 16:41:01,930"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:41:01,930"}
+{"message": "======================16:41:01.931204=================", "module": "serializers", "asctime": "2026-03-26 16:41:01,931"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:41:01,931"}
+{"message": "======================16:41:01.931533=================", "module": "serializers", "asctime": "2026-03-26 16:41:01,931"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:41:01,931"}
+{"message": "======================16:41:01.931854=================", "module": "serializers", "asctime": "2026-03-26 16:41:01,931"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:41:01,931"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:41:01,932"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:41:18,972"}
+{"message": "======================16:41:18.979562=================", "module": "serializers", "asctime": "2026-03-26 16:41:18,979"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:41:18,979"}
+{"message": "======================16:41:18.979979=================", "module": "serializers", "asctime": "2026-03-26 16:41:18,980"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:41:18,980"}
+{"message": "======================16:41:18.980310=================", "module": "serializers", "asctime": "2026-03-26 16:41:18,980"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:41:18,980"}
+{"message": "======================16:41:18.980618=================", "module": "serializers", "asctime": "2026-03-26 16:41:18,980"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:41:18,980"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:41:18,980"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:43:55,630"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:43:59,396"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:02,788"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:13,809"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:16,122"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:18,415"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:23,915"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:28,615"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:36,604"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:41,053"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:45,742"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:48,350"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:51,982"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:55,649"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:44:58,298"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:06,952"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:10,548"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:17,133"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:26,838"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:30,495"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:36,300"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:38,553"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:46,445"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:48,669"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:45:56,192"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:46:01,928"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:46:07,769"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:46:15,510"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:46:19,172"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:46:24,929"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:46:28,715"}
+{"message": "======================16:46:28.727660=================", "module": "serializers", "asctime": "2026-03-26 16:46:28,727"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:46:28,727"}
+{"message": "======================16:46:28.728390=================", "module": "serializers", "asctime": "2026-03-26 16:46:28,728"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:46:28,728"}
+{"message": "======================16:46:28.729039=================", "module": "serializers", "asctime": "2026-03-26 16:46:28,729"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:46:28,729"}
+{"message": "======================16:46:28.729663=================", "module": "serializers", "asctime": "2026-03-26 16:46:28,729"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:46:28,729"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:46:28,730"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:47:53,570"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:48:05,670"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:48:09,238"}
+{"message": "======================16:48:09.251640=================", "module": "serializers", "asctime": "2026-03-26 16:48:09,251"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:48:09,251"}
+{"message": "======================16:48:09.252201=================", "module": "serializers", "asctime": "2026-03-26 16:48:09,252"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:48:09,252"}
+{"message": "======================16:48:09.252858=================", "module": "serializers", "asctime": "2026-03-26 16:48:09,252"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:48:09,253"}
+{"message": "======================16:48:09.253488=================", "module": "serializers", "asctime": "2026-03-26 16:48:09,253"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:48:09,253"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:48:09,254"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:53:01,159"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:53:02,349"}
+{"message": "======================16:53:02.356563=================", "module": "serializers", "asctime": "2026-03-26 16:53:02,356"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:53:02,356"}
+{"message": "======================16:53:02.356943=================", "module": "serializers", "asctime": "2026-03-26 16:53:02,356"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:53:02,357"}
+{"message": "======================16:53:02.357256=================", "module": "serializers", "asctime": "2026-03-26 16:53:02,357"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:53:02,357"}
+{"message": "======================16:53:02.357545=================", "module": "serializers", "asctime": "2026-03-26 16:53:02,357"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:53:02,357"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:53:02,357"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:55:31,611"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 16:55:48,829"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:55:52,743"}
+{"message": "======================16:55:52.750666=================", "module": "serializers", "asctime": "2026-03-26 16:55:52,750"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:55:52,750"}
+{"message": "======================16:55:52.751027=================", "module": "serializers", "asctime": "2026-03-26 16:55:52,751"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:55:52,751"}
+{"message": "======================16:55:52.751335=================", "module": "serializers", "asctime": "2026-03-26 16:55:52,751"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:55:52,751"}
+{"message": "======================16:55:52.751627=================", "module": "serializers", "asctime": "2026-03-26 16:55:52,751"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:55:52,751"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:55:52,751"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:57:47,045"}
+{"message": "======================16:57:47.053818=================", "module": "serializers", "asctime": "2026-03-26 16:57:47,053"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:57:47,054"}
+{"message": "======================16:57:47.054257=================", "module": "serializers", "asctime": "2026-03-26 16:57:47,054"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:57:47,054"}
+{"message": "======================16:57:47.054577=================", "module": "serializers", "asctime": "2026-03-26 16:57:47,054"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:57:47,054"}
+{"message": "======================16:57:47.054890=================", "module": "serializers", "asctime": "2026-03-26 16:57:47,054"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:57:47,055"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:57:47,055"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:58:28,374"}
+{"message": "======================16:58:28.380531=================", "module": "serializers", "asctime": "2026-03-26 16:58:28,380"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:28,380"}
+{"message": "======================16:58:28.381148=================", "module": "serializers", "asctime": "2026-03-26 16:58:28,381"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:28,381"}
+{"message": "======================16:58:28.381488=================", "module": "serializers", "asctime": "2026-03-26 16:58:28,381"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:28,381"}
+{"message": "======================16:58:28.381809=================", "module": "serializers", "asctime": "2026-03-26 16:58:28,381"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:28,381"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:58:28,382"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:58:33,717"}
+{"message": "======================16:58:33.725090=================", "module": "serializers", "asctime": "2026-03-26 16:58:33,725"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:33,725"}
+{"message": "======================16:58:33.725510=================", "module": "serializers", "asctime": "2026-03-26 16:58:33,725"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:33,725"}
+{"message": "======================16:58:33.725824=================", "module": "serializers", "asctime": "2026-03-26 16:58:33,725"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:33,725"}
+{"message": "======================16:58:33.726144=================", "module": "serializers", "asctime": "2026-03-26 16:58:33,726"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:33,726"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:58:33,726"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 16:58:47,903"}
+{"message": "======================16:58:47.909697=================", "module": "serializers", "asctime": "2026-03-26 16:58:47,909"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:47,909"}
+{"message": "======================16:58:47.910152=================", "module": "serializers", "asctime": "2026-03-26 16:58:47,910"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:47,910"}
+{"message": "======================16:58:47.910464=================", "module": "serializers", "asctime": "2026-03-26 16:58:47,910"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:47,910"}
+{"message": "======================16:58:47.910804=================", "module": "serializers", "asctime": "2026-03-26 16:58:47,910"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 16:58:47,910"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 16:58:47,911"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:01:06,866"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:01:12,604"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:01:12,651"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:01:23,273"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:01:34,203"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 17:01:35,521"}
+{"message": "======================17:01:35.528619=================", "module": "serializers", "asctime": "2026-03-26 17:01:35,528"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:01:35,528"}
+{"message": "======================17:01:35.528985=================", "module": "serializers", "asctime": "2026-03-26 17:01:35,529"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:01:35,529"}
+{"message": "======================17:01:35.529312=================", "module": "serializers", "asctime": "2026-03-26 17:01:35,529"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:01:35,529"}
+{"message": "======================17:01:35.529606=================", "module": "serializers", "asctime": "2026-03-26 17:01:35,529"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:01:35,529"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 17:01:35,529"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:01:54,481"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-03-26 17:02:01,787"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 17:02:10,890"}
+{"message": "======================17:02:10.897262=================", "module": "serializers", "asctime": "2026-03-26 17:02:10,897"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:02:10,897"}
+{"message": "======================17:02:10.897726=================", "module": "serializers", "asctime": "2026-03-26 17:02:10,897"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:02:10,897"}
+{"message": "======================17:02:10.898068=================", "module": "serializers", "asctime": "2026-03-26 17:02:10,898"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:02:10,898"}
+{"message": "======================17:02:10.898380=================", "module": "serializers", "asctime": "2026-03-26 17:02:10,898"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:02:10,898"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 17:02:10,898"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:02:23,941"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 17:02:31,880"}
+{"message": "======================17:02:31.892234=================", "module": "serializers", "asctime": "2026-03-26 17:02:31,892"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:02:31,892"}
+{"message": "======================17:02:31.893006=================", "module": "serializers", "asctime": "2026-03-26 17:02:31,893"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:02:31,893"}
+{"message": "======================17:02:31.893582=================", "module": "serializers", "asctime": "2026-03-26 17:02:31,893"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:02:31,893"}
+{"message": "======================17:02:31.894233=================", "module": "serializers", "asctime": "2026-03-26 17:02:31,894"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:02:31,894"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 17:02:31,894"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 17:03:15,955"}
+{"message": "======================17:03:15.961024=================", "module": "serializers", "asctime": "2026-03-26 17:03:15,961"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:03:15,961"}
+{"message": "======================17:03:15.961553=================", "module": "serializers", "asctime": "2026-03-26 17:03:15,961"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:03:15,961"}
+{"message": "======================17:03:15.961902=================", "module": "serializers", "asctime": "2026-03-26 17:03:15,961"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:03:15,962"}
+{"message": "======================17:03:15.962246=================", "module": "serializers", "asctime": "2026-03-26 17:03:15,962"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:03:15,962"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 17:03:15,962"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:05:32,579"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:06:11,399"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:06:17,161"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:06:33,203"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:06:41,091"}
+{"message": "using v1", "module": "views", "asctime": "2026-03-26 17:06:46,716"}
+{"message": "======================17:06:46.727187=================", "module": "serializers", "asctime": "2026-03-26 17:06:46,727"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:06:46,727"}
+{"message": "======================17:06:46.727744=================", "module": "serializers", "asctime": "2026-03-26 17:06:46,727"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:06:46,728"}
+{"message": "======================17:06:46.728433=================", "module": "serializers", "asctime": "2026-03-26 17:06:46,728"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:06:46,728"}
+{"message": "======================17:06:46.728844=================", "module": "serializers", "asctime": "2026-03-26 17:06:46,728"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-03-26 17:06:46,728"}
+{"message": "Listing all rests : -  [{'id': 18, 'name': 'Indian resto', 'description': 'this is an indian restro', 'cuisine_type': 'in', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto18@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 17, 'name': 'Italian Resto', 'description': 'this is an indian restro', 'cuisine_type': 'it', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto17@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 16, 'name': 'Chinese Resto', 'description': 'this is an Chinese restro', 'cuisine_type': 'ch', 'address': 'this is some address', 'phone_number': '952563500', 'email': 'resto16@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}, {'id': 19, 'name': 'Mediterranean Resto', 'description': 'this is an Mediterranean restro', 'cuisine_type': 'md', 'address': 'SG highay,Ahm - 380015', 'phone_number': '952563500', 'email': 'resto19@email.com', 'logo': None, 'banner': None, 'delivery_fee': '10.00', 'minimum_order': '0', 'is_open_now': True, 'average_rating': '0.0', 'total_reviews': None}]", "module": "views", "asctime": "2026-03-26 17:06:46,729"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:34:39,626"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:34:42,918"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:35:47,423"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:35:58,326"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:36:13,374"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:36:16,026"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:36:23,461"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:36:32,327"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:38:03,840"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:38:07,602"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:38:12,061"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:38:16,686"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-03-26 17:38:21,154"}

@@ -8,7 +8,9 @@ logger = logging.getLogger('user')
 
 #===============================================================
 # SIGN UP VIEW SERIALIZER
+#@extend_schema_serializer()
 class CustomUserRegistrationSerializer(serializers.ModelSerializer):
+    
     password = serializers.CharField(min_length=8,)
     password_confirm = serializers.CharField(write_only=True)
     class Meta:

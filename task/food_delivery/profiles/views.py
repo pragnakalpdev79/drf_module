@@ -61,6 +61,15 @@ class DriverProfileView(generics.RetrieveUpdateAPIView):
         })
 
 class AddressViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint for managing patients.
+    Full ViewSet for Patient model:
+    - POST /api/v1/patients/ (create)
+    - GET /api/v1/patients/ (list all)
+    - GET /api/v1/patients/{id}/ (retrieve)
+    - PUT /api/v1/patients/{id}/ (update)
+    """
+    
     serializer_class = AddressSerializer
     permission_classes = [IsAuthenticated]
 

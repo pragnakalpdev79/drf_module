@@ -7,13 +7,13 @@ from django.dispatch import receiver
 from .models import *
 from .tasks import assign_order_driver
 from channels.layers import get_channel_layer
-import asyncio
-import websockets
-import ssl
-import json
 import logging
 
 logger = logging.getLogger(__name__)
+
+
+# @receiver(pre_save,sender=CustomUser)
+# def pre_save_post(sender,instance,**kwargs)
 
 
 

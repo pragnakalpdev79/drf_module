@@ -1,6 +1,7 @@
 import logging
 from django.shortcuts import render
 from django.contrib.auth.models import Group,Permission
+from drf_spectacular.utils import extend_schema,OpenApiParameter,OpenApiResponse,OpenApiTypes,OpenApiExample
 from rest_framework import generics,status,viewsets,filters
 from rest_framework.permissions import AllowAny,IsAuthenticated,IsAdminUser
 from rest_framework.response import Response
@@ -23,6 +24,10 @@ logger = logging.getLogger('user')
 
 # 1.REGISTRATION - Allowany
 class UserRegisterationView(generics.CreateAPIView):
+
+    """
+    API endpoint for new user registration.
+    """
     #generics.CreateAPIView inherits from APIView
     #Extends with mixin CreateModelMixin
     #Specifcialy to handle create_only post method handler
@@ -31,8 +36,38 @@ class UserRegisterationView(generics.CreateAPIView):
     permission_classes = [AllowAny]
     
     #POST METHOD
+    @extend_schema(
+        summary="Delete a user.",
+        description="Remove the user with given username. Normal users can only delete themselves, and staff can remove anyone.",
+        auth=["tokenAuth"],
+        responses={
+            204: "",
+            401: OpenApiResponse(
+                response=OpenApiTypes.OBJECT,
+                description="Missing authentication.",
+                examples=[
+                    OpenApiExample(
+                        name="No auth",
+                        value={"nonFieldErrors": ["Missing auth credentials"]},
+                    ),
+                ],
+            ),
+            403: OpenApiResponse(
+                response=OpenApiTypes.OBJECT,
+                description="Forbidden.",
+                examples=[
+                    OpenApiExample(
+                        name="Current user cannot delete given user.",
+                        value={"nonFieldErrors": ["Not allowed to delete user."]},
+                    ),
+                ],
+            ),
+        },
+    )
     def create(self,request,*args,**kwargs):
-
+        """
+        API endpoint for new user registration. 123
+        """
         logger.info("===========================================p1-entering the view ======================================================")
         logger.info("p2-create function intiated")
         serializer = self.get_serializer(data=request.data)

@@ -156,9 +156,22 @@ X_FRAME_OPTIONS = "SAMEORIGIN"
 
 SILENCED_SYSTEM_CHECKS = ['security.W019']
 
-STATIC_ROOT = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'media'
 
 LOGIN_REDIRECT_URL = '/'
 
@@ -189,8 +202,8 @@ REST_FRAMEWORK = {
     'DEFAULT_VERSION': 'v1',
     'ALLOWED_VERSIONS': ['v1', 'v2'],
     'VERSION_PARAM': 'version',
-    'DEFAULT_PAGINATION_CLASS' : 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 2,
+    # 'DEFAULT_PAGINATION_CLASS' : 'rest_framework.pagination.LimitOffsetPagination',
+    # 'PAGE_SIZE': 2,
 }
 
 SPECTACULAR_SETTINGS = {
@@ -198,6 +211,12 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION' : 'API MAP FOR TASK',
     'VERSION' : '1.0.0',
     'SERVE_INCLUDE_SCHEMA' : False,
+    'AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'SWAGGER_UI_SETTINGS': {
+        'persistAuthorization': True,
+    }
 }
 
 SIMPLE_JWT = {
@@ -284,7 +303,6 @@ CACHES = {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         },
         'KEY_PREFIX': 'rest_api',
-        'TIMEOUT': 300,
     }
 }
 

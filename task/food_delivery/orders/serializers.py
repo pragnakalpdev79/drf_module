@@ -63,6 +63,9 @@ class OrderStatusUpdateSerializer(serializers.Serializer):
                 f"cant change from {order.get_status_display()} to {value}. allowed: {allowed}"
             )
         return value
+    
+    class Meta:
+        model = Order
 
 class ReviewSerializer(serializers.ModelSerializer):
     customer_name = serializers.SerializerMethodField()

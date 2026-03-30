@@ -1,3 +1,6 @@
 from django.test import TestCase
+from user.models import Review
 
-# Create your tests here.
+# class ReviewTest(TestCase):
+#     def test_rev_creation(self):
+

@@ -9,6 +9,7 @@ from .throttles import *
 from user.models import *
 from user.permissions import IsRestaurantOwner,IsCustomer,IsDriver
 from .serializers import *
+from .pagination import OrdersPagination,ReviewPagination
 
 logger = logging.getLogger('user')
 
@@ -82,7 +83,7 @@ class CartViewSet(viewsets.ModelViewSet):
     
     #==================================================================================
     # 1.4 CHECKOUT - CONVERT CART TO ORDER MOCK PAYMENT
-    @action(detail=False,methods=['post'])
+    @action(detail=False,methods=['post'],throttle_classes=[OrderCreateT])
     def checkout(self,request):
         logger.info(f"===checkout started for {request.user.email}===")
         cart_items = CartItem.objects.filter(user=request.user).select_related('menu_item','menu_item__restaurant')
@@ -171,13 +172,13 @@ class OrderViewSet(viewsets.ModelViewSet):
             return qs.filter(driver=user)
         elif user.check_if_restaurant:
             return qs.filter(restaurant__owner=user)
-        return qs.none()
+        return qs
 
     #===============================================================================================
     # STATUS UPDATE
     @action(detail=True,methods=['patch'])
     def update_status(self,request,pk=None):
-        order = self.get_object()
+        order = self.get_object(order_number=pk)
         logger.info(f"===status update for order {order.order_number}===")
         serializer = OrderStatusUpdateSerializer(
             data=request.data,
@@ -203,9 +204,9 @@ class OrderViewSet(viewsets.ModelViewSet):
     @action(detail=True,methods=['post'])
     def assign_driver(self,request,pk=None):
         order = self.get_object()
-        #print(order) order id will be passed from post request url
-        # logger.info(f"+++++++++++++++++++++++++++++++++++++++++++++")
-        # logger.info(f"Assign driver request for order -- {order}")
+        print(order) #order id will be passed from post request url
+        logger.info(f"+++++++++++++++++++++++++++++++++++++++++++++")
+        logger.info(f"Assign driver request for or    der -- {order}")
         driver_id = request.data.get('driver_id')
         logger.info(f"===assigning driver {driver_id}===")
         try:
@@ -241,13 +242,13 @@ class OrderViewSet(viewsets.ModelViewSet):
             return Response({'error':str(e)},status=status.HTTP_400_BAD_REQUEST)
     #=======================================
     # LIST ALL ACTIVE ORDERS
-    @action(detail=False,methods=['get'])
+    @action(detail=False,methods=['get'],pagination_class=OrdersPagination)
     def active(self,request):
         qs = self.get_queryset().exclude(status__in=['dl','cd'])
         return Response(OrderSerializer(qs,many=True).data)
     #=======================================
     # LIST ALL ORDERS
-    @action(detail=False,methods=['get'])
+    @action(detail=False,methods=['get'],pagination_class=OrdersPagination)
     def history(self,request):
         qs = self.get_queryset().filter(status__in=['dl','cd'])
         return Response(OrderSerializer(qs,many=True).data)
@@ -257,7 +258,13 @@ class OrderViewSet(viewsets.ModelViewSet):
 class ReviewViewSet(viewsets.ModelViewSet):
     serializer_class = ReviewSerializer
     permission_classes = [IsAuthenticated]
-    throttle_classes = [ReviewCreateT]
+    #throttle_classes = [ReviewCreateT]
+    pagination_class = ReviewPagination
+
+    def get_throttles(self):
+        if self.action == 'create':
+            return [ReviewCreateT()]
+        return super().get_throttles()
 
     def get_queryset(self):
         qs = Review.objects.select_related('customer','restaurant','menu_item','order')

@@ -3,14 +3,14 @@ from user.models import *
 #from django.utils.timezone import datetime
 import datetime
 import logging,re
-from .pagination import RestoPagination
+#from .pagination import RestoPagination
 
 logger = logging.getLogger('user')
 
 class RestoListSerializer(serializers.ModelSerializer):
     logger.info("in serializer")
     is_open_now = serializers.SerializerMethodField()
-    pagination_class = RestoPagination
+    #pagination_class = RestoPagination
     class Meta:
         model = RestrauntModel
         fields = ['id','name','description','cuisine_type','address',

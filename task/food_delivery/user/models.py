@@ -75,7 +75,7 @@ class CustomUser(AbstractUser):
         ('d','Delivery Driver   '),
     )
     utype = models.CharField(max_length=1,choices=USER_TYPE,blank=True,default='c',help_text='User Type') #USER TYPE
-
+    
     created_at = models.DateTimeField(auto_now_add=True) # CREATED AT
     updated_at = models.DateTimeField(auto_now=True) # UPDATED AT
 
@@ -237,6 +237,19 @@ class RestrauntModel(TimestampedModel):
     minimum_order = models.DecimalField(default=0,decimal_places=0,max_digits=3)
     average_rating = models.DecimalField(max_digits=2,default=0,decimal_places=1)
     total_reviews = models.IntegerField(null=True,blank=True)
+
+    deleted_at = models.DateTimeField(null=True,blank=True)
+
+    @property
+    def delete(self,using=None,keep_parents=False):
+        print("deleting")
+        self.deleted_at = timezone.now()
+        self.save()
+    
+    @property
+    def restore(self):
+        self.deleted_at = None
+        self.save()
 
     def __str__(self):
         return f"{self.name}"

@@ -4,6 +4,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from rest_framework import status,viewsets
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
+from drf_spectacular.utils import extend_schema, extend_schema_view, OpenApiParameter, OpenApiExample, OpenApiResponse
 from rest_framework.response import Response
 from .throttles import *
 from user.models import *
@@ -15,6 +16,12 @@ logger = logging.getLogger('user')
 
 #===============================================================================================
 # 1. CART VIEWSET - add or remove or view cart items
+@extend_schema_view(
+    addtocart=extend_schema(
+        summary="Add to cart",
+        description="Add an item to the cart before checkout to place order.",
+        tags=["Cart"],
+    ),)
 class CartViewSet(viewsets.ModelViewSet):
     serializer_class = CartItemSerializer
     permission_classes = [IsCustomer]
@@ -38,6 +45,7 @@ class CartViewSet(viewsets.ModelViewSet):
 
         try:
             menu_item = MenuItem.objects.get(id=menu_item_id)
+            logger.info("Menu_item does not exists")
         except MenuItem.DoesNotExist:
             return Response({'error':'menu item not found'},status=status.HTTP_404_NOT_FOUND)
 
@@ -59,7 +67,7 @@ class CartViewSet(viewsets.ModelViewSet):
         return Response({
             'message': 'item added to cart',
             'item': serializer.data,
-        })
+        },status=status.HTTP_202_ACCEPTED)
     #==================================================================================
     # 1.2 view full cart with total
     @action(detail=False,methods=['get'])
@@ -169,16 +177,17 @@ class OrderViewSet(viewsets.ModelViewSet):
         if user.check_if_customer: 
             return qs.filter(customer=user)
         elif user.check_if_driver:
+            print("driver")
             return qs.filter(driver=user)
         elif user.check_if_restaurant:
             return qs.filter(restaurant__owner=user)
-        return qs
 
     #===============================================================================================
     # STATUS UPDATE
     @action(detail=True,methods=['patch'])
     def update_status(self,request,pk=None):
-        order = self.get_object(order_number=pk)
+        #order = self.get_object(order_number=pk)
+        order = self.get_queryset().get(order_number=pk)
         logger.info(f"===status update for order {order.order_number}===")
         serializer = OrderStatusUpdateSerializer(
             data=request.data,
@@ -203,8 +212,8 @@ class OrderViewSet(viewsets.ModelViewSet):
 
     @action(detail=True,methods=['post'])
     def assign_driver(self,request,pk=None):
-        order = self.get_object()
-        print(order) #order id will be passed from post request url
+        order = self.get_queryset()
+        print("order",order) #order id will be passed from post request url
         logger.info(f"+++++++++++++++++++++++++++++++++++++++++++++")
         logger.info(f"Assign driver request for or    der -- {order}")
         driver_id = request.data.get('driver_id')
@@ -228,7 +237,8 @@ class OrderViewSet(viewsets.ModelViewSet):
 
     @action(detail=True,methods=['post'])
     def cancel(self,request,pk=None):
-        order = self.get_object()
+        order = self.get_queryset().first()
+        print(order)
         if not order.is_cancellable:
             return Response({'error':'cant cancel this order anymore'},status=status.HTTP_400_BAD_REQUEST)
         try:

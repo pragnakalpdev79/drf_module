@@ -13,15 +13,18 @@ from user.models import RestrauntModel
 from user.permissions import IsRestaurantOwner
 from .serializers import *
 from .pagination import RestoPagination,MenuItemPagination
+from .filters import RestoFilter
 
 logger = logging.getLogger('user')
 
 class RestaurantViewSet(viewsets.ModelViewSet):
-    queryset = RestrauntModel.objects.all()
+    queryset = RestrauntModel.objects.filter(deleted_at=None)
     http_method_names = ['get', 'post','patch']
-    filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['cuisine_type','is_open']
+    #filter_backends = [DjangoFilterBackend,filters.SearchFilter]
+    #filterset_fields = ['cuisine_type','is_open','delivery_fee__lte','minimum_order__lte','average_rating__gte']
     pagination_class = RestoPagination
+   # search_fields = ['name','cuisine_type']
+    filterset_class = RestoFilter
 
     def get_serializer_class(self):
         if self.action == 'list':
@@ -44,6 +47,8 @@ class RestaurantViewSet(viewsets.ModelViewSet):
         if self.action == 'create':
             logger.info("Create action detected")
             #print(self.request.user.check_if_restaurant,self.request.user.get_user_permissions())
+            return [IsRestaurantOwner()]
+        if self.action == 'deleter':
             return [IsRestaurantOwner()]
         return [IsAuthenticatedOrReadOnly()]
     
@@ -189,28 +194,18 @@ class RestaurantViewSet(viewsets.ModelViewSet):
         logger.info("using v1")
         return Response(serializer.data)
 
+#6. DELETE A RESTO
+    @action(detail=True,methods=['get'])
+    def deleter(self,request,pk):
+        print(request.user)
+        resto = self.get_queryset().get(id=pk)
+        print(type(resto))
+        resto.delete()
+        return Response({
+            "message" : request.user.email
+        })
 
 
 #==============================================================================
 #==============================================================================
-        
 
-# class RestoListView(APIView):
-#     permission_classes = [AllowAny]
-#     def get(self,request):
-#         tolist = RestrauntModel.objects.all()
-#         serializers = RestoListSerializer(tolist,many=True)
-#         return Response(serializers.data,status=status.HTTP_200_OK)
-
-
-# class RestoCreateView(APIView):
-
-#     # def test_func(self):UserPassesTestMixin
-#     #     print(self.request.user.has_perm("add_restrauntmodel"))
-#     #     return self.request.user.has_perm("add_restrauntmodel")
-    
-#     permission_classes = [IsRestaurantOwner]
-#     def get(self,request):
-#         return Response({
-#             "message" : "permissions works!",
-#         })

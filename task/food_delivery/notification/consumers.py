@@ -1,7 +1,9 @@
 from channels.generic.websocket import AsyncWebsocketConsumer
 import json
 from datetime import datetime
+import logging
 
+logger = logging.getLogger('user')
 
 #==============================================================================
 # 1. Customer Room
@@ -19,6 +21,7 @@ class CustomerConsumer(AsyncWebsocketConsumer):
             self.room_group_name,
             self.channel_name
         )
+        logger.info(f"connection started WITH {self.user} for ORDER {self.room_name} and group NAME : ---   {self.room_group_name} ")
         await self.accept()
 
     async def disconnect(self, close_code):
@@ -102,7 +105,7 @@ class OrderConsumer(AsyncWebsocketConsumer):
         message = event["message"]
         print("inside the chat message function")
         print(message)
-        # Send message to WebSocket
+        
         await self.send(text_data=json.dumps({"message": message}))
 
 
@@ -156,6 +159,53 @@ class RestoConsumer(AsyncWebsocketConsumer):
         message = event["message"]
         print("inside the chat message function")
         print(message)
-        # Send message to WebSocket
+        
         await self.send(text_data=json.dumps({"message": message}))
 
+
+
+#==============================================================================
+# Driver New Orders Room
+class DriverConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        self.room_name = "driver_room"
+        self.room_group_name = "drivers"
+        self.user = self.scope['user']
+        print(self.user)
+        print(self.user.utype)
+        if not self.user.utype == 'd':
+            print("you cant access this room")
+            self.close()
+        
+        await self.channel_layer.group_add(
+            self.room_group_name,
+            self.channel_name
+        )
+        await self.accept()
+
+    async def disconnect(self, close_code):
+        print(f"Connection closed with code: {close_code}")
+        print(self.user)
+        await self.channel_layer.group_discard(
+            self.room_group_name,
+            self.channel_name
+        )
+    async def receive(self, text_data ):
+        text_data_json = json.loads(text_data)
+        message = text_data_json["message"]
+        print("---------message recieved----------")
+        print(message)
+        print("calling the chatmessage function")
+        await self.channel_layer.group_send(
+            self.room_group_name,
+            {
+                "type": "chat.message",
+                "message": message,
+            }
+        )
+    async def chat_message(self,event):
+        message = event["message"]
+        print("inside the chat message function")
+        print(message)
+        
+        await self.send(text_data=json.dumps({"message": message}))

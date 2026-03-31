@@ -1,6 +1,6 @@
-from django.test import TestCase
-from user.models import *
+# from django.test import TestCase
+# from user.models import *
 
-class TestModels(TestCase):
-    def order_has_menu(self):
+# class TestModels(TestCase):
+#     def order_has_menu(self):
         

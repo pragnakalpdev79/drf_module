@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'daphne',
     'admin_interface',
+    'django.contrib.gis',
     'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -60,6 +61,7 @@ INSTALLED_APPS = [
     'django_celery_results',
     'channels',
     'channels_redis',
+
 ]
 
 MIDDLEWARE = [
@@ -112,7 +114,8 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default':
      {
-        'ENGINE':  'django.db.backends.postgresql',
+        #'ENGINE':  'django.db.backends.postgresql',
+        'ENGINE': 'django.contrib.gis.db.backend.postgis',
         'NAME': os.getenv('DB_NAME'),
         'USER': os.getenv('DB_USER'),
         'PASSWORD' : os.getenv('DB_PASSWORD'),
@@ -202,7 +205,7 @@ REST_FRAMEWORK = {
     'DEFAULT_VERSION': 'v1',
     'ALLOWED_VERSIONS': ['v1', 'v2'],
     'VERSION_PARAM': 'version',
-   # 'EXCEPTION_HANDLER' : 'user.exceptions.custom_exception_handler',
+    'EXCEPTION_HANDLER' : 'user.exceptions.custom_exception_handler',
     # 'DEFAULT_PAGINATION_CLASS' : 'rest_framework.pagination.LimitOffsetPagination',
     # 'PAGE_SIZE': 2,
 }

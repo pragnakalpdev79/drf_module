@@ -5,9 +5,12 @@ from django.contrib.auth.models import Group
 import pytest
 from decimal import Decimal
 from django.test import TestCase
+from django.contrib.auth.models import Group,Permission
+from django.contrib.contenttypes.models import ContentType
 from rest_framework.test import APIClient
 from rest_framework import status
 from user.models import *
+
 
 # #===============================================================================
 # #===============================================================================
@@ -16,10 +19,15 @@ from user.models import *
 
 @pytest.fixture(autouse=True)
 def create_groups(db):
-    Group.objects.get_or_create(name='Customers')
+    cgrps,created = Group.objects.get_or_create(name='Customers')
     Group.objects.get_or_create(name='RestrauntOwners')
     Group.objects.get_or_create(name='Drivers')
     print("groups created for test")
+    content_type = ContentType.objects.get_for_model(CustomUser)
+    customer_permissions = Permission.objects.filter(content_type=content_type,
+                                                     codename__in =['IsCustomer'])
+    cgrps.permissions.set(customer_permissions)
+    
 
 @pytest.fixture
 def api_client():
@@ -37,6 +45,9 @@ def customer(db):
         utype='c'
     )
     print(f"created customer -- {user.has_perms}")
+    grp = Group.objects.get(name='Customers')
+    print(grp.permissions.all())
+    user.groups.add(grp)
     return user
 
 @pytest.fixture
@@ -51,6 +62,7 @@ def resto_owner(db):
         utype='r'
     )
     print(f"created resto owner -- {user}")
+    
     return user
 
 @pytest.fixture
@@ -199,12 +211,40 @@ class TestCart:
     def test_add_to_cart(self,api_client,customer,menu_items,create_groups):
         print("=====test4 add to cart=====")
         api_client.force_authenticate(user=customer)
-        print(customer.check_if_customer)
+        #print(customer.check_if_customer)
+        print(customer.user_permissions) 
+        print(customer.has_perm('user.IsCustomer'))
         print(menu_items[1].id)
         data = {'menu_item':menu_items[1].id,'quantity':2}
         print(data)
         response = api_client.post('/api/orders/cart/addtocart/',data,format='json')
         print(f"response -- {response.status_code}")
         print(response)
-        assert response.status_code == 201
-        assert response['message'] == 'item added to cart'
+        assert response.status_code == 202
+        assert response.data['message'] == 'item added to cart'
+
+    def test_add_unavailable_item(self,api_client,customer,menu_items):
+        print("=====test5 unavailable item=====")
+        api_client.force_authenticate(user=customer)
+        data = {'menu_item':menu_items[2].id,'quantity':1} #gulab jamun is unavailable
+        print(data)
+        response = api_client.post('/api/orders/cart/addtocart/',data,format='json')
+        print(response)
+        print(f"response -- {response.status_code}")
+        assert response.status_code == 404
+        assert 'not available' in response.data['error']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

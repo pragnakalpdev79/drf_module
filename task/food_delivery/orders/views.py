@@ -14,20 +14,46 @@ from .pagination import OrdersPagination,ReviewPagination
 
 logger = logging.getLogger('user')
 
+extrap = extend_schema(
+        tags=["extra"],
+    )
+
 #===============================================================================================
 # 1. CART VIEWSET - add or remove or view cart items
 @extend_schema_view(
     addtocart=extend_schema(
-        summary="Add to cart",
+        summary=" C.1Add to cart",
         description="Add an item to the cart before checkout to place order.",
         tags=["Cart"],
-    ),)
+    ),
+    mycart=extend_schema(
+        summary="C.2 View cart with total",
+        description="This endpoint returns whatever is in the cart and empty if not",
+        tags=["Cart"],
+    ),
+    clear=extend_schema(
+        summary=" C.3 Empty Cart",
+        description="Remove Everything from the cart",
+        tags=["Cart"],
+    ),
+    checkout=extend_schema(
+        summary=" C.4 Checkout ",
+        description="Confirm Payment here with confirm=true used as mock payment",
+        tags=["Cart"],
+    ),
+    destroy = extrap,
+    partial_update = extrap,
+    update = extrap,
+    retrive = extrap,
+    create = extrap,
+    list = extrap,
+    )
 class CartViewSet(viewsets.ModelViewSet):
     serializer_class = CartItemSerializer
     permission_classes = [IsCustomer]
     throttle_classes = [OrderCreateT]
     throttle_scope = 'checkout'
-
+    #http_method_names = ["post","delete"]
     def get_queryset(self):
         return CartItem.objects.filter(user=self.request.user).select_related('menu_item')
 
@@ -50,7 +76,7 @@ class CartViewSet(viewsets.ModelViewSet):
             return Response({'error':'menu item not found'},status=status.HTTP_404_NOT_FOUND)
 
         if not menu_item.is_available:
-            return Response({'error':f'{menu_item.name} is not available right now'},status=status.HTTP_400_BAD_REQUEST)
+            return Response({'error':f'{menu_item.name} is not available right now'},status=status.HTTP_404_NOT_FOUND)
 
         #check if already in cart
         existing = CartItem.objects.filter(user=request.user,menu_item=menu_item).first()
@@ -166,6 +192,44 @@ class CartViewSet(viewsets.ModelViewSet):
 
 #===============================================================================================
 # ORDER VIEWSET - view/manage orders
+@extend_schema_view(
+    update_status = extend_schema(
+        summary=" O.1 UPDATE ORDER STATUS",
+        description="Update the order status from confirmed to delivered,can be accessed by driver and restaurant owners",
+        auth=[{"tokenAuth": [], }],
+        tags=["Order"],
+    ),
+    assign_driver=extend_schema(
+        summary=" O.2 Assign orders to driver",
+        description="Orders can accept the new orders from here order id must be passed into request",
+        auth=[{"tokenAuth": [], }],
+        tags=["Order"],
+    ),
+    cancel=extend_schema(
+        summary=" O.3 Cancel Order",
+        description="Cancel order from this endpoint if allowed at given time",
+        auth=[{"tokenAuth": [], }],
+        tags=["Order"],
+    ),
+    active=extend_schema(
+        summary=" O.4 List of active orders of user",
+        description="Returns active orders of logged in user -- for customers only",
+        auth=[{"tokenAuth": [], }],
+        tags=["Order"],
+    ),
+    history=extend_schema(
+        summary=" O.5 Past orders",
+        description="Returns Customer's past completed orders -- for customers only",
+        auth=[{"tokenAuth": [], }],
+        tags=["Order"],
+    ),
+    destroy = extrap,
+    partial_update = extrap,
+    update = extrap,
+    retrive = extrap,
+    create = extrap,
+    list = extrap,
+)
 class OrderViewSet(viewsets.ModelViewSet):
     serializer_class = OrderSerializer
     permission_classes = [IsAuthenticated]
@@ -183,7 +247,7 @@ class OrderViewSet(viewsets.ModelViewSet):
             return qs.filter(restaurant__owner=user)
 
     #===============================================================================================
-    # STATUS UPDATE
+    # O.1 STATUS UPDATE
     @action(detail=True,methods=['patch'])
     def update_status(self,request,pk=None):
         #order = self.get_object(order_number=pk)
@@ -209,7 +273,8 @@ class OrderViewSet(viewsets.ModelViewSet):
             logger.info("did not work")
             return Response({'error':str(e)},status=status.HTTP_400_BAD_REQUEST)
 
-
+    #===============================================================================================
+    # O.2 ASSIGN DRIVER
     @action(detail=True,methods=['post'])
     def assign_driver(self,request,pk=None):
         order = self.get_queryset()
@@ -234,7 +299,8 @@ class OrderViewSet(viewsets.ModelViewSet):
             return Response({'message':f'driver {driver.first_name} assigned'})
         except CustomUser.DoesNotExist:
             return Response({'error':'driver not found'},status=status.HTTP_404_NOT_FOUND)
-
+    #===============================================================================================
+    # O.3 CANCEL ORDER
     @action(detail=True,methods=['post'])
     def cancel(self,request,pk=None):
         order = self.get_queryset().first()
@@ -251,13 +317,13 @@ class OrderViewSet(viewsets.ModelViewSet):
         except Exception as e:
             return Response({'error':str(e)},status=status.HTTP_400_BAD_REQUEST)
     #=======================================
-    # LIST ALL ACTIVE ORDERS
+    #  O.4 LIST ALL ACTIVE ORDERS
     @action(detail=False,methods=['get'],pagination_class=OrdersPagination)
     def active(self,request):
         qs = self.get_queryset().exclude(status__in=['dl','cd'])
         return Response(OrderSerializer(qs,many=True).data)
     #=======================================
-    # LIST ALL ORDERS
+    # O.5  LIST ALL ORDERS
     @action(detail=False,methods=['get'],pagination_class=OrdersPagination)
     def history(self,request):
         qs = self.get_queryset().filter(status__in=['dl','cd'])

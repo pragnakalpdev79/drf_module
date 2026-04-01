@@ -69,3 +69,9 @@ class RestoSerializer(serializers.ModelSerializer):
     class Meta:
         fields = ['name','description','cuisine_type','is_open','opening_time','closing_time','menu','review_for']
         model = RestrauntModel
+
+class MenuSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        fields = ["name",'description','price','category','dietary_info','is_available','preparation_time']
+        model = MenuItem

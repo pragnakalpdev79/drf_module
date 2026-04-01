@@ -1,8 +1,11 @@
+from __future__ import unicode_literals
 from decimal import Decimal
 from django.db import models
 from django.db.models import Avg,Sum,F
 from django.utils import timezone
 from django.contrib.auth.models import AbstractUser,BaseUserManager
+from django.contrib.gis.db import models as gis_models
+from django.db.models import Manager as GeoManager
 from django.core.validators import RegexValidator,MaxValueValidator,MinValueValidator
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
@@ -141,6 +144,8 @@ class address(TimestampedModel):
     address = models.TextField(help_text='Your full address')
     is_default = models.BooleanField()
     adrofuser = models.ForeignKey('CustomUser',on_delete=models.CASCADE,related_name="user_s_adress")
+    location = gis_models.PointField(srid=4326)
+    objects=GeoManager()
 
     def save(self,*args,**kwargs):
         if self.is_default:
@@ -353,6 +358,7 @@ class Order(TimestampedModel):
         self.total_amount = self.subtotal + self.delivery_fee + self.tax
         self.save(update_fields=['subtotal','delivery_fee','tax','total_amount'])
         logger.info(f"Order total:-- sub = {self.subtotal} ---- tax={self.tax} ----- total={self.total_amount}")
+
 
 
     def __init__(self,*args,**kwargs):

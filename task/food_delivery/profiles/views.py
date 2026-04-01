@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from drf_spectacular.utils import extend_schema,extend_schema_view
 from rest_framework.permissions import AllowAny,IsAuthenticated,IsAdminUser
 from rest_framework import generics,status,viewsets,filters
 from rest_framework.response import Response
@@ -43,6 +44,22 @@ logger = logging.getLogger('user')
     #         'message': 'This method is not allowed use patch'
     #     })   
 
+@extend_schema_view(
+    get=extend_schema(
+        summary=" P.1 Customer Profile",
+        description="Your profile details",
+        tags=["Customer-Profiles"]),
+    patch=extend_schema(
+        summary=" P.2 Update Customer Profile",
+        description=" Update your profile details here",
+        tags=['Customer-Profiles']
+    ),
+    put=extend_schema(
+        summary=" P.3 This method is not allowed",
+        description = "Please use patch method instead",
+        tags=['Customer-Profiles']
+    ),
+)
 class CustomerProfileView(generics.RetrieveUpdateAPIView):
     serializer_class = CustomProfileSerializer
     permission_classes = [IsAuthenticated]
@@ -72,6 +89,23 @@ class CustomerProfileView(generics.RetrieveUpdateAPIView):
             'message': 'This method is not allowed use patch'
         })
 
+
+@extend_schema_view(
+    get=extend_schema(
+        summary=" DP.1 Driver Profile",
+        description="Your profile details",
+        tags=["Driver-Profiles"]),
+    patch=extend_schema(
+        summary=" DP.2 Update Driver Profile",
+        description=" Update your profile details here",
+        tags=['Driver-Profiles']
+    ),
+    put=extend_schema(
+        summary=" DP.3 This method is not allowed",
+        description = "Please use patch method instead",
+        tags=['Driver-Profiles']
+    ),
+)
 class DriverProfileView(generics.RetrieveUpdateAPIView):
     serializer_class = DriverProfileSerializer
     permission_classes = [IsAuthenticated]
@@ -95,18 +129,15 @@ class DriverProfileView(generics.RetrieveUpdateAPIView):
             'total deliveries' :  myprofile.total_deliveries,
             'average rating' :  myprofile.average_rating,
         })
+    def put(self,request,*args,**kwargs):
+        return Response({
+            'message': 'This method is not allowed use patch'
+        })
+    
 
 class AddressViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint for managing patients.
-    Full ViewSet for Patient model:
-    - POST /api/v1/patients/ (create)
-    - GET /api/v1/patients/ (list all)
-    - GET /api/v1/patients/{id}/ (retrieve)
-    - PUT /api/v1/patients/{id}/ (update)
-    """
-    
     serializer_class = AddressSerializer
+    http_method_names = ['get', 'post','patch']
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):

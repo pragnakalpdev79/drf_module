@@ -23,6 +23,12 @@ logger = logging.getLogger('user')
 # 5. RESTORE USER VIEW - Admin Only
 
 # 1.REGISTRATION - Allowany
+@extend_schema_view(
+    post=extend_schema(
+        summary=" U.1 Sign-Up",
+        description=" Endpoint for new user registration of all types.",
+        tags=["Userbase"],
+    ))
 class UserRegisterationView(generics.CreateAPIView):
 
     """
@@ -34,7 +40,11 @@ class UserRegisterationView(generics.CreateAPIView):
     #only works with post requests
     serializer_class = CustomUserRegistrationSerializer
     permission_classes = [AllowAny]
-    
+    @extend_schema(
+        summary=" C.1Add to cart",
+        description="Add an item to the cart before checkout to place order.",
+        tags=["Cart"],
+    )
     def create(self,request,*args,**kwargs):
         """
         API endpoint for new user registration. 123
@@ -95,6 +105,12 @@ class UserRegisterationView(generics.CreateAPIView):
         )
     
 # 2.LOGIN - Allowany
+@extend_schema_view(
+    post=extend_schema(
+        summary=" U.2 Login",
+        description="Registered users login here",
+        tags=["Userbase"],
+    ))
 class UserLoginView(APIView):
     permission_classes = [AllowAny]
     def post(self,request):
@@ -114,6 +130,12 @@ class UserLoginView(APIView):
         },status=status.HTTP_201_CREATED)
 
 # 3.LOGOUT - Logged in user only
+@extend_schema_view(
+    post=extend_schema(
+        summary=" U.3 Logout",
+        description="Logged-in users logout here",
+        tags=["Userbase"],
+    ))
 class UserLogoutView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -137,6 +159,12 @@ class UserLogoutView(APIView):
             },status=status.HTTP_400_BAD_REQUEST)
 
 # 4. DELETE USER VIEW -Admin only
+@extend_schema_view(
+    delete=extend_schema(
+        summary=" Delete User",
+        description=" U.4 Admin only feature to soft deleted user",
+        tags=["Admin-Only"],
+    ))
 class DeleteUser(APIView):
     queryset = CustomUser
     permission_classes = [IsAdminUser] #FOR TESTING ONLY
@@ -159,6 +187,12 @@ class DeleteUser(APIView):
         })
 
 # 5. RESTORE USER VIEW - Admin Only
+@extend_schema_view(
+    post=extend_schema(
+        summary=" U.5 Restore User",
+        description=" Admin only feature to restore soft deleted users",
+        tags=["Admin-Only"],
+    ))
 class RestoreDeletedUserView(APIView):
     permission_classes = [IsAdminUser]
 

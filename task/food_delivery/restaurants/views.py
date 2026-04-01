@@ -2,8 +2,9 @@ import logging
 from django.shortcuts import render
 from django.contrib.auth.mixins import UserPassesTestMixin
 from django.core.cache import cache
+from django.db.models import Count
 from django_filters.rest_framework import DjangoFilterBackend
-from drf_spectacular.utils import extend_schema
+from drf_spectacular.utils import extend_schema,extend_schema_view,OpenApiParameter
 from rest_framework import generics,status,viewsets,permissions,renderers,filters
 from rest_framework.decorators import action
 from rest_framework.permissions import AllowAny,IsAuthenticatedOrReadOnly,IsAuthenticated
@@ -17,8 +18,58 @@ from .filters import RestoFilter
 
 logger = logging.getLogger('user')
 
+
+@extend_schema_view(
+    list=extend_schema(
+        summary=" R.1 List of all restaurants",
+        description="You can get a list of all restaurants available here",
+        tags=["Restaurants"],
+        # parameters=[
+        #     OpenApiParameter("test",RestoListSerializer)
+        # ],
+        responses=RestoListSerializer,
+        auth=[],
+    ),
+    retrieve=extend_schema(
+        summary=" R.2 Get details of a restaurant",
+        description="Pass the restaurant id to get all details about it",
+        tags=["Restaurants"],
+        auth=[],
+    ),
+    create=extend_schema(
+        summary="R.3 Register Your restaurant",
+        description="Enter your restaurant details and register a new one,this endpoint can be only accesed if you are a restaurnt owner" \
+        " [Restaurant Owner Permission Required]",
+        tags=["Restaurants"],
+        auth=[{"tokenAuth": [], }],
+    ),
+    menu=extend_schema(
+        summary=" R.4 Get Menu from a restaurant id",
+        description="Pass Restaurant id to get its menu",
+        tags=["Restaurants"],
+        auth=[],
+    ),
+    popular=extend_schema(
+        summary=" R.5 Check popular restaurants",
+        description="Endpoint to fetch popular restaurants ordered by top rated",
+        tags=["Restaurants"],
+        auth=[],
+    ),
+    deleter=extend_schema(
+        summary=" R.6 Delete a restaurant",
+        description="Can be only accessed if user has restaurant owner permission",
+        tags=["Restaurants"],
+        auth=[{"tokenAuth": [], }],
+    ),
+    partial_update=extend_schema(
+        summary=" R.7 Update restaurant details",
+        description="Can be only accessed if user has restaurant owner permission",
+        tags=["Restaurants"],
+        auth=[{"tokenAuth": [], }],
+    )
+)
 class RestaurantViewSet(viewsets.ModelViewSet):
-    queryset = RestrauntModel.objects.filter(deleted_at=None)
+    queryset = RestrauntModel.objects.filter(deleted_at=None).annotate(items_count=Count('delivery_fee'))
     http_method_names = ['get', 'post','patch']
     #filter_backends = [DjangoFilterBackend,filters.SearchFilter]
     #filterset_fields = ['cuisine_type','is_open','delivery_fee__lte','minimum_order__lte','average_rating__gte']
@@ -54,14 +105,6 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     
 #==============================================================================
 # 1. GET ALL RESTAURANTS BY GET METHOOD
-    @extend_schema(
-            parameters = [
-                {
-                    'name': 'name1',
-                    'hello':'hi,'
-                }
-            ]
-    )
     def list(self,request): #list does not have incoming data,so not passing data into serializer
         if request.version == 'v2':
             # ZERO QUERIES AFTER FIRST RUN
@@ -209,3 +252,24 @@ class RestaurantViewSet(viewsets.ModelViewSet):
 #==============================================================================
 #==============================================================================
 
+class MenuItemViewSet(viewsets.ModelViewSet):
+    #queryset = MenuItem.objects.all()
+    permission_classes = [IsRestaurantOwner]
+    serializer_class = MenuSerializer
+
+    def get_queryset(self):
+        user = self.request.user
+        #if 
+        qs = MenuItem.objects.filter().select_related('restaurant')
+        return qs
+    
+    def create(self,request):
+        test = self.get_queryset().first()
+
+        return Response({
+            "message": "worked",
+            "email": request.user.email,
+        })
+
+    def perform_create(self,serializer):
+        serializer.save()

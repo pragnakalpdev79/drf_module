@@ -9,7 +9,7 @@ from django.db.models import Manager as GeoManager
 from django.core.validators import RegexValidator,MaxValueValidator,MinValueValidator
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
-import uuid,logging
+import uuid,logging,datetime
 
 
 logger = logging.getLogger('user')
@@ -144,8 +144,8 @@ class address(TimestampedModel):
     address = models.TextField(help_text='Your full address')
     is_default = models.BooleanField()
     adrofuser = models.ForeignKey('CustomUser',on_delete=models.CASCADE,related_name="user_s_adress")
-    location = gis_models.PointField(srid=4326)
-    objects=GeoManager()
+    #location = gis_models.PointField(srid=4326)
+    #objects=GeoManager()
 
     def save(self,*args,**kwargs):
         if self.is_default:
@@ -202,6 +202,24 @@ class DriverProfile(TimestampedModel):
         ('s','Scooter'),
         ('c','Car'),
     )
+
+    def update_availability(self,available=True):
+        #changing availability directly from this function
+        self.is_available = available
+        self.save(update_fields=['is_available'])
+        logger.info(f"driver availability set to {available}")
+
+
+    def get_delivery_stats(self):
+        # get all delivered orders of requested user
+        delivered = Order.objects.filter(driver=self.user,status='dl').count()
+        logger.info(f"delivery stats for {self.user.email}: {delivered}")
+        return {
+            'total_deliveries': delivered,
+            'average_rating': self.average_rating,
+            'is_available': self.is_available,
+        }
+
     vehicle_type = models.CharField(max_length=1,choices=VTYPE,blank=True,default='b',help_text="Delivery partner's Vehicle Type")
     vehicle_number = models.CharField(max_length=10,unique=True)
     license_number = models.CharField(max_length=10,unique=True)
@@ -244,6 +262,22 @@ class RestrauntModel(TimestampedModel):
     total_reviews = models.IntegerField(null=True,blank=True)
 
     deleted_at = models.DateTimeField(null=True,blank=True)
+
+    def is_currently_open(self):
+        now = datetime.datetime.now().time()
+        result = self.opening_time <= now <= self.closing_time
+        logger.info(f"{self.name} is_currently_open: {result}")
+        return result
+    
+    def update_average_rating(self):
+        #
+        avg = self.review_for.aggregate(avg=Avg('rating'))['avg']
+        if avg:
+            self.average_rating = round(avg,1)
+            self.total_reviews = self.review_for.count()
+            self.save(update_fields=['average_rating','total_reviews'])
+            logger.info(f"updated rating for {self.name} to {self.average_rating}")
+
 
     @property
     def delete(self,using=None,keep_parents=False):
@@ -290,7 +324,7 @@ class MenuItem(TimestampedModel):
     )
     def file_path(self):
         return f"{self.name}/menu_items"
-    item_image = models.ImageField(upload_to=file_path,blank=True,null=True)
+    foodimage = models.ImageField(upload_to=file_path,blank=True,null=True)
     is_available = models.BooleanField(default=True)
     preparation_time = models.PositiveIntegerField(default=3)
 

@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from user.models import *
 import logging,re
+from PIL import Image
 
 logger = logging.getLogger('user')
 
@@ -27,12 +28,23 @@ class CustomProfileSerializer(serializers.ModelSerializer):
     #cadr = AddressSerializer()   
     # def get_test(self,obj):
     #     return f"{obj.saved_addresses}" 
+    # def validate_logo(self,value):
+    #     if value:
+    #         if value.size > 5 * 1024 * 1024:
+    #             raise serializers.ValidationError("Logo must be under 5MB")
+    #         ext = value.name.split('.')[-1].lower()
+    #         if ext not in ['jpg','jpeg','png']:
+    #             raise serializers.ValidationError("Only jpg, jpeg, png allowed")
+    #         logger.info(f"logo validated: {value.name}")
+    #     return value
     
     def validate_avatar(self,value):
         if value:
             if value.size > 5*1024*1024:
                 raise serializers.ValidationError("Image size cannot exceed 5mb")
-        from PIL import Image
+            ext = value.name.split('.')[-1].lower()
+            if ext not in ['jpg','jpeg','png']:
+                raise serializers.ValidationError("Only jpg, jpeg, png allowed")
         try:
             img = Image.open(value)
             img.verify()

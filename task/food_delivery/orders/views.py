@@ -1,13 +1,15 @@
 import logging
 from django.db.models import Sum,F
 from django.core.exceptions import ObjectDoesNotExist
-from rest_framework import status,viewsets
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import status,viewsets,filters
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from drf_spectacular.utils import extend_schema, extend_schema_view, OpenApiParameter, OpenApiExample, OpenApiResponse
 from rest_framework.response import Response
 from .throttles import *
 from user.models import *
+from .filters import OrderFilter,ReviewFilter 
 from user.permissions import IsRestaurantOwner,IsCustomer,IsDriver
 from .serializers import *
 from .pagination import OrdersPagination,ReviewPagination
@@ -233,6 +235,11 @@ class CartViewSet(viewsets.ModelViewSet):
 class OrderViewSet(viewsets.ModelViewSet):
     serializer_class = OrderSerializer
     permission_classes = [IsAuthenticated]
+    filterset_class = OrderFilter 
+    filter_backends = [DjangoFilterBackend,filters.SearchFilter,filters.OrderingFilter] 
+    search_fields = ['order_number'] 
+    ordering_fields = ['created_at','total_amount'] 
+    ordering = ['-created_at'] 
 
     def get_queryset(self):
         user = self.request.user
@@ -278,9 +285,12 @@ class OrderViewSet(viewsets.ModelViewSet):
     @action(detail=True,methods=['post'])
     def assign_driver(self,request,pk=None):
         order = self.get_queryset()
+        order = order.first()
         print("order",order) #order id will be passed from post request url
         logger.info(f"+++++++++++++++++++++++++++++++++++++++++++++")
+        logger.info(self.request.user.utype)
         logger.info(f"Assign driver request for or    der -- {order}")
+        logger.info(f"Assign driver request for or    der -- {order.customer_id}")
         driver_id = request.data.get('driver_id')
         logger.info(f"===assigning driver {driver_id}===")
         try:
@@ -336,7 +346,11 @@ class ReviewViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     #throttle_classes = [ReviewCreateT]
     pagination_class = ReviewPagination
-
+    filterset_class = ReviewFilter 
+    filter_backends = [DjangoFilterBackend,filters.OrderingFilter] 
+    ordering_fields = ['created_at','rating'] 
+    ordering = ['-created_at'] 
+    
     def get_throttles(self):
         if self.action == 'create':
             return [ReviewCreateT()]

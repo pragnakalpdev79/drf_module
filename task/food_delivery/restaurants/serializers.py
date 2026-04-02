@@ -3,6 +3,9 @@ from user.models import *
 #from django.utils.timezone import datetime
 import datetime
 import logging,re
+from rest_framework.response import Response
+from rest_framework import status
+from PIL import Image
 #from .pagination import RestoPagination
 
 logger = logging.getLogger('user')
@@ -42,6 +45,26 @@ class RestoCreateSerializer(serializers.ModelSerializer):
         logger.info('Restro is Closed while being registered')
         return False 
     
+    def validate_logo(self,value):
+        if value:
+            if value.size > 5 * 1024 * 1024:
+                raise serializers.ValidationError("Logo must be under 5MB")
+            ext = value.name.split('.')[-1].lower()
+            if ext not in ['jpg','jpeg','png']:
+                raise serializers.ValidationError("Only jpg, jpeg, png allowed")
+            logger.info(f"logo validated: {value.name}")
+        return value
+    def validate_banner(self,value):
+        if value:
+            if value.size > 10 * 1024 * 1024:
+                raise serializers.ValidationError("Banner must be under 10MB")
+            ext = value.name.split('.')[-1].lower()
+            if ext not in ['jpg','jpeg','png']:
+                raise serializers.ValidationError("Only jpg, jpeg, png allowed")
+            logger.info(f"banner validated: {value.name}")
+        return value
+
+
     class Meta:
 
         fields = ['owner','name','description','cuisine_type','address','phone_number','email','logo','banner',
@@ -71,7 +94,59 @@ class RestoSerializer(serializers.ModelSerializer):
         model = RestrauntModel
 
 class MenuSerializer(serializers.ModelSerializer):
-
+    #resto = RestoSerializer()
+    restoid = serializers.IntegerField()
+    # restaurant = serializers.SerializerMethodField()  
+    
     class Meta:
-        fields = ["name",'description','price','category','dietary_info','is_available','preparation_time']
+        fields = ['restoid','foodimage','name','description','price','category','dietary_info','is_available','preparation_time']
         model = MenuItem
+
+    # def get_restaurant(self,obj):
+    #     print(obj)
+
+    # def validate(self,data):
+    #     logger.info("in ser validation!")
+    #     return data
+
+
+    def validate_foodimage(self,value):
+        logger.info("===========================")
+        logger.info("CV.1 testing image")
+        logger.info(value)
+        logger.info("============================")
+        if value:
+            if value.size > 5*1024*1024:
+                raise serializers.ValidationError("Image size cannot exceed 5mb")
+            ext = value.name.split('.')[-1].lower()
+            if ext not in ['jpg','jpeg','png']:
+                raise serializers.ValidationError("Only jpg, jpeg, png allowed")
+        # try:
+        #     img = Image.open(value)
+        #     img.verify()
+        # except Exception:
+        #     raise serializers.ValidationError("Invalid Image format")
+        logger.info("image validated")
+        logger.info(value)
+        return value
+
+    def validate_restoid(self,value):
+        logger.info(" CV.2 =============================")
+        logger.info(value)
+        id = self.context.get('request').user.id
+        try:
+            self.resto = RestrauntModel.objects.filter(owner_id=id).get(id=value)
+        except RestrauntModel.DoesNotExist:
+            raise serializers.ValidationError("Please enter the restaurant which you own and does exits")
+        logger.info(self.resto)
+        logger.info(id)
+        # print(type(owner))
+        # print(restaurant__owner)
+        logger.info(value)
+        logger.info("CV.2 DONE =============================")
+        #value = self.resto
+        return value
+    
+    # def create(self,validated_data):
+    #     validated_data.pop('restoid')
+    #     return validated_data

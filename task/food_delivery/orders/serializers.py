@@ -52,6 +52,44 @@ class OrderSerializer(serializers.ModelSerializer):
             return f"{obj.driver.first_name} {obj.driver.last_name}"
         return None
 
+
+class OrderSerializer(serializers.ModelSerializer):
+    items = OrderItemSerializer(source='item_for',many=True,read_only=True)
+    can_cancel = serializers.SerializerMethodField()
+    can_review = serializers.SerializerMethodField()
+    items_count = serializers.SerializerMethodField()
+    final_total = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Order
+        fields = ['order_number','customer','restaurant','driver','status',
+                  'delivery_address','adratorder','subtotal','delivery_fee','tax',
+                  'total_amount','special_instructions','estimated_delivery_time',
+                  'actual_delivery_time','created_at','items',
+                   'can_cancel','can_review','items_count','final_total'] 
+
+    def get_can_cancel(self,obj):
+        print(f"checking if order {obj.order_number} can be cancelled")
+        return obj.is_cancellable
+
+    def get_can_review(self,obj):
+        #can review only if delivered and not already reviewed
+        if obj.status != 'dl':
+            return False
+        already = Review.objects.filter(order=obj,customer=obj.customer).exists()
+        print(f"can review: {not already}")
+        return not already
+
+    def get_items_count(self,obj):
+        count = obj.item_for.count()
+        print(f"items count: {count}")
+        return count
+
+    def get_final_total(self,obj):
+        print(f"final total: {obj.total_amount}")
+        return str(obj.total_amount)
+
+
 class OrderStatusUpdateSerializer(serializers.Serializer):
     status = serializers.ChoiceField(choices=Order.SC)
 

@@ -151,6 +151,7 @@ def customer_with_address(db,customer):
 @pytest.mark.django_db
 class TestRegistration:
     #NORMAL REGISTRATION
+    #DONE
     def test_customer_registration(self,api_client):
         print("=====test1 registration=====")
         data = {
@@ -170,6 +171,7 @@ class TestRegistration:
         assert 'access' in response.data
         assert 'refresh' in response.data
     #PASSWORD MISMATCH
+    #DONE
     def test_registration_password_mismatch(self,api_client):
         print("=====test2 password mismatch=====")
         data = {
@@ -186,6 +188,7 @@ class TestRegistration:
         print(f"response -- {response.status_code}")
         assert response.status_code == 400
     #DUPLICATE EMAIL
+    #DONE
     def test_registration_duplicate_email(self,api_client,customer):
         print("=====test3 duplicate email=====")
         data = {
@@ -208,6 +211,7 @@ class TestRegistration:
 
 @pytest.mark.django_db
 class TestCart:
+#DONE
     def test_add_to_cart(self,api_client,customer,menu_items,create_groups):
         print("=====test4 add to cart=====")
         api_client.force_authenticate(user=customer)
@@ -222,7 +226,7 @@ class TestCart:
         print(response)
         assert response.status_code == 202
         assert response.data['message'] == 'item added to cart'
-
+#DONE
     def test_add_unavailable_item(self,api_client,customer,menu_items):
         print("=====test5 unavailable item=====")
         api_client.force_authenticate(user=customer)
@@ -234,7 +238,206 @@ class TestCart:
         assert response.status_code == 404
         assert 'not available' in response.data['error']
 
+#DONE
+    def test_add_duplicate_item_increases_quantity(self,api_client,customer,menu_items):
+        print("=====test6 duplicate item quantity update=====")
+        api_client.force_authenticate(user=customer)
+        data = {'menu_item':menu_items[0].id,'quantity':1}
+        api_client.post('/api/orders/cart/addtocart/',data,format='json')
+        #adding again
+        response = api_client.post('/api/orders/cart/addtocart/',data,format='json')
+        print(f"response -- {response.status_code}")
+        #quantity should be 2 now
+        cart = CartItem.objects.get(user=customer,menu_item=menu_items[0])
+        print(f"cart quantity -- {cart.quantity}")
+        assert cart.quantity == 2
+#DONE
+    def test_view_cart(self,api_client,customer,menu_items):
+        print("=====test7 view my cart=====")
+        api_client.force_authenticate(user=customer)
+        #add items first
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[0].id,'quantity':2},format='json')
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[1].id,'quantity':1},format='json')
+        response = api_client.get('/api/orders/cart/mycart/')
+        print(f"response -- {response.status_code}")
+        print(f"cart total -- {response.data['cart_total']}")
+        print(f"item count -- {response.data['item_count']}")
+        assert response.status_code == 200
+        assert response.data['item_count'] == 2
+        assert float(response.data['cart_total']) == 650.00
+#DONE
+    def test_clear_cart(self,api_client,customer,menu_items):
+        print("=====test8 clear cart=====")
+        api_client.force_authenticate(user=customer)
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[0].id,'quantity':1},format='json')
+        response = api_client.delete('/api/orders/cart/clear/')
+        print(f"response -- {response.status_code}")
+        assert response.status_code == 200
+        assert CartItem.objects.filter(user=customer).count() == 0
+#DONE
+    def test_unauthenticated_cart_access(self,api_client,menu_items):
+        print("=====test9 no auth cart=====")
+        response = api_client.get('/api/orders/cart/mycart/')
+        print(f"response -- {response.status_code}")
+        assert response.status_code in [401,403]
 
+
+# #===============================================================================
+# # 3. CHECKOUT TESTS
+# #===============================================================================
+
+@pytest.mark.django_db
+class TestCheckout:
+#DONE
+    def test_checkout_preview(self,api_client,customer_with_address,menu_items):
+        print("=====test10 checkout preview=====")
+        api_client.force_authenticate(user=customer_with_address)
+        #ADD ITEMS
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[0].id,'quantity':2},format='json')
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[1].id,'quantity':1},format='json')
+        #PREVIEW BEFOR PLACING- confirm=false
+        response = api_client.post('/api/orders/cart/checkout/',{'confirm':False},format='json')
+        print(f"response -- {response.status_code}")
+        print(response.data)
+        assert response.status_code == 200
+        assert 'review your order' in response.data['message']
+        assert 'delivery_fee' in response.data
+        #cart should NOT be cleared yet
+        assert CartItem.objects.filter(user=customer_with_address).count() == 2
+#DONE
+    def test_checkout_confirm(self,api_client,customer_with_address,menu_items):
+        print("=====test11 checkout confirmed=====")
+        api_client.force_authenticate(user=customer_with_address)
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[0].id,'quantity':2},format='json')
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[1].id,'quantity':1},format='json')
+        #confirm
+        response = api_client.post('/api/orders/cart/checkout/',{'confirm':True},format='json')
+        print(f"response -- {response.status_code}")
+        print(response.data)
+        assert response.status_code == 201
+        assert 'order' in response.data
+        #cart should be empty now
+        assert CartItem.objects.filter(user=customer_with_address).count() == 0
+        #order should exist
+        assert Order.objects.filter(customer=customer_with_address).count() == 1
+#DONE
+    def test_checkout_empty_cart(self,api_client,customer_with_address):
+        print("=====test12 empty cart checkout=====")
+        api_client.force_authenticate(user=customer_with_address)
+        response = api_client.post('/api/orders/cart/checkout/',{'confirm':True},format='json')
+        print(f"response -- {response.status_code}")
+        assert response.status_code == 400
+        assert 'empty' in response.data['error']
+#DONE
+    def test_checkout_below_minimum(self,api_client,customer_with_address,menu_items):
+        print("=====test13 below minimum order=====")
+        api_client.force_authenticate(user=customer_with_address)
+        #gulab jamun is 80rs, minimum order is 100
+        #so adding an available cheap item
+        cheap = MenuItem.objects.create(
+            restaurant=menu_items[0].restaurant,
+            name='Papad',
+            description='just a papad',
+            price=Decimal('20.00'),
+            category='s',
+            dietary_info='v1',
+            is_available=True,
+        )
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':cheap.id,'quantity':1},format='json')
+        response = api_client.post('/api/orders/cart/checkout/',{'confirm':True},format='json')
+        print(f"response -- {response.status_code}")
+        assert response.status_code == 400
+        assert 'minimum' in response.data['error']
+
+#===============================================================================
+# 4. ORDER STATUS TESTS
+#===============================================================================
+
+@pytest.mark.django_db
+class TestOrderStatus:
+    def _create_order(self,api_client,customer_with_address,menu_items):
+        #helper -- creates an order via checkout
+        api_client.force_authenticate(user=customer_with_address)
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[0].id,'quantity':2},format='json')
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[1].id,'quantity':1},format='json')
+        response = api_client.post('/api/orders/cart/checkout/',{'confirm':True},format='json')
+        print(f"order created -- {response.data}")
+        return response.data['order']['order_number']
+
+#DONE
+    def test_order_starts_as_pending(self,api_client,customer_with_address,menu_items):
+        print("=====test14 order initial status=====")
+        order_id = self._create_order(api_client,customer_with_address,menu_items)
+        order = Order.objects.get(order_number=order_id)
+        print(f"order status -- {order.status}")
+        assert order.status == 'pd'
+
+#DONE
+    def test_order_has_correct_total(self,api_client,customer_with_address,menu_items,restaurant):
+        print("=====test15 order total=====")
+        order_id = self._create_order(api_client,customer_with_address,menu_items)
+        order = Order.objects.get(order_number=order_id)
+        #subtotal = 250*2 + 150*1 = 650
+        print(f"subtotal -- {order.subtotal}")
+        print(f"delivery_fee -- {order.delivery_fee}")
+        print(f"tax -- {order.tax}")
+        print(f"total -- {order.total_amount}")
+        assert order.subtotal == Decimal('650.00')
+        assert order.delivery_fee == restaurant.delivery_fee
+        #tax = 650 * 0.05 = 32.50
+        assert order.tax == Decimal('32.50')
+
+#TODOO
+    def test_cancel_pending_order(self,api_client,customer_with_address,menu_items):
+        print("=====test16 cancel order=====")
+        order_id = self._create_order(api_client,customer_with_address,menu_items)
+        response = api_client.post(f'/api/orders/new/{order_id}/cancel/')
+        print(f"response -- {response.status_code}")
+        assert response.status_code == 200
+        order = Order.objects.get(order_number=order_id)
+        assert order.status == 'cd'
+
+#TODOO
+    def test_assign_driver(self,api_client,customer_with_address,menu_items,driver):
+        print("=====test17 assign driver=====")
+        order_id = self._create_order(api_client,customer_with_address,menu_items)
+        response = api_client.post(
+            f'/api/orders/new/{order_id}/assign_driver/',
+            {'driver_id':str(driver.id)},
+            format='json'
+        )
+        print(f"response -- {response.status_code}")
+        print(response.data)
+        assert response.status_code == 200
+        #driver should be busy now
+        dp = DriverProfile.objects.get(user=driver)
+        assert dp.is_available == False
+
+#===============================================================================
+# 5. REVIEW TESTS
+#===============================================================================
+
+@pytest.mark.django_db
+class TestReviews:
+#TODOO
+    def test_review_only_delivered_orders(self,api_client,customer_with_address,menu_items,restaurant):
+        print("=====test18 review on non-delivered=====")
+        api_client.force_authenticate(user=customer_with_address)
+        #create order (its pending not delivered)
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[0].id,'quantity':2},format='json')
+        api_client.post('/api/orders/cart/addtocart/',{'menu_item':menu_items[1].id,'quantity':1},format='json')
+        resp = api_client.post('/api/orders/cart/checkout/',{'confirm':True},format='json')
+        order_id = resp.data['order']['order_number']
+        #try to review pending order
+        review_data = {
+            'order':order_id,
+            'restaurant':restaurant.id,
+            'rating':5,
+            'comment':'great food!'
+        }
+        response = api_client.post('/api/orders/reviews/',review_data,format='json')
+        print(f"response -- {response.status_code}")
+        assert response.status_code == 400
 
 
 

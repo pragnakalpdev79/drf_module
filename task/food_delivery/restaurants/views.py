@@ -10,7 +10,7 @@ from rest_framework.decorators import action
 from rest_framework.permissions import AllowAny,IsAuthenticatedOrReadOnly,IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from user.models import RestrauntModel
+from user.models import *
 from user.permissions import IsRestaurantOwner
 from .serializers import *
 from .pagination import RestoPagination,MenuItemPagination
@@ -69,12 +69,14 @@ logger = logging.getLogger('user')
     )
 )
 class RestaurantViewSet(viewsets.ModelViewSet):
-    queryset = RestrauntModel.objects.filter(deleted_at=None).annotate(items_count=Count('delivery_fee'))
+    #queryset = RestrauntModel.objects.filter(deleted_at=None).annotate(items_count=Count('delivery_fee'))
+    queryset = RestrauntModel.objects.filter(deleted_at=None).annotate(items_count=Count('menu')) 
     http_method_names = ['get', 'post','patch']
-    #filter_backends = [DjangoFilterBackend,filters.SearchFilter]
-    #filterset_fields = ['cuisine_type','is_open','delivery_fee__lte','minimum_order__lte','average_rating__gte']
     pagination_class = RestoPagination
-   # search_fields = ['name','cuisine_type']
+    filter_backends = [DjangoFilterBackend,filters.SearchFilter,filters.OrderingFilter] 
+    search_fields = ['name','cuisine_type','description'] 
+    ordering_fields = ['average_rating','delivery_fee','created_at'] 
+    ordering = ['-average_rating'] 
     filterset_class = RestoFilter
 
     def get_serializer_class(self):
@@ -231,22 +233,50 @@ class RestaurantViewSet(viewsets.ModelViewSet):
 # 5. POPULAR RESTOS
     @action(detail=False,methods=['get'])
     def popular(self,request):
+        #=====================================
+        # CACHED POPULAR RESTOS FOR 30 MIN
+        #=====================================
+        cache_key = 'popular_restos'
+        cached = cache.get(cache_key)
+        if cached:
+            logger.info("returning cached popular restos")
+            return Response(cached)
         queryset = RestrauntModel.objects.order_by('-total_reviews')
         serializer = self.get_serializer(queryset,many=True)
-        logger.info("listing popular restos")
-        logger.info("using v1")
+        cache.set(cache_key,serializer.data,1800)  # 30 minutes
+        logger.info("listing popular restos and caching")
         return Response(serializer.data)
+        # queryset = RestrauntModel.objects.order_by('-total_reviews')
+        # serializer = self.get_serializer(queryset,many=True)
+        # logger.info("listing popular restos")
+        # logger.info("using v1")
+        # return Response(serializer.data)
+
+def perform_create(self, serializer):
+       serializer.save(owner=self.request.user)
+       #=====================================
+       # CLEAR CACHE ON NEW RESTO
+       #=====================================
+       cache.delete('resto_list')
+       logger.info("cache cleared after new restaurant")
+
 
 #6. DELETE A RESTO
-    @action(detail=True,methods=['get'])
-    def deleter(self,request,pk):
-        print(request.user)
-        resto = self.get_queryset().get(id=pk)
-        print(type(resto))
-        resto.delete()
-        return Response({
-            "message" : request.user.email
-        })
+@action(detail=True,methods=['get'])
+def deleter(self,request,pk):
+    print(request.user)
+    resto = self.get_queryset().get(id=pk)
+    print(type(resto))
+    resto.delete() #INVALIDATE CACHE
+       #=====================================
+       # CLEAR CACHE ON DELETE
+       #=====================================
+    cache.delete('resto_list')
+    cache.delete(f'resto_{pk}')
+    cache.delete(f'menuof__{pk}')
+    logger.info("cache cleared after restaurant delete")
+    return Response({"message" : request.user.email})
+
 
 
 #==============================================================================
@@ -257,19 +287,33 @@ class MenuItemViewSet(viewsets.ModelViewSet):
     permission_classes = [IsRestaurantOwner]
     serializer_class = MenuSerializer
 
+    logger.info("Menu-Item serializer")
+
     def get_queryset(self):
         user = self.request.user
-        #if 
         qs = MenuItem.objects.filter().select_related('restaurant')
         return qs
     
     def create(self,request):
-        test = self.get_queryset().first()
+        logger.info("C.1 entering post rewquest")
+        print(request.data)
+        logger.info(request.data)
+        serializer = self.get_serializer(data=request.data)
+        logger.info(" C.3 applying validation")
+        serializer.is_valid(raise_exception=True)
+        logger.info("validation done")
+        self.perform_create(serializer)
 
         return Response({
             "message": "worked",
             "email": request.user.email,
+            "Added": serializer.validated_data,
         })
 
     def perform_create(self,serializer):
-        serializer.save()
+        logger.info(f"------ serializer ---- {serializer.validated_data.get('restoid')}")
+        mid = serializer.validated_data.pop('restoid')
+        print(mid)
+        logger.info(mid)
+        logger.info("all done till here")
+        serializer.save(restaurant_id=mid)

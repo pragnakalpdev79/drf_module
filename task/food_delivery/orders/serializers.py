@@ -28,29 +28,7 @@ class OrderItemSerializer(serializers.ModelSerializer):
     def get_line_total(self,obj):
         return obj.uprice * obj.quantity
 
-class OrderSerializer(serializers.ModelSerializer):
-    items = OrderItemSerializer(source='item_for',many=True,read_only=True)
-    customer_name = serializers.SerializerMethodField()
-    restaurant_name = serializers.CharField(source='restaurant.name',read_only=True)
-    driver_name = serializers.SerializerMethodField()
-    status_display = serializers.CharField(source='get_status_display',read_only=True)
-    class Meta:
-        model = Order
-        fields = ['order_number','customer','customer_name','restaurant','restaurant_name',
-                  'driver','driver_name','status','status_display','delivery_address',
-                  'special_instructions','subtotal','delivery_fee','tax','total_amount',
-                  'estimated_delivery_time','actual_delivery_time','is_cancellable',
-                  'items','created_at','updated_at']
-        read_only_fields = ['order_number','customer','subtotal','delivery_fee','tax',
-                           'total_amount','estimated_delivery_time','actual_delivery_time']
 
-    def get_customer_name(self,obj):
-        return f"{obj.customer.first_name} {obj.customer.last_name}"
-
-    def get_driver_name(self,obj):
-        if obj.driver:
-            return f"{obj.driver.first_name} {obj.driver.last_name}"
-        return None
 
 
 class OrderSerializer(serializers.ModelSerializer):

@@ -14,11 +14,28 @@ class RestoListSerializer(serializers.ModelSerializer):
     logger.info("in serializer")
     is_open_now = serializers.SerializerMethodField()
     #pagination_class = RestoPagination
+    #    def get_distance(self,obj):
+    #    #=====================================
+    #    # SHOW DISTANCE FROM USER IF AVAILABLE
+    #    #=====================================
+    #    request = self.context.get('request')
+    #    if request and request.user.is_authenticated:
+    #        try:
+    #            user_addr = request.user.customer_profile.default_adress
+    #            if user_addr.location and obj.location:
+    #                dist_m = obj.location.distance(user_addr.location) * 100000
+    #                dist_km = dist_m / 1000
+    #                print(f"distance to {obj.name}: {dist_km:.1f} km")
+    #                return f"{dist_km:.1f} km"
+    #        except Exception:
+    #            pass
+    #    return None
+
     class Meta:
         model = RestrauntModel
         fields = ['id','name','description','cuisine_type','address',
                   'phone_number','email','logo','banner','delivery_fee',
-                  'minimum_order','is_open_now','minimum_order',
+                  'is_open_now','minimum_order',
                   'average_rating','total_reviews']
     
     def get_is_open_now(self,obj): #TO CHECK IF THE RESTO IS OPEN OR NOT AT GIVEN TIME
@@ -70,6 +87,10 @@ class RestoCreateSerializer(serializers.ModelSerializer):
         fields = ['owner','name','description','cuisine_type','address','phone_number','email','logo','banner',
                   'opening_time','closing_time','delivery_fee','minimum_order','is_open']
         read_only_fields = ['owner']
+
+        # 'opening_time','closing_time','delivery_fee','minimum_order','is_open',
+        #          'latitude','longitude']
+
         model = RestrauntModel
     
     def validate_phone_number(self,value):
@@ -78,6 +99,36 @@ class RestoCreateSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Please enter the phone number in proper format")
         logger.info("regx matched succesful")
         return value
+    
+class RestoUpdateSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        fields = ['logo','banner','minimum_order','opening_time','closing_time']
+        model = RestrauntModel
+    
+    def validate_logo(self,value):
+        if value:
+            if value.size > 5*1024*1024:
+                raise serializers.ValidationError("Image size cannot exceed 5mb")
+            ext = value.name.split('.')[-1].lower()
+            if ext not in ['jpg','jpeg','png']:
+                raise serializers.ValidationError("Only jpg, jpeg, png allowed")
+        logger.info("image validated")
+        logger.info(value)
+        return value
+    
+    def validate_banner(self,value):
+        if value:
+            if value.size > 5*1024*1024:
+                raise serializers.ValidationError("Image size cannot exceed 5mb")
+            ext = value.name.split('.')[-1].lower()
+            if ext not in ['jpg','jpeg','png']:
+                raise serializers.ValidationError("Only jpg, jpeg, png allowed")
+        logger.info("image validated")
+        logger.info(value)
+        return value
+
+
     
         
 class MenuItemSerializer(serializers.ModelSerializer):
@@ -94,20 +145,11 @@ class RestoSerializer(serializers.ModelSerializer):
         model = RestrauntModel
 
 class MenuSerializer(serializers.ModelSerializer):
-    #resto = RestoSerializer()
-    restoid = serializers.IntegerField()
-    # restaurant = serializers.SerializerMethodField()  
+    restoid = serializers.IntegerField()  
     
     class Meta:
         fields = ['restoid','foodimage','name','description','price','category','dietary_info','is_available','preparation_time']
         model = MenuItem
-
-    # def get_restaurant(self,obj):
-    #     print(obj)
-
-    # def validate(self,data):
-    #     logger.info("in ser validation!")
-    #     return data
 
 
     def validate_foodimage(self,value):
@@ -121,11 +163,7 @@ class MenuSerializer(serializers.ModelSerializer):
             ext = value.name.split('.')[-1].lower()
             if ext not in ['jpg','jpeg','png']:
                 raise serializers.ValidationError("Only jpg, jpeg, png allowed")
-        # try:
-        #     img = Image.open(value)
-        #     img.verify()
-        # except Exception:
-        #     raise serializers.ValidationError("Invalid Image format")
+
         logger.info("image validated")
         logger.info(value)
         return value
@@ -147,6 +185,3 @@ class MenuSerializer(serializers.ModelSerializer):
         #value = self.resto
         return value
     
-    # def create(self,validated_data):
-    #     validated_data.pop('restoid')
-    #     return validated_data

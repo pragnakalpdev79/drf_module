@@ -17889,3 +17889,661 @@
 {"message": "step5", "module": "models", "asctime": "2026-04-02 18:51:00,382"}
 {"message": "here", "module": "signals", "asctime": "2026-04-02 18:51:00,383"}
 {"message": "here", "module": "signals", "asctime": "2026-04-02 18:51:00,397"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:16:22,416"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:16:22,430"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:16:40,676"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:16:40,686"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:16:55,078"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:16:55,088"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:17:14,932"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:17:14,960"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:18:35,438"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:18:35,454"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:18:43,153"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:18:43,172"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:18:50,960"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:18:50,971"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:18:59,456"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:18:59,478"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:21:58,873"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:21:58,903"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:22:15,974"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:22:15,989"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:22:43,446"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:22:43,474"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:28:01,232"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:28:01,250"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:32:59,535"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:32:59,576"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:33:07,572"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:33:07,613"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 10:33:17,423"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 10:33:17,434"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:36:05,523"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:36:05,541"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:37:37,456"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:37:37,482"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:38:24,072"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:38:24,096"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:38:31,228"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:38:31,249"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:39:45,288"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:39:45,314"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:40:09,102"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:40:09,124"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:40:18,032"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:40:18,043"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:40:37,459"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:40:37,482"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:41:09,335"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:41:09,366"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:41:19,195"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:41:19,206"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:41:27,348"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:41:27,396"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:41:33,817"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:41:33,841"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:41:41,169"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:41:41,199"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:41:50,716"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:41:50,748"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:41:59,430"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:41:59,458"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:42:55,499"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:42:55,521"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:43:01,483"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:43:01,529"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:43:10,361"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:43:10,384"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:43:17,368"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:43:17,383"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:43:35,392"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:43:35,407"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:43:51,526"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:43:51,543"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:44:01,697"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:44:01,731"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:44:22,644"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:44:22,674"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:44:33,030"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:44:33,050"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:44:39,316"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:44:39,331"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:45:30,531"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:45:30,565"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:47:04,881"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:47:04,890"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:47:14,946"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:47:14,959"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:47:22,455"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:47:22,467"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:47:34,828"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:47:34,846"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:47:43,977"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:47:44,006"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:48:01,440"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:48:01,455"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:48:07,592"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:48:07,605"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:48:24,202"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:48:24,218"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:48:35,514"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:48:35,533"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:48:42,899"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:48:42,910"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:49:03,815"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:49:03,850"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:49:11,389"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:49:11,401"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:49:24,045"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:49:24,056"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:49:41,217"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:49:41,242"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:49:54,390"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:49:54,403"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:50:02,156"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:50:02,192"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:50:08,902"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:50:08,913"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:50:33,778"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:50:33,811"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:50:49,733"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:50:49,747"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:50:59,544"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:50:59,560"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:51:10,691"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:51:10,700"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:58:07,551"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:58:07,566"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:58:35,606"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:58:35,624"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:58:46,656"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:58:46,679"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:59:08,922"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:59:08,933"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:59:16,785"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:59:16,813"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 11:59:28,829"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 11:59:28,849"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:00:02,911"}
+{"message": "Menu-Item serializer", "module": "views", "asctime": "2026-04-03 12:00:02,925"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:00:14,054"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:00:22,065"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:00:28,832"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:00:50,008"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:00:57,768"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:01:09,813"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:01:20,860"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:01:32,227"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:01:57,952"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:02:05,391"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:02:34,964"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:02:42,180"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:02:53,307"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:04:20,655"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:04:30,538"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:04:40,203"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:05:35,284"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:05:51,457"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:06:25,762"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:06:35,066"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:06:52,586"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:07:14,395"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:07:32,127"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:08:49,599"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:13:06,608"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:13:14,120"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:14:16,651"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:14:46,918"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:15:00,124"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:15:33,883"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:15:42,861"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:17:32,988"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:17:51,819"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:18:05,588"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:18:12,685"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:18:27,291"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:18:42,504"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:18:57,730"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:19:06,513"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:19:30,180"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:19:46,946"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:20:04,528"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:20:18,202"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:22:16,689"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:22:33,534"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:22:43,534"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:22:50,732"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:24:17,085"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:25:00,509"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:25:10,577"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:25:25,352"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:26:28,714"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:26:42,502"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:26:50,340"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:27:00,998"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:27:13,892"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:27:27,629"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:27:41,359"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:27:47,575"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:27:56,702"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:28:10,301"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:28:22,399"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:28:29,000"}
+{"message": " Create function intiated ", "module": "views", "asctime": "2026-04-03 12:32:49,101"}
+{"message": " Create function intiated ", "module": "views", "asctime": "2026-04-03 12:34:02,141"}
+{"message": " Create function intiated ", "module": "views", "asctime": "2026-04-03 12:34:15,105"}
+{"message": " Serialzer validation successful ", "module": "views", "asctime": "2026-04-03 12:34:15,283"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 12:34:17,804"}
+{"message": "New Customer Profile for customer1@gmail.com Completed!!", "module": "signals", "asctime": "2026-04-03 12:34:17,813"}
+{"message": " Serialzer save successful", "module": "views", "asctime": "2026-04-03 12:34:17,862"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-04-03 12:34:17,877"}
+{"message": " Customers==>customer1f customer1l - customer1@gmail.com", "module": "views", "asctime": "2026-04-03 12:34:17,912"}
+{"message": "customer1f customer1l - customer1@gmail.com added to group Customers", "module": "views", "asctime": "2026-04-03 12:34:17,913"}
+{"message": " Create function intiated ", "module": "views", "asctime": "2026-04-03 12:37:29,722"}
+{"message": " Create function intiated ", "module": "views", "asctime": "2026-04-03 12:37:39,579"}
+{"message": " Serialzer validation successful ", "module": "views", "asctime": "2026-04-03 12:37:39,632"}
+{"message": "New Driver Profile for driver2@gmail.com Completed!!", "module": "signals", "asctime": "2026-04-03 12:37:42,241"}
+{"message": " Serialzer save successful", "module": "views", "asctime": "2026-04-03 12:37:42,242"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-04-03 12:37:42,249"}
+{"message": " Drivers==>driver1f driver1l - driver2@gmail.com", "module": "views", "asctime": "2026-04-03 12:37:42,281"}
+{"message": "driver1f driver1l - driver2@gmail.com added to group Drivers", "module": "views", "asctime": "2026-04-03 12:37:42,282"}
+{"message": " Create function intiated ", "module": "views", "asctime": "2026-04-03 12:40:12,096"}
+{"message": " Serialzer validation successful ", "module": "views", "asctime": "2026-04-03 12:40:12,150"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 12:40:15,023"}
+{"message": " Serialzer save successful", "module": "views", "asctime": "2026-04-03 12:40:15,024"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-04-03 12:40:15,031"}
+{"message": " RestrauntOwners==>rowner1f rowner1l - rowner1@gmail.com", "module": "views", "asctime": "2026-04-03 12:40:15,060"}
+{"message": "rowner1f rowner1l - rowner1@gmail.com added to group RestrauntOwners", "module": "views", "asctime": "2026-04-03 12:40:15,061"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:48:46,098"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:48:54,129"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:49:00,790"}
+{"message": "getting object", "module": "views", "asctime": "2026-04-03 12:49:03,055"}
+{"message": "customer1f customer1l", "module": "views", "asctime": "2026-04-03 12:49:03,056"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:49:23,552"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:49:30,782"}
+{"message": "get requested", "module": "views", "asctime": "2026-04-03 12:49:35,809"}
+{"message": "getting object", "module": "views", "asctime": "2026-04-03 12:49:35,829"}
+{"message": "customer1f customer1l", "module": "views", "asctime": "2026-04-03 12:49:35,830"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:49:55,460"}
+{"message": "get requested", "module": "views", "asctime": "2026-04-03 12:49:59,275"}
+{"message": "getting object", "module": "views", "asctime": "2026-04-03 12:49:59,295"}
+{"message": "customer1f customer1l", "module": "views", "asctime": "2026-04-03 12:49:59,295"}
+{"message": "customer1f customer1l", "module": "views", "asctime": "2026-04-03 12:49:59,296"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:51:04,461"}
+{"message": "get requested", "module": "views", "asctime": "2026-04-03 12:51:15,480"}
+{"message": "getting object", "module": "views", "asctime": "2026-04-03 12:51:15,516"}
+{"message": "customer1f customer1l", "module": "views", "asctime": "2026-04-03 12:51:15,517"}
+{"message": "customer1f customer1l", "module": "views", "asctime": "2026-04-03 12:51:15,518"}
+{"message": "Unexpected error: address matching query does not exist.", "module": "exceptions", "asctime": "2026-04-03 12:51:15,619", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 512, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/task/food_delivery/profiles/views.py\", line 55, in get\n    'default adress' : myprofile.default_adress.address,\n                       ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/task/food_delivery/user/models.py\", line 200, in default_adress\n    defadr = address.objects.get(adrofuser=self.user,is_default=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/query.py\", line 639, in get\n    raise self.model.DoesNotExist(\nuser.models.address.DoesNotExist: address matching query does not exist."}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:51:52,201"}
+{"message": "get requested", "module": "views", "asctime": "2026-04-03 12:51:54,200"}
+{"message": "getting object", "module": "views", "asctime": "2026-04-03 12:51:54,214"}
+{"message": "customer1f customer1l", "module": "views", "asctime": "2026-04-03 12:51:54,215"}
+{"message": "customer1f customer1l", "module": "views", "asctime": "2026-04-03 12:51:54,215"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:52:10,744"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:52:19,249"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:52:45,300"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:52:53,672"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:53:01,297"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:55:01,600"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:55:10,876"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:55:24,618"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:55:31,079"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:56:44,279"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 12:57:33,936"}
+{"message": "Error 401: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}", "module": "exceptions", "asctime": "2026-04-03 12:57:57,984", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 503, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 420, in initial\n    self.perform_authentication(request)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 330, in perform_authentication\n    request.user\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/request.py\", line 232, in user\n    self._authenticate()\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/request.py\", line 385, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py\", line 49, in authenticate\n    validated_token = self.get_validated_token(raw_token)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py\", line 113, in get_validated_token\n    raise InvalidToken(\nrest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}", "request_path": "/api/profiles/address/", "request_method": "GET"}
+{"message": "location point created: SRID=4326;POINT (72.540177 23.114344)", "module": "models", "asctime": "2026-04-03 13:04:47,941"}
+{"message": "location point created: SRID=4326;POINT (72.551828 23.052882)", "module": "models", "asctime": "2026-04-03 13:10:02,123"}
+{"message": "Error 401: Authentication credentials were not provided.", "module": "exceptions", "asctime": "2026-04-03 13:11:32,888", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 503, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 421, in initial\n    self.check_permissions(request)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 339, in check_permissions\n    self.permission_denied(\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 180, in permission_denied\n    raise exceptions.NotAuthenticated()\nrest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.", "request_path": "/api/profiles/address/", "request_method": "GET"}
+{"message": "Error 401: Authentication credentials were not provided.", "module": "exceptions", "asctime": "2026-04-03 13:13:22,787", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 503, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 421, in initial\n    self.check_permissions(request)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 339, in check_permissions\n    self.permission_denied(\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 180, in permission_denied\n    raise exceptions.NotAuthenticated()\nrest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.", "request_path": "/api/profiles/address/", "request_method": "POST"}
+{"message": "Error 400: {'adrname': [ErrorDetail(string='This field is required.', code='required')], 'address': [ErrorDetail(string='This field is required.', code='required')], 'is_default': [ErrorDetail(string='This field is required.', code='required')]}", "module": "exceptions", "asctime": "2026-04-03 13:13:46,354", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 512, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/mixins.py\", line 18, in create\n    serializer.is_valid(raise_exception=True)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/serializers.py\", line 233, in is_valid\n    raise ValidationError(self.errors)\nrest_framework.exceptions.ValidationError: {'adrname': [ErrorDetail(string='This field is required.', code='required')], 'address': [ErrorDetail(string='This field is required.', code='required')], 'is_default': [ErrorDetail(string='This field is required.', code='required')]}", "request_path": "/api/profiles/address/", "request_method": "POST"}
+{"message": "location point created: SRID=4326;POINT (72.55047 23.0557)", "module": "models", "asctime": "2026-04-03 13:17:29,669"}
+{"message": "Unexpected error: null value in column \"adrofuser_id\" of relation \"user_address\" violates not-null constraint\nDETAIL:  Failing row contains (5, 2026-04-03 07:47:29.671157+00, 2026-04-03 07:47:29.671282+00, 3H42+2QX, Pujya Dharmsingh Swami Marg, behind AEC Tower, Sundar ..., f, null, museum, 23.055700, 0101000020E610000077DB85E63A2352402063EE5A420E3740, 72.550470).\n", "module": "exceptions", "asctime": "2026-04-03 13:17:29,691", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 105, in _execute\n    return self.cursor.execute(sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npsycopg2.errors.NotNullViolation: null value in column \"adrofuser_id\" of relation \"user_address\" violates not-null constraint\nDETAIL:  Failing row contains (5, 2026-04-03 07:47:29.671157+00, 2026-04-03 07:47:29.671282+00, 3H42+2QX, Pujya Dharmsingh Swami Marg, behind AEC Tower, Sundar ..., f, null, museum, 23.055700, 0101000020E610000077DB85E63A2352402063EE5A420E3740, 72.550470).\n\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 512, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/mixins.py\", line 19, in create\n    self.perform_create(serializer)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/mixins.py\", line 24, in perform_create\n    serializer.save()\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/serializers.py\", line 210, in save\n    self.instance = self.create(validated_data)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/serializers.py\", line 991, in create\n    instance = ModelClass._default_manager.create(**validated_data)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/query.py\", line 669, in create\n    obj.save(force_insert=True, using=self.db)\n  File \"/home/pragnakalpl39/Desktop/drf_module/task/food_delivery/user/models.py\", line 179, in save\n    super().save(*args,**kwargs)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/base.py\", line 874, in save\n    self.save_base(\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/base.py\", line 966, in save_base\n    updated = self._save_table(\n              ^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/base.py\", line 1169, in _save_table\n    results = self._do_insert(\n              ^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/base.py\", line 1220, in _do_insert\n    return manager._insert(\n           ^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/query.py\", line 1918, in _insert\n    return query.get_compiler(using=using).execute_sql(returning_fields)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/sql/compiler.py\", line 1925, in execute_sql\n    cursor.execute(sql, params)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py\", line 243, in execute\n    return self._record(super().execute, sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py\", line 164, in _record\n    return method(sql, params)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 122, in execute\n    return super().execute(sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 79, in execute\n    return self._execute_with_wrappers(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 92, in _execute_with_wrappers\n    return executor(sql, params, many, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 100, in _execute\n    with self.db.wrap_database_errors:\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/utils.py\", line 94, in __exit__\n    raise dj_exc_value.with_traceback(traceback) from exc_value\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 105, in _execute\n    return self.cursor.execute(sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ndjango.db.utils.IntegrityError: null value in column \"adrofuser_id\" of relation \"user_address\" violates not-null constraint\nDETAIL:  Failing row contains (5, 2026-04-03 07:47:29.671157+00, 2026-04-03 07:47:29.671282+00, 3H42+2QX, Pujya Dharmsingh Swami Marg, behind AEC Tower, Sundar ..., f, null, museum, 23.055700, 0101000020E610000077DB85E63A2352402063EE5A420E3740, 72.550470).\n"}
+{"message": "location point created: SRID=4326;POINT (72.55047 23.0557)", "module": "models", "asctime": "2026-04-03 13:17:57,009"}
+{"message": "Unexpected error: null value in column \"adrofuser_id\" of relation \"user_address\" violates not-null constraint\nDETAIL:  Failing row contains (6, 2026-04-03 07:47:57.011719+00, 2026-04-03 07:47:57.011841+00, 3H42+2QX, Pujya Dharmsingh Swami Marg, behind AEC Tower, Sundar ..., f, null, museum, 23.055700, 0101000020E610000077DB85E63A2352402063EE5A420E3740, 72.550470).\n", "module": "exceptions", "asctime": "2026-04-03 13:17:57,032", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 105, in _execute\n    return self.cursor.execute(sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npsycopg2.errors.NotNullViolation: null value in column \"adrofuser_id\" of relation \"user_address\" violates not-null constraint\nDETAIL:  Failing row contains (6, 2026-04-03 07:47:57.011719+00, 2026-04-03 07:47:57.011841+00, 3H42+2QX, Pujya Dharmsingh Swami Marg, behind AEC Tower, Sundar ..., f, null, museum, 23.055700, 0101000020E610000077DB85E63A2352402063EE5A420E3740, 72.550470).\n\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 512, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/mixins.py\", line 19, in create\n    self.perform_create(serializer)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/mixins.py\", line 24, in perform_create\n    serializer.save()\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/serializers.py\", line 210, in save\n    self.instance = self.create(validated_data)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/serializers.py\", line 991, in create\n    instance = ModelClass._default_manager.create(**validated_data)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/query.py\", line 669, in create\n    obj.save(force_insert=True, using=self.db)\n  File \"/home/pragnakalpl39/Desktop/drf_module/task/food_delivery/user/models.py\", line 179, in save\n    super().save(*args,**kwargs)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/base.py\", line 874, in save\n    self.save_base(\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/base.py\", line 966, in save_base\n    updated = self._save_table(\n              ^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/base.py\", line 1169, in _save_table\n    results = self._do_insert(\n              ^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/base.py\", line 1220, in _do_insert\n    return manager._insert(\n           ^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/query.py\", line 1918, in _insert\n    return query.get_compiler(using=using).execute_sql(returning_fields)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/models/sql/compiler.py\", line 1925, in execute_sql\n    cursor.execute(sql, params)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py\", line 243, in execute\n    return self._record(super().execute, sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py\", line 164, in _record\n    return method(sql, params)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 122, in execute\n    return super().execute(sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 79, in execute\n    return self._execute_with_wrappers(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 92, in _execute_with_wrappers\n    return executor(sql, params, many, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 100, in _execute\n    with self.db.wrap_database_errors:\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/utils.py\", line 94, in __exit__\n    raise dj_exc_value.with_traceback(traceback) from exc_value\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/django/db/backends/utils.py\", line 105, in _execute\n    return self.cursor.execute(sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ndjango.db.utils.IntegrityError: null value in column \"adrofuser_id\" of relation \"user_address\" violates not-null constraint\nDETAIL:  Failing row contains (6, 2026-04-03 07:47:57.011719+00, 2026-04-03 07:47:57.011841+00, 3H42+2QX, Pujya Dharmsingh Swami Marg, behind AEC Tower, Sundar ..., f, null, museum, 23.055700, 0101000020E610000077DB85E63A2352402063EE5A420E3740, 72.550470).\n"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:18:09,679"}
+{"message": "location point created: SRID=4326;POINT (72.55047 23.0557)", "module": "models", "asctime": "2026-04-03 13:18:21,080"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:19:51,545"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:19:58,167"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:20:07,739"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:20:22,531"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:20:27,974"}
+{"message": "location point created: SRID=4326;POINT (72.55047 23.0557)", "module": "models", "asctime": "2026-04-03 13:20:33,741"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:20:49,432"}
+{"message": "location point created: SRID=4326;POINT (72.55047 23.0557)", "module": "models", "asctime": "2026-04-03 13:21:00,610"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:29:10,454"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:29:20,509"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:29:26,376"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:29:32,190"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:29:50,783"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:30:06,516"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:30:13,516"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:34:37,007"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:34:42,724"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:34:49,206"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 13:35:38,146"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 14:58:35,619"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 14:58:47,350"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-04-03 15:01:23,844"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-04-03 15:01:23,910"}
+{"message": "False", "module": "views", "asctime": "2026-04-03 15:01:23,974"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-04-03 15:01:23,987"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-04-03 15:03:52,804"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-04-03 15:03:52,847"}
+{"message": "False", "module": "views", "asctime": "2026-04-03 15:03:52,858"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-04-03 15:03:52,869"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-04-03 15:04:17,956"}
+{"message": "The use has the permission to register a RESTRO", "module": "permissions", "asctime": "2026-04-03 15:04:18,002"}
+{"message": "False", "module": "views", "asctime": "2026-04-03 15:04:18,012"}
+{"message": "regx matched succesful", "module": "serializers", "asctime": "2026-04-03 15:04:18,024"}
+{"message": "cache cleared after new restaurant", "module": "views", "asctime": "2026-04-03 15:04:18,083"}
+{"message": "Current Time : ---- 15:04:18.084831", "module": "serializers", "asctime": "2026-04-03 15:04:18,084"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 15:04:18,085"}
+{"message": "cache cleared after restaurant update 20", "module": "views", "asctime": "2026-04-03 15:07:33,365"}
+{"message": "======================15:07:33.367235=================", "module": "serializers", "asctime": "2026-04-03 15:07:33,367"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 15:07:33,367"}
+{"message": "cache cleared after restaurant update 20", "module": "views", "asctime": "2026-04-03 15:09:49,202"}
+{"message": "======================15:09:49.203313=================", "module": "serializers", "asctime": "2026-04-03 15:09:49,203"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 15:09:49,203"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:10:49,749"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:10:57,010"}
+{"message": "<function action at 0x710f5bae5760>", "module": "views", "asctime": "2026-04-03 15:11:04,393"}
+{"message": "cache cleared after restaurant update 20", "module": "views", "asctime": "2026-04-03 15:11:04,451"}
+{"message": "======================15:11:04.453035=================", "module": "serializers", "asctime": "2026-04-03 15:11:04,453"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 15:11:04,454"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:13:24,406"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:13:55,223"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:14:02,480"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:14:19,306"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:14:54,251"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:15:02,063"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:15:33,716"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:16:46,828"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:17:17,384"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:18:35,486"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:18:42,029"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:18:49,083"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:18:55,881"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:19:02,766"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:19:09,083"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:19:20,922"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:19:33,625"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:20:24,676"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:20:40,143"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:20:46,296"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:21:08,944"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:21:23,675"}
+{"message": "<function action at 0x75d671d3f880>", "module": "views", "asctime": "2026-04-03 15:21:29,388"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:21:54,532"}
+{"message": "<function action at 0x7eda47baa660>", "module": "views", "asctime": "2026-04-03 15:22:09,980"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:22:31,004"}
+{"message": "<function action at 0x7457fd0b7560>", "module": "views", "asctime": "2026-04-03 15:22:35,029"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:26:47,339"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:26:54,676"}
+{"message": "<function action at 0x7441cbd21e40>", "module": "views", "asctime": "2026-04-03 15:26:57,203"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:27:13,338"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:27:44,433"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:27:44,568"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:27:50,566"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:27:50,686"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:27:56,865"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:27:56,934"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:28:02,568"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:28:02,576"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:31:42,279"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:31:48,608"}
+{"message": "<function action at 0x7e1868c78040>", "module": "views", "asctime": "2026-04-03 15:32:08,193"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:32:42,677"}
+{"message": "<function action at 0x779da641a840>", "module": "views", "asctime": "2026-04-03 15:32:53,169"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:37:38,555"}
+{"message": "<function action at 0x7364c1c1e2a0>", "module": "views", "asctime": "2026-04-03 15:37:50,240"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:39:03,022"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:39:12,172"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:39:19,210"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:39:26,065"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:39:37,752"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:39:45,124"}
+{"message": "<function action at 0x73a00b04bb00>", "module": "views", "asctime": "2026-04-03 15:40:33,461"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:41:10,900"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:41:21,132"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:41:29,862"}
+{"message": "<function action at 0x756f79b74d60>", "module": "views", "asctime": "2026-04-03 15:41:32,186"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:41:51,488"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:41:59,067"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:42:09,096"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:42:15,379"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:42:27,463"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:43:18,449"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:43:33,780"}
+{"message": "<function action at 0x76359ad14a40>", "module": "views", "asctime": "2026-04-03 15:43:59,003"}
+{"message": "<function action at 0x76359ad14a40>", "module": "views", "asctime": "2026-04-03 15:44:05,707"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:45:16,122"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:45:25,401"}
+{"message": "<function action at 0x7d41d6552c00>", "module": "views", "asctime": "2026-04-03 15:45:31,344"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:45:31,349", "logo": null, "banner": null, "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:47:07,310"}
+{"message": "<function action at 0x7f38463a9a80>", "module": "views", "asctime": "2026-04-03 15:47:12,391"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:47:12,395", "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:47:32,728"}
+{"message": "<function action at 0x75f5e23a6200>", "module": "views", "asctime": "2026-04-03 15:47:38,773"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:47:38,777"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:47:38,778", "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:48:05,663"}
+{"message": "<function action at 0x748442e12200>", "module": "views", "asctime": "2026-04-03 15:48:08,056"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:48:08,059"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:48:08,060", "logo": null, "banner": null, "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:48:37,933"}
+{"message": "<function action at 0x7eedaf30c9a0>", "module": "views", "asctime": "2026-04-03 15:48:46,114"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:48:46,118"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:53:03,242"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:53:10,127"}
+{"message": "<function action at 0x7ecd82dc5800>", "module": "views", "asctime": "2026-04-03 15:53:17,336"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:53:17,340"}
+{"message": "RestoUpdateSerializer(context={'request': <rest_framework.request.Request: PATCH '/api/restaurants/details/20/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QueryDict: {'minimum_order': ['50']}>):\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    opening_time = TimeField(required=False)\n    closing_time = TimeField(required=False)", "module": "views", "asctime": "2026-04-03 15:53:17,341"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:53:40,827"}
+{"message": "<function action at 0x7e5d49b3fba0>", "module": "views", "asctime": "2026-04-03 15:53:45,453"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:53:45,458"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:53:45,458", "logo": null, "banner": null, "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:54:06,657"}
+{"message": "<function action at 0x79c6aa555800>", "module": "views", "asctime": "2026-04-03 15:54:20,020"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:54:20,024"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:54:20,024", "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:54:37,577"}
+{"message": "<function action at 0x71312a7945e0>", "module": "views", "asctime": "2026-04-03 15:54:47,206"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:54:47,211"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:54:47,211", "minimum_order": "50"}
+{"message": "<function action at 0x71312a7945e0>", "module": "views", "asctime": "2026-04-03 15:54:51,795"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:54:51,798"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:54:51,799", "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:54:59,878"}
+{"message": "<function action at 0x761c807498a0>", "module": "views", "asctime": "2026-04-03 15:55:05,281"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:55:05,284"}
+{"message": "RestoUpdateSerializer(context={'request': <rest_framework.request.Request: PATCH '/api/restaurants/details/20/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QueryDict: {'minimum_order': ['50']}>):\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    opening_time = TimeField(required=False)\n    closing_time = TimeField(required=False)", "module": "views", "asctime": "2026-04-03 15:55:05,285"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:55:05,287", "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:56:10,867"}
+{"message": "<function action at 0x77de60733880>", "module": "views", "asctime": "2026-04-03 15:56:54,200"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 15:58:57,219"}
+{"message": "<function action at 0x792b0fd35e40>", "module": "views", "asctime": "2026-04-03 15:59:08,320"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 15:59:08,326"}
+{"message": "RestoUpdateSerializer(context={'request': <rest_framework.request.Request: PATCH '/api/restaurants/details/20/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QueryDict: {'minimum_order': ['50']}>, partial=True):\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()", "module": "views", "asctime": "2026-04-03 15:59:08,327"}
+{"message": "", "module": "views", "asctime": "2026-04-03 15:59:08,329", "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:01:29,641"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:01:47,167"}
+{"message": "Burger King", "module": "views", "asctime": "2026-04-03 16:01:51,140"}
+{"message": "<function action at 0x7f1ba54b4e00>", "module": "views", "asctime": "2026-04-03 16:01:51,143"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 16:01:51,147"}
+{"message": "RestoUpdateSerializer(context={'request': <rest_framework.request.Request: PATCH '/api/restaurants/details/20/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QueryDict: {'minimum_order': ['50']}>, partial=True):\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()", "module": "views", "asctime": "2026-04-03 16:01:51,147"}
+{"message": "", "module": "views", "asctime": "2026-04-03 16:01:51,149", "minimum_order": "50"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:02:01,981"}
+{"message": "Burger King", "module": "views", "asctime": "2026-04-03 16:02:49,803"}
+{"message": "<function action at 0x735776c132e0>", "module": "views", "asctime": "2026-04-03 16:02:49,808"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 16:02:49,813"}
+{"message": "RestoUpdateSerializer(<RestrauntModel: Burger King>, context={'request': <rest_framework.request.Request: PATCH '/api/restaurants/details/20/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QueryDict: {'minimum_order': ['50']}>, partial=True):\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()", "module": "views", "asctime": "2026-04-03 16:02:49,814"}
+{"message": "", "module": "views", "asctime": "2026-04-03 16:02:49,817", "minimum_order": "50"}
+{"message": "cache cleared after restaurant update 20", "module": "views", "asctime": "2026-04-03 16:02:49,868"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:07:36,055"}
+{"message": "50", "module": "views", "asctime": "2026-04-03 16:07:38,498"}
+{"message": "<function action at 0x713027d0a7a0>", "module": "views", "asctime": "2026-04-03 16:07:38,501"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 16:07:38,504"}
+{"message": "RestoUpdateSerializer(<RestrauntModel: Burger King>, context={'request': <rest_framework.request.Request: PATCH '/api/restaurants/details/20/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QueryDict: {'minimum_order': ['50']}>, partial=True):\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()", "module": "views", "asctime": "2026-04-03 16:07:38,505"}
+{"message": "", "module": "views", "asctime": "2026-04-03 16:07:38,506", "minimum_order": "50"}
+{"message": "cache cleared after restaurant update 20", "module": "views", "asctime": "2026-04-03 16:07:38,542"}
+{"message": "50", "module": "views", "asctime": "2026-04-03 16:08:19,223"}
+{"message": "<function action at 0x713027d0a7a0>", "module": "views", "asctime": "2026-04-03 16:08:19,249"}
+{"message": "50", "module": "views", "asctime": "2026-04-03 16:08:29,907"}
+{"message": "<function action at 0x713027d0a7a0>", "module": "views", "asctime": "2026-04-03 16:08:29,911"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 16:08:29,914"}
+{"message": "RestoUpdateSerializer(<RestrauntModel: Burger King>, context={'request': <rest_framework.request.Request: PATCH '/api/restaurants/details/20/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QueryDict: {'minimum_order': ['50']}>, partial=True):\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()", "module": "views", "asctime": "2026-04-03 16:08:29,915"}
+{"message": "", "module": "views", "asctime": "2026-04-03 16:08:29,916", "minimum_order": "50"}
+{"message": "cache cleared after restaurant update 20", "module": "views", "asctime": "2026-04-03 16:08:29,957"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:09:45,275"}
+{"message": "<function action at 0x7a513b72f4c0>", "module": "views", "asctime": "2026-04-03 16:09:52,458"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 16:09:52,463"}
+{"message": "RestoUpdateSerializer(<RestrauntModel: Burger King>, context={'request': <rest_framework.request.Request: PATCH '/api/restaurants/details/20/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QueryDict: {'minimum_order': ['50']}>, partial=True):\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()", "module": "views", "asctime": "2026-04-03 16:09:52,464"}
+{"message": "", "module": "views", "asctime": "2026-04-03 16:09:52,466", "minimum_order": "50"}
+{"message": "cache cleared after restaurant update 20", "module": "views", "asctime": "2026-04-03 16:09:52,509"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:10:37,035"}
+{"message": "min_order 50 ", "module": "views", "asctime": "2026-04-03 16:10:44,391"}
+{"message": "<function action at 0x767b7393a160>", "module": "views", "asctime": "2026-04-03 16:10:44,395"}
+{"message": "hello", "module": "views", "asctime": "2026-04-03 16:10:44,400"}
+{"message": "RestoUpdateSerializer(<RestrauntModel: Burger King>, context={'request': <rest_framework.request.Request: PATCH '/api/restaurants/details/20/'>, 'format': None, 'view': <restaurants.views.RestaurantViewSet object>}, data=<QueryDict: {'minimum_order': ['50']}>, partial=True):\n    logo = ImageField(allow_null=True, max_length=100, required=False)\n    banner = ImageField(allow_null=True, max_length=100, required=False)\n    minimum_order = DecimalField(decimal_places=0, max_digits=3, required=False)\n    opening_time = TimeField()\n    closing_time = TimeField()", "module": "views", "asctime": "2026-04-03 16:10:44,401"}
+{"message": "", "module": "views", "asctime": "2026-04-03 16:10:44,405", "minimum_order": "50"}
+{"message": "cache cleared after restaurant update 20", "module": "views", "asctime": "2026-04-03 16:10:44,484"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:12:57,954"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:13:56,621"}
+{"message": "connection started WITH customer1f customer1l - customer1@gmail.com for ORDER d99268f4-2de7-435a-bf29-ad1ceb5ca926 and group NAME : ---   customer_d99268f4-2de7-435a-bf29-ad1ceb5ca926 ", "module": "consumers", "asctime": "2026-04-03 16:24:11,087"}
+{"message": "using v1", "module": "views", "asctime": "2026-04-03 16:32:41,555"}
+{"message": "<function action at 0x72022721e2a0>", "module": "views", "asctime": "2026-04-03 16:32:41,587"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 16:33:48,493"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 16:33:48,503"}
+{"message": "1.1===adding item 27 to cart===", "module": "views", "asctime": "2026-04-03 16:33:48,506"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 16:33:48,553"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 16:34:01,107"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 16:34:01,118"}
+{"message": "1.1===adding item 28 to cart===", "module": "views", "asctime": "2026-04-03 16:34:01,121"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 16:34:01,168"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 16:34:17,788"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 16:34:17,799"}
+{"message": "1.1===adding item 29 to cart===", "module": "views", "asctime": "2026-04-03 16:34:17,803"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 16:34:17,844"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 16:34:33,385"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 16:35:01,393"}
+{"message": "===checkout started for customer1@gmail.com===", "module": "views", "asctime": "2026-04-03 16:35:01,404"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:36:26,330"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:36:37,408"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 16:36:44,916"}
+{"message": "===checkout started for customer1@gmail.com===", "module": "views", "asctime": "2026-04-03 16:36:44,967"}
+{"message": "no resto location", "module": "views", "asctime": "2026-04-03 16:36:45,130"}
+{"message": "restaurant location point created: SRID=4326;POINT (72.56692 23.09473)", "module": "models", "asctime": "2026-04-03 16:37:42,024"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 16:38:02,075"}
+{"message": "===checkout started for customer1@gmail.com===", "module": "views", "asctime": "2026-04-03 16:38:02,086"}
+{"message": "", "module": "views", "asctime": "2026-04-03 16:38:02,191"}
+{"message": "connection started WITH customer1f customer1l - customer1@gmail.com for ORDER d99268f4-2de7-435a-bf29-ad1ceb5ca926 and group NAME : ---   customer_d99268f4-2de7-435a-bf29-ad1ceb5ca926 ", "module": "consumers", "asctime": "2026-04-03 16:38:27,746"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 16:38:56,986"}
+{"message": "===checkout started for customer1@gmail.com===", "module": "views", "asctime": "2026-04-03 16:38:56,998"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-04-03 16:38:57,100"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:38:57,102"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:38:57,102"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:38:57,103"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:38:57,103"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:38:57,104"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,105"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,117"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 16:38:57,188"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:38:57,218"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:38:57,219"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:38:57,219"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:38:57,220"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:38:57,223"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,225"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,241"}
+{"message": "Order total:-- sub = 78.00 ---- tax=3.90 ----- total=110.90", "module": "models", "asctime": "2026-04-03 16:38:57,314"}
+{"message": "recalculated total for order fd222373-b128-4b80-9b6e-4451483fc519", "module": "signals", "asctime": "2026-04-03 16:38:57,315"}
+{"message": "item: Burger * 2 at the price 39.00", "module": "views", "asctime": "2026-04-03 16:38:57,316"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 16:38:57,324"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:38:57,340"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:38:57,341"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:38:57,341"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:38:57,342"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:38:57,342"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,343"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,358"}
+{"message": "Order total:-- sub = 118.00 ---- tax=5.90 ----- total=152.90", "module": "models", "asctime": "2026-04-03 16:38:57,451"}
+{"message": "recalculated total for order fd222373-b128-4b80-9b6e-4451483fc519", "module": "signals", "asctime": "2026-04-03 16:38:57,452"}
+{"message": "item: Coke * 2 at the price 20.00", "module": "views", "asctime": "2026-04-03 16:38:57,453"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 16:38:57,460"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:38:57,476"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:38:57,477"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:38:57,477"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:38:57,478"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:38:57,479"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,480"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,498"}
+{"message": "Order total:-- sub = 217.00 ---- tax=10.85 ----- total=256.85", "module": "models", "asctime": "2026-04-03 16:38:57,580"}
+{"message": "recalculated total for order fd222373-b128-4b80-9b6e-4451483fc519", "module": "signals", "asctime": "2026-04-03 16:38:57,581"}
+{"message": "item: French Fries * 1 at the price 99.00", "module": "views", "asctime": "2026-04-03 16:38:57,582"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:38:57,602"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:38:57,603"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:38:57,604"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:38:57,606"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:38:57,607"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,608"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,628"}
+{"message": "Order total:-- sub = 217.00 ---- tax=10.85 ----- total=256.85", "module": "models", "asctime": "2026-04-03 16:38:57,704"}
+{"message": "calculating ETA ", "module": "models", "asctime": "2026-04-03 16:38:57,705"}
+{"message": "distance: 4.45 km", "module": "models", "asctime": "2026-04-03 16:38:57,706"}
+{"message": "max prep time: 5 min", "module": "models", "asctime": "2026-04-03 16:38:57,726"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:38:57,727"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:38:57,729"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:38:57,729"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:38:57,730"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:38:57,731"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,732"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:38:57,751"}
+{"message": "ETA == 2026-04-03 11:19:57.727606+00:00 (11 min = 6 travel + 5 prep)", "module": "models", "asctime": "2026-04-03 16:38:57,826"}
+{"message": "ETA: 2026-04-03 11:19:57.727606+00:00", "module": "views", "asctime": "2026-04-03 16:38:57,827"}
+{"message": "===order fd222373-b128-4b80-9b6e-4451483fc519 placed, cart cleared===", "module": "views", "asctime": "2026-04-03 16:38:57,852"}
+{"message": "===status update for order fd222373-b128-4b80-9b6e-4451483fc519===", "module": "views", "asctime": "2026-04-03 16:42:16,874"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-04-03 16:42:16,877"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-04-03 16:42:16,878"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-04-03 16:42:16,879"}
+{"message": "step6", "module": "models", "asctime": "2026-04-03 16:42:16,879"}
+{"message": "step7", "module": "models", "asctime": "2026-04-03 16:42:16,880"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:42:16,880"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:42:16,881"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:42:16,881"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:42:16,881"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:42:16,882"}
+{"message": "Order fd222373-b128-4b80-9b6e-4451483fc519: pd -> co", "module": "signals", "asctime": "2026-04-03 16:42:16,897"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:42:16,897"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:42:16,908"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:42:16,930"}
+{"message": "Order fd222373-b128-4b80-9b6e-4451483fc519 transitioned to co", "module": "models", "asctime": "2026-04-03 16:42:16,961"}
+{"message": "worked", "module": "views", "asctime": "2026-04-03 16:42:16,962"}
+{"message": "===status update for order fd222373-b128-4b80-9b6e-4451483fc519===", "module": "views", "asctime": "2026-04-03 16:42:36,826"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-04-03 16:42:36,829"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-04-03 16:42:36,830"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-04-03 16:42:36,831"}
+{"message": "step6", "module": "models", "asctime": "2026-04-03 16:42:36,831"}
+{"message": "step7", "module": "models", "asctime": "2026-04-03 16:42:36,832"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:42:36,832"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:42:36,833"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:42:36,833"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:42:36,834"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:42:36,834"}
+{"message": "Order fd222373-b128-4b80-9b6e-4451483fc519: co -> pr", "module": "signals", "asctime": "2026-04-03 16:42:36,849"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:42:36,849"}
+{"message": "Order fd222373-b128-4b80-9b6e-4451483fc519 transitioned to pr", "module": "models", "asctime": "2026-04-03 16:42:36,890"}
+{"message": "worked", "module": "views", "asctime": "2026-04-03 16:42:36,891"}
+{"message": "===status update for order fd222373-b128-4b80-9b6e-4451483fc519===", "module": "views", "asctime": "2026-04-03 16:43:10,249"}
+{"message": "validating with serializer", "module": "views", "asctime": "2026-04-03 16:43:10,252"}
+{"message": "validated with serializer", "module": "views", "asctime": "2026-04-03 16:43:10,254"}
+{"message": "validating with serializer updated status in validated data", "module": "views", "asctime": "2026-04-03 16:43:10,254"}
+{"message": "step6", "module": "models", "asctime": "2026-04-03 16:43:10,254"}
+{"message": "step7", "module": "models", "asctime": "2026-04-03 16:43:10,255"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:43:10,255"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:43:10,256"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:43:10,256"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:43:10,257"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:43:10,257"}
+{"message": "Order fd222373-b128-4b80-9b6e-4451483fc519: pr -> rd", "module": "signals", "asctime": "2026-04-03 16:43:10,273"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:43:10,273"}
+{"message": "Order fd222373-b128-4b80-9b6e-4451483fc519 transitioned to rd", "module": "models", "asctime": "2026-04-03 16:43:10,315"}
+{"message": "worked", "module": "views", "asctime": "2026-04-03 16:43:10,315"}
+{"message": "d", "module": "views", "asctime": "2026-04-03 16:45:31,166"}
+{"message": "Assign driver request for or    der -- None", "module": "views", "asctime": "2026-04-03 16:45:31,167"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:47:00,855"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:47:37,307"}
+{"message": "<QuerySet []>", "module": "views", "asctime": "2026-04-03 16:47:42,613"}
+{"message": "d", "module": "views", "asctime": "2026-04-03 16:47:42,719"}
+{"message": "Assign driver request for order -- None", "module": "views", "asctime": "2026-04-03 16:47:42,720"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:48:17,910"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:48:45,631"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:48:53,959"}
+{"message": "fd222373-b128-4b80-9b6e-4451483fc519", "module": "views", "asctime": "2026-04-03 16:48:59,009"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:49:20,439"}
+{"message": "fd222373-b128-4b80-9b6e-4451483fc519", "module": "views", "asctime": "2026-04-03 16:49:29,930"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:50:04,723"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:50:11,386"}
+{"message": "fd222373-b128-4b80-9b6e-4451483fc519", "module": "views", "asctime": "2026-04-03 16:50:16,450"}
+{"message": "<QuerySet []>", "module": "views", "asctime": "2026-04-03 16:50:16,452"}
+{"message": "d", "module": "views", "asctime": "2026-04-03 16:50:16,557"}
+{"message": "Assign driver request for order -- None", "module": "views", "asctime": "2026-04-03 16:50:16,564"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:51:07,137"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:51:21,958"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 16:51:30,490"}
+{"message": "fd222373-b128-4b80-9b6e-4451483fc519", "module": "views", "asctime": "2026-04-03 16:51:36,476"}
+{"message": "<QuerySet [<Order: Order object (3166ad77-0618-42a8-b877-8dab07cbe164)>, <Order: Order object (10d8d7a2-2297-4a54-bf29-9b2f88a4cccc)>, <Order: Order object (e33d0a2d-0983-47ca-a0a3-34ae30d1bfb7)>, <Order: Order object (90fa39ad-8abc-4e44-be7f-a8b1e89b2365)>, <Order: Order object (1d57686c-db03-40eb-8ee6-6b97db134973)>, <Order: Order object (9dfa9fcd-7f14-4ad1-946a-3fffb54dffa0)>, <Order: Order object (986db216-e168-425a-9501-1b53d7638ef6)>, <Order: Order object (95efaf2e-217e-4576-8e67-be55671bf706)>, <Order: Order object (51907e36-404e-4e71-a155-180f8af71f93)>, <Order: Order object (b9f8388e-ef27-4a54-bc6b-f61ce70b867a)>, <Order: Order object (b9186e26-7295-4c2a-830d-777b6ad52015)>, <Order: Order object (e0d69896-0910-45c5-a82b-4d154f7b3968)>, <Order: Order object (0a70af14-69db-4bce-8832-4f0a568a6a61)>, <Order: Order object (b374bf17-e84e-4952-896e-d0bedd1dd97d)>, <Order: Order object (2ff66788-f24b-4a65-9529-fa99d07cdb3d)>, <Order: Order object (f265283e-7012-4505-8a17-f5024e28ebe8)>, <Order: Order object (aeb0b425-c01b-4fe8-8848-5ab05db6f1b8)>, <Order: Order object (122a9cab-ba7a-4d70-848e-7768e8a4ec52)>, <Order: Order object (db8f0c51-6e2c-4438-a553-d1508563b3ed)>, <Order: Order object (4bb22af0-8b55-435f-ab4d-6ae4b6de022e)>, '...(remaining elements truncated)...']>", "module": "views", "asctime": "2026-04-03 16:51:36,477"}
+{"message": "d", "module": "views", "asctime": "2026-04-03 16:51:36,779"}
+{"message": "Assign driver request for order -- Order object (0a70af14-69db-4bce-8832-4f0a568a6a61)", "module": "views", "asctime": "2026-04-03 16:51:36,780"}
+{"message": "Assign driver request for or    der -- 4948c36e-5545-47f3-8cd3-4a93e508abdb", "module": "views", "asctime": "2026-04-03 16:51:36,781"}
+{"message": "===assigning driver 892c35fe-e7ee-4a94-bcf5-2374c4760ece===", "module": "views", "asctime": "2026-04-03 16:51:36,788"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 16:51:36,843"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 16:51:36,847"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 16:51:36,855"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 16:51:36,856"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 16:51:36,856"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:51:36,858"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 16:51:36,932"}
+{"message": "connection started WITH customer1f customer1l - customer1@gmail.com for ORDER d99268f4-2de7-435a-bf29-ad1ceb5ca926 and group NAME : ---   customer_d99268f4-2de7-435a-bf29-ad1ceb5ca926 ", "module": "consumers", "asctime": "2026-04-03 16:51:49,965"}

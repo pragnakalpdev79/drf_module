@@ -4,7 +4,7 @@ from .views import *
 
 router = DefaultRouter()
 router.register(r'address',AddressViewSet,basename='address')
-#router.register(r"Migtets",CustomerProfileView1,basename='test12')
+
 
 urlpatterns = [
     #PROFILE VIEWS

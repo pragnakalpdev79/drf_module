@@ -1,12 +1,16 @@
+# Standard Library Imports
 import logging
-from django.db.models import Sum,F
-from django.core.exceptions import ObjectDoesNotExist
+from datetime import timedelta
+
+# Third-Party Imports (Django)
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import status,viewsets,filters
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from drf_spectacular.utils import extend_schema, extend_schema_view, OpenApiParameter, OpenApiExample, OpenApiResponse
 from rest_framework.response import Response
+
+# Local Imports
 from .throttles import *
 from user.models import *
 from .filters import OrderFilter,ReviewFilter 
@@ -51,17 +55,27 @@ extrap = extend_schema(
     list = extrap,
     )
 class CartViewSet(viewsets.ModelViewSet):
+    """
+    Cart View set has the following functions
+    1. Menu-items can be addes to the cart with post request
+    2. Cart can be viewed
+    3. Clear cart
+    4. checkout -- 
+        4.1 if confirm= False it will just show cart total and all
+        4.2 if confirm= True it acts as mock payment and converts cart to order
+    """
     serializer_class = CartItemSerializer
     permission_classes = [IsCustomer]
     throttle_classes = [OrderCreateT]
     throttle_scope = 'checkout'
-    #http_method_names = ["post","delete"]
+    
     def get_queryset(self):
         return CartItem.objects.filter(user=self.request.user).select_related('menu_item')
 
     def perform_create(self,serializer):
         serializer.save(user=self.request.user)
         logger.info(f"===item added to cart by {self.request.user.email}===")
+
     #==================================================================================
     # 1.1 add to cart - if item already exists just update quantity
     @action(detail=False,methods=['post'])
@@ -73,20 +87,22 @@ class CartViewSet(viewsets.ModelViewSet):
 
         try:
             menu_item = MenuItem.objects.get(id=menu_item_id)
-            logger.info("Menu_item does not exists")
+            
         except MenuItem.DoesNotExist:
+            logger.info("Menu_item does not exists")
             return Response({'error':'menu item not found'},status=status.HTTP_404_NOT_FOUND)
 
         if not menu_item.is_available:
             return Response({'error':f'{menu_item.name} is not available right now'},status=status.HTTP_404_NOT_FOUND)
 
-        #check if already in cart
         existing = CartItem.objects.filter(user=request.user,menu_item=menu_item).first()
+
         if existing:
             existing.quantity += quantity
             existing.save(update_fields=['quantity'])
             logger.info(f"1.2 ===updated quantity to {existing.quantity}===")
             serializer = CartItemSerializer(existing)
+
         else:
             cart_item = CartItem.objects.create(user=request.user,menu_item=menu_item,quantity=quantity)
             serializer = CartItemSerializer(cart_item)
@@ -96,6 +112,9 @@ class CartViewSet(viewsets.ModelViewSet):
             'message': 'item added to cart',
             'item': serializer.data,
         },status=status.HTTP_202_ACCEPTED)
+    
+
+
     #==================================================================================
     # 1.2 view full cart with total
     @action(detail=False,methods=['get'])
@@ -108,12 +127,14 @@ class CartViewSet(viewsets.ModelViewSet):
             'cart_total': cart_total,
             'item_count': items.count(),
         })
+    
+
+
     #==================================================================================
     # 1.3 clear the ENTIRE CART
     @action(detail=False,methods=['delete'])
     def clear(self,request):
-        logger.info("---------Cart empty request-----------")
-        count = CartItem.objects.filter(user=request.user).delete()[0]
+        count = CartItem.objects.filter(user=request.user).delete()[0] 
         logger.info(f"===cart cleared, {count} items removed===")
         return Response({'message':f'cart cleared, {count} items removed'})
     
@@ -127,14 +148,14 @@ class CartViewSet(viewsets.ModelViewSet):
         if not cart_items.exists():
             return Response({'error':'cart is empty'},status=status.HTTP_400_BAD_REQUEST)
 
-        #check all items from same restaurant
         restaurants = set(item.menu_item.restaurant_id for item in cart_items)
         if len(restaurants) > 1:
             return Response({'error':'all items must be from same restaurant'},status=status.HTTP_400_BAD_REQUEST)
 
         restaurant = cart_items.first().menu_item.restaurant
-        #checking minimum order of resto
+       
         cart_total = sum(item.menu_item.price * item.quantity for item in cart_items)
+
         if cart_total < restaurant.minimum_order:
             return Response({
                 'error':f'minimum order is Rs.{restaurant.minimum_order}, your cart is Rs.{cart_total}'
@@ -151,6 +172,19 @@ class CartViewSet(viewsets.ModelViewSet):
         confirm = request.data.get('confirm',False)
 
         if not confirm:
+
+            if restaurant.location and dadr.location:
+                logger.info("resto location available")
+                distance_m = restaurant.location.distance(dadr.location) * 100000
+                distance_km = distance_m / 1000
+                travel_min = max(int((distance_km / 40) * 60),5)
+                eta_display = f"{travel_min + 15} minutes"
+                distance_display = f"{distance_km:.1f} km"
+            else:
+                logger.info("no resto location")
+                eta_display = "~30 minutes"
+                distance_display = "unknown"
+            
             return Response({
                 'message': 'review your order and send confirm=true to place',
                 'restaurant': restaurant.name,
@@ -158,9 +192,11 @@ class CartViewSet(viewsets.ModelViewSet):
                 'cart_total': cart_total,
                 'delivery_fee': restaurant.delivery_fee,
                 'delivery_address': dadr.address,
+                'estimated_delivery': eta_display,
+                'distance': distance_display,
             })
 
-        #confirmed - create the order
+        #confirmed - creating the order
         logger.info("===order confirmed, creating===")
         order = Order.objects.create(
             customer=request.user,
@@ -180,8 +216,10 @@ class CartViewSet(viewsets.ModelViewSet):
             )
             logger.info(f"item: {ci.menu_item.name} * {ci.quantity} at the price {ci.menu_item.price}")
 
-        #calculate total
         order.calculate_total()
+        
+        order.calculate_eta()
+        logger.info(f"ETA: {order.estimated_delivery_time}")
 
         #clear cart
         cart_items.delete()
@@ -191,6 +229,11 @@ class CartViewSet(viewsets.ModelViewSet):
             'message': 'order placed successfully!',
             'order': OrderSerializer(order).data,
         },status=status.HTTP_201_CREATED)
+
+
+
+
+
 
 #===============================================================================================
 # ORDER VIEWSET - view/manage orders
@@ -233,6 +276,14 @@ class CartViewSet(viewsets.ModelViewSet):
     list = extrap,
 )
 class OrderViewSet(viewsets.ModelViewSet):
+    """
+    Order Viewset once the order is placed has the following functions
+    1. Update order status by resto and driver
+    2. assign driver to order
+    3. cancel order
+    4. list all active orders
+    5. list all past orders
+    """
     serializer_class = OrderSerializer
     permission_classes = [IsAuthenticated]
     filterset_class = OrderFilter 
@@ -245,6 +296,8 @@ class OrderViewSet(viewsets.ModelViewSet):
         user = self.request.user
         qs = Order.objects.select_related('customer','restaurant','driver').prefetch_related('item_for__menu_item')
         #THIS VIEW WILL BE USED BY ALL 3  
+        if self.action == "assign_driver":
+            return qs
         if user.check_if_customer: 
             return qs.filter(customer=user)
         elif user.check_if_driver:
@@ -257,20 +310,16 @@ class OrderViewSet(viewsets.ModelViewSet):
     # O.1 STATUS UPDATE
     @action(detail=True,methods=['patch'])
     def update_status(self,request,pk=None):
-        #order = self.get_object(order_number=pk)
         order = self.get_queryset().get(order_number=pk)
         logger.info(f"===status update for order {order.order_number}===")
         serializer = OrderStatusUpdateSerializer(
             data=request.data,
             context={'order':order,'request':request}
         )
-        logger.info(" 1.1 **********************************************8")
         logger.info("validating with serializer")
         serializer.is_valid(raise_exception=True)
-        logger.info("1.2 **********************************************8")
         logger.info("validated with serializer")
         new_status = serializer.validated_data['status']
-        logger.info("1.3 **********************************************8")
         logger.info("validating with serializer updated status in validated data")
         try:
             order._transition(new_status)
@@ -284,29 +333,29 @@ class OrderViewSet(viewsets.ModelViewSet):
     # O.2 ASSIGN DRIVER
     @action(detail=True,methods=['post'])
     def assign_driver(self,request,pk=None):
+        logger.info(pk)
         order = self.get_queryset()
+        logger.info(order)
         order = order.first()
         print("order",order) #order id will be passed from post request url
-        logger.info(f"+++++++++++++++++++++++++++++++++++++++++++++")
         logger.info(self.request.user.utype)
-        logger.info(f"Assign driver request for or    der -- {order}")
+        logger.info(f"Assign driver request for order -- {order}")
         logger.info(f"Assign driver request for or    der -- {order.customer_id}")
         driver_id = request.data.get('driver_id')
         logger.info(f"===assigning driver {driver_id}===")
         try:
             driver = CustomUser.objects.get(id=driver_id,utype='d')
-            #dp = driver.driver_profile
             dp = DriverProfile.objects.get(user_id=driver_id)
-            print(driver)
-            print(dp)
-            print(dp.is_available)
             if not dp.is_available:
                 return Response({'error':'driver is busy'},status=status.HTTP_400_BAD_REQUEST)
+            
             order.driver = driver
             order.save(update_fields=['driver'])
             dp.is_available = False
             dp.save(update_fields=['is_available'])
+
             return Response({'message':f'driver {driver.first_name} assigned'})
+        
         except CustomUser.DoesNotExist:
             return Response({'error':'driver not found'},status=status.HTTP_404_NOT_FOUND)
     #===============================================================================================
@@ -323,15 +372,19 @@ class OrderViewSet(viewsets.ModelViewSet):
                 dp = order.driver.driver_profile
                 dp.is_available = True
                 dp.save(update_fields=['is_available'])
+
             return Response({'message':'order cancelled'})
+        
         except Exception as e:
             return Response({'error':str(e)},status=status.HTTP_400_BAD_REQUEST)
+        
     #=======================================
     #  O.4 LIST ALL ACTIVE ORDERS
     @action(detail=False,methods=['get'],pagination_class=OrdersPagination)
     def active(self,request):
         qs = self.get_queryset().exclude(status__in=['dl','cd'])
         return Response(OrderSerializer(qs,many=True).data)
+    
     #=======================================
     # O.5  LIST ALL ORDERS
     @action(detail=False,methods=['get'],pagination_class=OrdersPagination)

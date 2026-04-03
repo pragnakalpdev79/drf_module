@@ -18,12 +18,12 @@ class DriverProfile(admin.ModelAdmin):
 
 @admin.register(address)
 class Address(admin.ModelAdmin):
-    list_display = ('adrname','address','is_default','adrofuser','id')
+    list_display = ('adrname','address','is_default','adrofuser','id','latitude','longitude','location')
     ordering = ['-created_at']
 
 @admin.register(RestrauntModel)
 class RestrauntModel(admin.ModelAdmin):
-    list_display = ('name','email','phone_number','owner','cuisine_type','description','id')
+    list_display = ('name','email','phone_number','owner','cuisine_type','description','id','location')
     ordering = ['-created_at']
 
 

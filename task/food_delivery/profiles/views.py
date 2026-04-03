@@ -1,49 +1,20 @@
+# Third-Party Imports (Django)
 from django.shortcuts import render
 from drf_spectacular.utils import extend_schema,extend_schema_view
 from rest_framework.permissions import AllowAny,IsAuthenticated,IsAdminUser
 from rest_framework import generics,status,viewsets,filters
 from rest_framework.response import Response
+
+# Local Imports
 from user.models import CustomUser,address
 from .serializers import *
 
 logger = logging.getLogger('user')
 
-# class CustomerProfileView1(viewsets.ModelViewSet):
-#     queryset = CustomerProfile.objects.select_related('user')
-#     permission_classes = [IsAuthenticated]
-#     serializer_class = CustomProfileSerializer
-#     http_method_names = ['get','patch']
+  
 
-    # def retrieve(self,request,pk=None):
-    #     print("profile details")
-    #     profile = CustomerProfile.objects.select_related('user').get(user=self.request.user)
-    #     serializer = self.get_serializer(profile)
-    #     return Response({
-    #         "message": "here are your profile details",
-    #         "user_id": pk,
-    #         "details" : serializer.data,
-    #     })
-
-    
-    # def get(self,request,*args,**kwargs):
-    #     print("here")
-    #     myprofile = self.get_object()
-
-    #     return Response({
-    #         'message': 'you can upload your avatar here through patch request',
-    #         'first_name' : myprofile.user.first_name,
-    #         'last_name' : myprofile.user.last_name,
-    #         'email' : myprofile.user.email,
-    #         'phone_number': myprofile.user.phone_number,
-    #         'default adress' : myprofile.default_adress.address,
-
-    #     })
-
-    # def put(self,request,*args,**kwargs):
-    #     return Response({
-    #         'message': 'This method is not allowed use patch'
-    #     })   
-
+#============================================================
+# 1. CUSTOMER PROFILE VIEW
 @extend_schema_view(
     get=extend_schema(
         summary=" P.1 Customer Profile",
@@ -66,14 +37,15 @@ class CustomerProfileView(generics.RetrieveUpdateAPIView):
 
     def get_object(self):
         profile = CustomerProfile.objects.select_related('user').get(user=self.request.user)
-        serializer = CustomProfileSerializer(profile)
-        #logger.info('step3')
-        #print(profile.default_adress.address)
+        #serializer = CustomProfileSerializer(profile)
         return profile
     
     def get(self,request,*args,**kwargs):
+        """
+        this method will throw an error unless after profile 
+        creation at least one adress is set for customer-profile
+        """
         myprofile = self.get_object()
-
         return Response({
             'message': 'you can upload your avatar here through patch request',
             'first_name' : myprofile.user.first_name,
@@ -81,6 +53,9 @@ class CustomerProfileView(generics.RetrieveUpdateAPIView):
             'email' : myprofile.user.email,
             'phone_number': myprofile.user.phone_number,
             'default adress' : myprofile.default_adress.address,
+            'loyalty_points' : myprofile.loyalty_points,
+            'total_orders' : myprofile.total_orders,
+            'total_spend': myprofile.total_spend,
 
         })
 
@@ -89,7 +64,8 @@ class CustomerProfileView(generics.RetrieveUpdateAPIView):
             'message': 'This method is not allowed use patch'
         })
 
-
+#============================================================
+# 2. DRIVER PROFILE VIEW
 @extend_schema_view(
     get=extend_schema(
         summary=" DP.1 Driver Profile",
@@ -134,7 +110,13 @@ class DriverProfileView(generics.RetrieveUpdateAPIView):
             'message': 'This method is not allowed use patch'
         })
     
-
+#============================================================
+# 3. ADDRESS MANAGEENT VIEWSET
+@extend_schema_view(
+    list=extend_schema(
+        summary=" AP.1 Get Address",
+        description="Your profile details",
+        tags=["Address"]),)
 class AddressViewSet(viewsets.ModelViewSet):
     serializer_class = AddressSerializer
     http_method_names = ['get', 'post','patch']
@@ -142,3 +124,41 @@ class AddressViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return address.objects.filter(adrofuser=self.request.user)
+    
+    def perform_create(self,serializer):
+        serializer.save(adrofuser_id=self.request.user.id)
+    
+
+# class CustomerProfileView1(viewsets.ModelViewSet):
+#     queryset = CustomerProfile.objects.select_related('user')
+#     permission_classes = [IsAuthenticated]
+#     serializer_class = CustomProfileSerializer
+#     http_method_names = ['get','patch']
+
+    # def retrieve(self,request,pk=None):
+    #     print("profile details")
+    #     profile = CustomerProfile.objects.select_related('user').get(user=self.request.user)
+    #     serializer = self.get_serializer(profile)
+    #     return Response({
+    #         "message": "here are your profile details",
+    #         "user_id": pk,
+    #         "details" : serializer.data,
+    #     })
+    # def get(self,request,*args,**kwargs):
+    #     print("here")
+    #     myprofile = self.get_object()
+
+    #     return Response({
+    #         'message': 'you can upload your avatar here through patch request',
+    #         'first_name' : myprofile.user.first_name,
+    #         'last_name' : myprofile.user.last_name,
+    #         'email' : myprofile.user.email,
+    #         'phone_number': myprofile.user.phone_number,
+    #         'default adress' : myprofile.default_adress.address,
+
+    #     })
+
+    # def put(self,request,*args,**kwargs):
+    #     return Response({
+    #         'message': 'This method is not allowed use patch'
+    #     }) 

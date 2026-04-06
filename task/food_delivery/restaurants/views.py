@@ -140,7 +140,7 @@ class RestaurantViewSet(viewsets.ModelViewSet):
             return Response(cached_data)
         # by defualt v1
         logger.info("using v1")
-        queryset = self.filter_queryset(self.get_queryset()) # <-- GUARANTEE: Re-attaches DRF Filters
+        queryset = self.filter_queryset(self.get_queryset())
         page = self.paginate_queryset(queryset)
         if page is not None:
             logger.info(page)
@@ -268,10 +268,14 @@ class RestaurantViewSet(viewsets.ModelViewSet):
 
 #==============================================================================
 # 6. DELETE A RESTO + CACHE INVALIDATION
-    @action(detail=True,methods=['get'])
+    @action(detail=True,methods=['delete'])
     def deleter(self,request,pk):
         print(request.user)
         resto = self.get_queryset().get(id=pk)
+        if resto.owner != request.user:
+            return Response({
+                "error" : "not allowed",
+            },status = status.HTTP_403_FORBIDDEN)
         print(type(resto))
         resto.delete()
         cache.delete('resto_list')

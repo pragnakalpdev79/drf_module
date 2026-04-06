@@ -391,13 +391,15 @@ class OrderViewSet(viewsets.ModelViewSet):
             return self.get_paginated_response(OrderSerializer(page, many=True).data)
         return Response(OrderSerializer(qs,many=True).data)
 
-
-    
     #=======================================
     # O.5  LIST ALL ORDERS
     @action(detail=False,methods=['get'],pagination_class=OrdersPagination)
     def history(self,request):
         qs = self.get_queryset().filter(status__in=['dl','cd'])
+        qs = self.filter_queryset(qs) 
+        page = self.paginate_queryset(qs) 
+        if page is not None:
+            return self.get_paginated_response(OrderSerializer(page, many=True).data)
         return Response(OrderSerializer(qs,many=True).data)
 
 #===============================================================================================

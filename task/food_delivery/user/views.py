@@ -183,7 +183,7 @@ class DeleteUser(APIView):
                     "error" : "The Requested User does not exist" 
                 })
            
-            user.delete
+            user.delete()
         logger.info("D1.2-USER FOUND AND DELETED ")
         return Response({
             'message' : 'User has been deleted',
@@ -219,7 +219,7 @@ class RestoreDeletedUserView(APIView):
                 return Response({
                     "error" : "The Requested User does not exist" 
                 })
-            user.restore
+            user.restore()
         logger.info("R1.2-USER FOUND AND DELETED ")
         
         return Response({

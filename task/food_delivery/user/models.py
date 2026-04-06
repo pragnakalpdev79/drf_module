@@ -514,7 +514,7 @@ class Order(TimestampedModel):
         logger.info("step4")
 
         if self.pk and updated:
-            self.__current_status = allowed_next
+            self.__current_status = self.status
 
         logger.info("step5")
 

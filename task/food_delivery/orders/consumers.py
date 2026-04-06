@@ -126,5 +126,5 @@ class RestaurantDashboardConsumer(AsyncWebsocketConsumer):
         message = event["message"]
         print("inside chat message function")
         # Send message to WebSocket
-        await self.send(text_data=json.dumps({"message": message}
+        await self.send(text_data=json.dumps({"message": message}))
                                              

@@ -1,10 +1,10 @@
 from rest_framework.throttling import UserRateThrottle
 
 class OrderCreateT(UserRateThrottle):
-    rate = '200/hour'
+    rate = '20/hour'
 
 class ReviewCreateT(UserRateThrottle):
-    rate = '100/hour'    
+    rate = '10/hour'    
 
 class LocationUp(UserRateThrottle):
     rate = '500/hour'

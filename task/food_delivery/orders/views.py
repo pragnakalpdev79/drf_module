@@ -334,9 +334,10 @@ class OrderViewSet(viewsets.ModelViewSet):
     @action(detail=True,methods=['post'])
     def assign_driver(self,request,pk=None):
         logger.info(pk)
-        order = self.get_queryset()
+        #order = self.get_queryset()
+        order = self.get_queryset().get(order_number=pk)
         logger.info(order)
-        order = order.first()
+        #order = order.first()
         print("order",order) #order id will be passed from post request url
         logger.info(self.request.user.utype)
         logger.info(f"Assign driver request for order -- {order}")
@@ -362,7 +363,8 @@ class OrderViewSet(viewsets.ModelViewSet):
     # O.3 CANCEL ORDER
     @action(detail=True,methods=['post'])
     def cancel(self,request,pk=None):
-        order = self.get_queryset().first()
+        #order = self.get_queryset().first()
+        order = self.get_queryset().get(order_number=pk)
         print(order)
         if not order.is_cancellable:
             return Response({'error':'cant cancel this order anymore'},status=status.HTTP_400_BAD_REQUEST)
@@ -383,7 +385,13 @@ class OrderViewSet(viewsets.ModelViewSet):
     @action(detail=False,methods=['get'],pagination_class=OrdersPagination)
     def active(self,request):
         qs = self.get_queryset().exclude(status__in=['dl','cd'])
+        qs = self.filter_queryset(qs) 
+        page = self.paginate_queryset(qs) 
+        if page is not None:
+            return self.get_paginated_response(OrderSerializer(page, many=True).data)
         return Response(OrderSerializer(qs,many=True).data)
+
+
     
     #=======================================
     # O.5  LIST ALL ORDERS

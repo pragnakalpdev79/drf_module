@@ -18547,3 +18547,647 @@
 {"message": "here", "module": "signals", "asctime": "2026-04-03 16:51:36,858"}
 {"message": "here", "module": "signals", "asctime": "2026-04-03 16:51:36,932"}
 {"message": "connection started WITH customer1f customer1l - customer1@gmail.com for ORDER d99268f4-2de7-435a-bf29-ad1ceb5ca926 and group NAME : ---   customer_d99268f4-2de7-435a-bf29-ad1ceb5ca926 ", "module": "consumers", "asctime": "2026-04-03 16:51:49,965"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 17:19:44,676"}
+{"message": " Create function intiated ", "module": "views", "asctime": "2026-04-03 17:19:44,778"}
+{"message": " Serialzer validation successful ", "module": "views", "asctime": "2026-04-03 17:19:44,910"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:19:46,898"}
+{"message": "New Customer Profile for newcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:19:46,901"}
+{"message": " Serialzer save successful", "module": "views", "asctime": "2026-04-03 17:19:46,945"}
+{"message": "p2.4 token generation successful` ", "module": "views", "asctime": "2026-04-03 17:19:46,978"}
+{"message": " Customers==>New Customer - newcust@test.com", "module": "views", "asctime": "2026-04-03 17:19:46,998"}
+{"message": "New Customer - newcust@test.com added to group Customers", "module": "views", "asctime": "2026-04-03 17:19:46,999"}
+{"message": " Create function intiated ", "module": "views", "asctime": "2026-04-03 17:19:47,164"}
+{"message": "Error 400: {'non_field_errors': [ErrorDetail(string='Passwords dont match', code='invalid')]}", "module": "exceptions", "asctime": "2026-04-03 17:19:47,198", "request_path": "/api/auth/register/", "request_method": "POST"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:19:49,487"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:19:49,489"}
+{"message": " Create function intiated ", "module": "views", "asctime": "2026-04-03 17:19:49,515"}
+{"message": "Error 400: {'email': [ErrorDetail(string='custom user with this email already exists.', code='unique')]}", "module": "exceptions", "asctime": "2026-04-03 17:19:49,545", "request_path": "/api/auth/register/", "request_method": "POST"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:19:51,656"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:19:51,657"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:19:53,588"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:19:53,619"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:19:53,622"}
+{"message": "1.1===adding item 2 to cart===", "module": "views", "asctime": "2026-04-03 17:19:53,623"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:19:53,647"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:19:55,664"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:19:55,665"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:19:57,625"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:19:57,663"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:19:57,665"}
+{"message": "1.1===adding item 6 to cart===", "module": "views", "asctime": "2026-04-03 17:19:57,666"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:19:59,696"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:19:59,698"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:01,617"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:01,658"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:01,660"}
+{"message": "1.1===adding item 7 to cart===", "module": "views", "asctime": "2026-04-03 17:20:01,661"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:01,681"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:01,751"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:01,754"}
+{"message": "1.1===adding item 7 to cart===", "module": "views", "asctime": "2026-04-03 17:20:01,755"}
+{"message": "1.2 ===updated quantity to 2===", "module": "views", "asctime": "2026-04-03 17:20:01,780"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:03,904"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:03,905"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:05,864"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:05,932"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:05,936"}
+{"message": "1.1===adding item 10 to cart===", "module": "views", "asctime": "2026-04-03 17:20:05,938"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:05,973"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:06,098"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:06,101"}
+{"message": "1.1===adding item 11 to cart===", "module": "views", "asctime": "2026-04-03 17:20:06,102"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:06,132"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:06,205"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:08,306"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:08,307"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:10,205"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:10,374"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:10,377"}
+{"message": "1.1===adding item 13 to cart===", "module": "views", "asctime": "2026-04-03 17:20:10,378"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:10,401"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:10,472"}
+{"message": "===cart cleared, 1 items removed===", "module": "views", "asctime": "2026-04-03 17:20:10,482"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:12,526"}
+{"message": "The user does not has permission to place an order", "module": "permissions", "asctime": "2026-04-03 17:20:12,538"}
+{"message": "Error 401: Authentication credentials were not provided.", "module": "exceptions", "asctime": "2026-04-03 17:20:12,539", "request_path": "/api/orders/cart/mycart/", "request_method": "GET"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:14,528"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:14,529"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:16,452"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:16,488"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:16,490"}
+{"message": "1.1===adding item 19 to cart===", "module": "views", "asctime": "2026-04-03 17:20:16,491"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:16,510"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:16,581"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:16,583"}
+{"message": "1.1===adding item 20 to cart===", "module": "views", "asctime": "2026-04-03 17:20:16,584"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:16,608"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:16,675"}
+{"message": "===checkout started for testcust@test.com===", "module": "views", "asctime": "2026-04-03 17:20:16,678"}
+{"message": "no resto location", "module": "views", "asctime": "2026-04-03 17:20:16,733"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:18,881"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:18,882"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:20,878"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:20,923"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:20,926"}
+{"message": "1.1===adding item 22 to cart===", "module": "views", "asctime": "2026-04-03 17:20:20,927"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:20,948"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:21,021"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:21,023"}
+{"message": "1.1===adding item 23 to cart===", "module": "views", "asctime": "2026-04-03 17:20:21,024"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:21,045"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:21,100"}
+{"message": "===checkout started for testcust@test.com===", "module": "views", "asctime": "2026-04-03 17:20:21,102"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-04-03 17:20:21,143"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:21,144"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:21,144"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:21,145"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:21,145"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:21,145"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,146"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,171"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:21,204"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:21,218"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:21,219"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:21,219"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:21,220"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:21,220"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,221"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,233"}
+{"message": "Order total:-- sub = 500.00 ---- tax=25.00 ----- total=555.00", "module": "models", "asctime": "2026-04-03 17:20:21,263"}
+{"message": "recalculated total for order ea6c8e57-9520-4b7c-94cd-b60b0348c0d9", "module": "signals", "asctime": "2026-04-03 17:20:21,263"}
+{"message": "item: Paneer Butter Masala * 2 at the price 250.00", "module": "views", "asctime": "2026-04-03 17:20:21,264"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:21,266"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:21,275"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:21,276"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:21,276"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:21,277"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:21,277"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,278"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,289"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:21,317"}
+{"message": "recalculated total for order ea6c8e57-9520-4b7c-94cd-b60b0348c0d9", "module": "signals", "asctime": "2026-04-03 17:20:21,318"}
+{"message": "item: Dal Tadka * 1 at the price 150.00", "module": "views", "asctime": "2026-04-03 17:20:21,318"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:21,326"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:21,327"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:21,327"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:21,327"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:21,328"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,328"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,339"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:21,364"}
+{"message": "calculating ETA ", "module": "models", "asctime": "2026-04-03 17:20:21,365"}
+{"message": "location data not found", "module": "models", "asctime": "2026-04-03 17:20:21,365"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:21,366"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:21,366"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:21,367"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:21,367"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:21,367"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,368"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:21,379"}
+{"message": "ETA: 2026-04-03 12:20:21.366199+00:00", "module": "views", "asctime": "2026-04-03 17:20:21,408"}
+{"message": "===order ea6c8e57-9520-4b7c-94cd-b60b0348c0d9 placed, cart cleared===", "module": "views", "asctime": "2026-04-03 17:20:21,416"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:23,748"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:23,750"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:23,801"}
+{"message": "===checkout started for testcust@test.com===", "module": "views", "asctime": "2026-04-03 17:20:23,804"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:25,891"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:25,893"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:27,875"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:27,910"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:27,912"}
+{"message": "1.1===adding item 28 to cart===", "module": "views", "asctime": "2026-04-03 17:20:27,913"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:27,938"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:28,013"}
+{"message": "===checkout started for testcust@test.com===", "module": "views", "asctime": "2026-04-03 17:20:28,016"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:30,171"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:30,172"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:32,230"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:32,270"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:32,272"}
+{"message": "1.1===adding item 29 to cart===", "module": "views", "asctime": "2026-04-03 17:20:32,273"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:32,293"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:32,362"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:32,364"}
+{"message": "1.1===adding item 30 to cart===", "module": "views", "asctime": "2026-04-03 17:20:32,365"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:32,384"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:32,443"}
+{"message": "===checkout started for testcust@test.com===", "module": "views", "asctime": "2026-04-03 17:20:32,445"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-04-03 17:20:32,496"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:32,497"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:32,498"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:32,498"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:32,499"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:32,499"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,500"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,513"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:32,539"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:32,549"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:32,549"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:32,550"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:32,550"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:32,551"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,552"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,563"}
+{"message": "Order total:-- sub = 500.00 ---- tax=25.00 ----- total=555.00", "module": "models", "asctime": "2026-04-03 17:20:32,590"}
+{"message": "recalculated total for order 79699d83-071f-474b-b609-7c689fd519a9", "module": "signals", "asctime": "2026-04-03 17:20:32,591"}
+{"message": "item: Paneer Butter Masala * 2 at the price 250.00", "module": "views", "asctime": "2026-04-03 17:20:32,591"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:32,594"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:32,602"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:32,603"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:32,603"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:32,604"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:32,604"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,605"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,617"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:32,645"}
+{"message": "recalculated total for order 79699d83-071f-474b-b609-7c689fd519a9", "module": "signals", "asctime": "2026-04-03 17:20:32,646"}
+{"message": "item: Dal Tadka * 1 at the price 150.00", "module": "views", "asctime": "2026-04-03 17:20:32,647"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:32,655"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:32,656"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:32,657"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:32,657"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:32,658"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,658"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,671"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:32,700"}
+{"message": "calculating ETA ", "module": "models", "asctime": "2026-04-03 17:20:32,700"}
+{"message": "location data not found", "module": "models", "asctime": "2026-04-03 17:20:32,701"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:32,701"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:32,702"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:32,702"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:32,703"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:32,704"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,704"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:32,716"}
+{"message": "ETA: 2026-04-03 12:20:32.701819+00:00", "module": "views", "asctime": "2026-04-03 17:20:32,752"}
+{"message": "===order 79699d83-071f-474b-b609-7c689fd519a9 placed, cart cleared===", "module": "views", "asctime": "2026-04-03 17:20:32,759"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:35,120"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:35,122"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:37,224"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:37,265"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:37,268"}
+{"message": "1.1===adding item 32 to cart===", "module": "views", "asctime": "2026-04-03 17:20:37,269"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:37,288"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:37,356"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:37,358"}
+{"message": "1.1===adding item 33 to cart===", "module": "views", "asctime": "2026-04-03 17:20:37,359"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:37,378"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:37,438"}
+{"message": "===checkout started for testcust@test.com===", "module": "views", "asctime": "2026-04-03 17:20:37,441"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-04-03 17:20:37,493"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:37,494"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:37,495"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:37,495"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:37,496"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:37,496"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,497"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,511"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:37,541"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:37,551"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:37,552"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:37,552"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:37,553"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:37,553"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,554"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,565"}
+{"message": "Order total:-- sub = 500.00 ---- tax=25.00 ----- total=555.00", "module": "models", "asctime": "2026-04-03 17:20:37,595"}
+{"message": "recalculated total for order e196ca0e-2ebb-4213-91a4-75acae288e5b", "module": "signals", "asctime": "2026-04-03 17:20:37,595"}
+{"message": "item: Paneer Butter Masala * 2 at the price 250.00", "module": "views", "asctime": "2026-04-03 17:20:37,596"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:37,598"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:37,607"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:37,607"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:37,608"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:37,608"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:37,609"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,609"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,620"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:37,646"}
+{"message": "recalculated total for order e196ca0e-2ebb-4213-91a4-75acae288e5b", "module": "signals", "asctime": "2026-04-03 17:20:37,647"}
+{"message": "item: Dal Tadka * 1 at the price 150.00", "module": "views", "asctime": "2026-04-03 17:20:37,647"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:37,656"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:37,656"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:37,657"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:37,657"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:37,657"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,658"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,669"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:37,695"}
+{"message": "calculating ETA ", "module": "models", "asctime": "2026-04-03 17:20:37,695"}
+{"message": "location data not found", "module": "models", "asctime": "2026-04-03 17:20:37,696"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:37,696"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:37,696"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:37,697"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:37,697"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:37,698"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,698"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:37,710"}
+{"message": "ETA: 2026-04-03 12:20:37.696378+00:00", "module": "views", "asctime": "2026-04-03 17:20:37,748"}
+{"message": "===order e196ca0e-2ebb-4213-91a4-75acae288e5b placed, cart cleared===", "module": "views", "asctime": "2026-04-03 17:20:37,759"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:39,915"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:39,917"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:41,806"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:41,841"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:41,843"}
+{"message": "1.1===adding item 35 to cart===", "module": "views", "asctime": "2026-04-03 17:20:41,844"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:41,862"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:41,925"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:41,928"}
+{"message": "1.1===adding item 36 to cart===", "module": "views", "asctime": "2026-04-03 17:20:41,928"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:41,948"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:42,008"}
+{"message": "===checkout started for testcust@test.com===", "module": "views", "asctime": "2026-04-03 17:20:42,011"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-04-03 17:20:42,064"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:42,065"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:42,065"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:42,066"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:42,066"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:42,067"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,068"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,087"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:42,116"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:42,126"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:42,126"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:42,127"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:42,127"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:42,128"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,128"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,140"}
+{"message": "Order total:-- sub = 500.00 ---- tax=25.00 ----- total=555.00", "module": "models", "asctime": "2026-04-03 17:20:42,170"}
+{"message": "recalculated total for order e097a9bf-6703-41b9-a996-6033bc7083a1", "module": "signals", "asctime": "2026-04-03 17:20:42,170"}
+{"message": "item: Paneer Butter Masala * 2 at the price 250.00", "module": "views", "asctime": "2026-04-03 17:20:42,171"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:42,174"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:42,183"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:42,183"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:42,184"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:42,184"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:42,185"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,185"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,197"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:42,226"}
+{"message": "recalculated total for order e097a9bf-6703-41b9-a996-6033bc7083a1", "module": "signals", "asctime": "2026-04-03 17:20:42,227"}
+{"message": "item: Dal Tadka * 1 at the price 150.00", "module": "views", "asctime": "2026-04-03 17:20:42,227"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:42,236"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:42,237"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:42,237"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:42,238"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:42,238"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,239"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,252"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:42,282"}
+{"message": "calculating ETA ", "module": "models", "asctime": "2026-04-03 17:20:42,282"}
+{"message": "location data not found", "module": "models", "asctime": "2026-04-03 17:20:42,283"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:42,283"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:42,284"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:42,284"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:42,285"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:42,285"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,286"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,299"}
+{"message": "ETA: 2026-04-03 12:20:42.283735+00:00", "module": "views", "asctime": "2026-04-03 17:20:42,331"}
+{"message": "===order e097a9bf-6703-41b9-a996-6033bc7083a1 placed, cart cleared===", "module": "views", "asctime": "2026-04-03 17:20:42,338"}
+{"message": "step6", "module": "models", "asctime": "2026-04-03 17:20:42,572"}
+{"message": "step7", "module": "models", "asctime": "2026-04-03 17:20:42,573"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:42,573"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:42,574"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:42,574"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:42,574"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:42,575"}
+{"message": "Order e097a9bf-6703-41b9-a996-6033bc7083a1: pd -> cd", "module": "signals", "asctime": "2026-04-03 17:20:42,583"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:42,584"}
+{"message": "Order e097a9bf-6703-41b9-a996-6033bc7083a1 transitioned to cd", "module": "models", "asctime": "2026-04-03 17:20:42,605"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:44,623"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:44,624"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:46,492"}
+{"message": "New Driver Profile for testdriver@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:48,429"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:48,458"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:48,461"}
+{"message": "1.1===adding item 38 to cart===", "module": "views", "asctime": "2026-04-03 17:20:48,461"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:48,480"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:48,551"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:48,553"}
+{"message": "1.1===adding item 39 to cart===", "module": "views", "asctime": "2026-04-03 17:20:48,554"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:48,574"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:48,635"}
+{"message": "===checkout started for testcust@test.com===", "module": "views", "asctime": "2026-04-03 17:20:48,637"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-04-03 17:20:48,680"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:48,681"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:48,681"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:48,682"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:48,682"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:48,682"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,683"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,695"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:48,719"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:48,728"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:48,728"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:48,729"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:48,729"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:48,730"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,730"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,741"}
+{"message": "Order total:-- sub = 500.00 ---- tax=25.00 ----- total=555.00", "module": "models", "asctime": "2026-04-03 17:20:48,773"}
+{"message": "recalculated total for order 5fc5e160-5f2a-48db-a085-2216f99a8650", "module": "signals", "asctime": "2026-04-03 17:20:48,773"}
+{"message": "item: Paneer Butter Masala * 2 at the price 250.00", "module": "views", "asctime": "2026-04-03 17:20:48,774"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:48,777"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:48,786"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:48,787"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:48,787"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:48,787"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:48,788"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,789"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,801"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:48,830"}
+{"message": "recalculated total for order 5fc5e160-5f2a-48db-a085-2216f99a8650", "module": "signals", "asctime": "2026-04-03 17:20:48,830"}
+{"message": "item: Dal Tadka * 1 at the price 150.00", "module": "views", "asctime": "2026-04-03 17:20:48,831"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:48,839"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:48,840"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:48,840"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:48,840"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:48,841"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,842"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,854"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:48,880"}
+{"message": "calculating ETA ", "module": "models", "asctime": "2026-04-03 17:20:48,880"}
+{"message": "location data not found", "module": "models", "asctime": "2026-04-03 17:20:48,881"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:48,881"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:48,881"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:48,882"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:48,882"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:48,883"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,883"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:48,894"}
+{"message": "ETA: 2026-04-03 12:20:48.881432+00:00", "module": "views", "asctime": "2026-04-03 17:20:48,920"}
+{"message": "===order 5fc5e160-5f2a-48db-a085-2216f99a8650 placed, cart cleared===", "module": "views", "asctime": "2026-04-03 17:20:48,925"}
+{"message": "5fc5e160-5f2a-48db-a085-2216f99a8650", "module": "views", "asctime": "2026-04-03 17:20:49,114"}
+{"message": "<QuerySet [<Order: Order object (5fc5e160-5f2a-48db-a085-2216f99a8650)>]>", "module": "views", "asctime": "2026-04-03 17:20:49,115"}
+{"message": "c", "module": "views", "asctime": "2026-04-03 17:20:49,434"}
+{"message": "Assign driver request for order -- Order object (5fc5e160-5f2a-48db-a085-2216f99a8650)", "module": "views", "asctime": "2026-04-03 17:20:49,435"}
+{"message": "Assign driver request for or    der -- 64d94d47-236e-46d4-a121-f96bb0a6f9d4", "module": "views", "asctime": "2026-04-03 17:20:49,435"}
+{"message": "===assigning driver 3bc5dffc-4e2b-43f8-b65d-0ccd9405520f===", "module": "views", "asctime": "2026-04-03 17:20:49,436"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:49,457"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:49,457"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:49,458"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:49,458"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:49,459"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:49,460"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:49,473"}
+{"message": "A customer registered", "module": "signals", "asctime": "2026-04-03 17:20:51,603"}
+{"message": "New Customer Profile for testcust@test.com Completed!!", "module": "signals", "asctime": "2026-04-03 17:20:51,605"}
+{"message": "A restaurant owner registered", "module": "signals", "asctime": "2026-04-03 17:20:53,541"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:53,579"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:53,581"}
+{"message": "1.1===adding item 41 to cart===", "module": "views", "asctime": "2026-04-03 17:20:53,582"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:53,601"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:53,665"}
+{"message": "1.ADD TO CART VIEW", "module": "views", "asctime": "2026-04-03 17:20:53,667"}
+{"message": "1.1===adding item 42 to cart===", "module": "views", "asctime": "2026-04-03 17:20:53,668"}
+{"message": "1.2 Menu-Item added to the cart", "module": "views", "asctime": "2026-04-03 17:20:53,686"}
+{"message": "The user has permission to place order as a customer", "module": "permissions", "asctime": "2026-04-03 17:20:53,744"}
+{"message": "===checkout started for testcust@test.com===", "module": "views", "asctime": "2026-04-03 17:20:53,747"}
+{"message": "===order confirmed, creating===", "module": "views", "asctime": "2026-04-03 17:20:53,797"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:53,798"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:53,798"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:53,799"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:53,799"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:53,800"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:53,800"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:53,813"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:53,840"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:53,849"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:53,850"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:53,850"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:53,851"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:53,851"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:53,852"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:53,864"}
+{"message": "Order total:-- sub = 500.00 ---- tax=25.00 ----- total=555.00", "module": "models", "asctime": "2026-04-03 17:20:53,894"}
+{"message": "recalculated total for order 5398feb3-d044-4689-a534-5826ce6eb498", "module": "signals", "asctime": "2026-04-03 17:20:53,895"}
+{"message": "item: Paneer Butter Masala * 2 at the price 250.00", "module": "views", "asctime": "2026-04-03 17:20:53,895"}
+{"message": "order item saved, recalculating total", "module": "signals", "asctime": "2026-04-03 17:20:53,898"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:53,907"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:53,908"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:53,908"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:53,909"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:53,909"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:53,910"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:53,921"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:53,948"}
+{"message": "recalculated total for order 5398feb3-d044-4689-a534-5826ce6eb498", "module": "signals", "asctime": "2026-04-03 17:20:53,948"}
+{"message": "item: Dal Tadka * 1 at the price 150.00", "module": "views", "asctime": "2026-04-03 17:20:53,949"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:53,957"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:53,957"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:53,958"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:53,958"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:53,958"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:53,959"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:53,971"}
+{"message": "Order total:-- sub = 650.00 ---- tax=32.50 ----- total=712.50", "module": "models", "asctime": "2026-04-03 17:20:53,996"}
+{"message": "calculating ETA ", "module": "models", "asctime": "2026-04-03 17:20:53,996"}
+{"message": "location data not found", "module": "models", "asctime": "2026-04-03 17:20:53,997"}
+{"message": "step1", "module": "models", "asctime": "2026-04-03 17:20:53,997"}
+{"message": "step2", "module": "models", "asctime": "2026-04-03 17:20:53,998"}
+{"message": "step3", "module": "models", "asctime": "2026-04-03 17:20:53,998"}
+{"message": "step4", "module": "models", "asctime": "2026-04-03 17:20:53,998"}
+{"message": "step5", "module": "models", "asctime": "2026-04-03 17:20:53,999"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:53,999"}
+{"message": "here", "module": "signals", "asctime": "2026-04-03 17:20:54,010"}
+{"message": "ETA: 2026-04-03 12:20:53.997625+00:00", "module": "views", "asctime": "2026-04-03 17:20:54,039"}
+{"message": "===order 5398feb3-d044-4689-a534-5826ce6eb498 placed, cart cleared===", "module": "views", "asctime": "2026-04-03 17:20:54,045"}
+{"message": "===validating review for order 5398feb3-d044-4689-a534-5826ce6eb498===", "module": "serializers", "asctime": "2026-04-03 17:20:54,259"}
+{"message": "Error 400: {'non_field_errors': [ErrorDetail(string='you can only review delivered orders', code='invalid')]}", "module": "exceptions", "asctime": "2026-04-03 17:20:54,260", "request_path": "/api/orders/reviews/", "request_method": "POST"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-03 17:31:27,988"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,197"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,198"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,198"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,209"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,212"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,214"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,215"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,215"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,231"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,232"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,233"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,238"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,245"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,248"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,248"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,249"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,251"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,253"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,254"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,255"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,258"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,259"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,260"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 17:31:44,261"}
+{"message": "using v1", "module": "views", "asctime": "2026-04-03 18:05:38,202"}
+{"message": "[<RestrauntModel: Italian Resto>, <RestrauntModel: Burger King>, <RestrauntModel: Indian resto>, <RestrauntModel: Chinese Resto>]", "module": "views", "asctime": "2026-04-03 18:05:38,271"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 18:05:38,271"}
+{"message": "======================18:05:38.279693=================", "module": "serializers", "asctime": "2026-04-03 18:05:38,279"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:05:38,280"}
+{"message": "======================18:05:38.281381=================", "module": "serializers", "asctime": "2026-04-03 18:05:38,281"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:05:38,281"}
+{"message": "======================18:05:38.282830=================", "module": "serializers", "asctime": "2026-04-03 18:05:38,282"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:05:38,283"}
+{"message": "======================18:05:38.284186=================", "module": "serializers", "asctime": "2026-04-03 18:05:38,284"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:05:38,284"}
+{"message": "returning <Response status_code=200, \"text/html; charset=utf-8\">", "module": "views", "asctime": "2026-04-03 18:05:38,285"}
+{"message": "using v1", "module": "views", "asctime": "2026-04-03 18:05:48,402"}
+{"message": "[<RestrauntModel: Italian Resto>, <RestrauntModel: Burger King>, <RestrauntModel: Indian resto>, <RestrauntModel: Chinese Resto>]", "module": "views", "asctime": "2026-04-03 18:05:48,456"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 18:05:48,457"}
+{"message": "======================18:05:48.463300=================", "module": "serializers", "asctime": "2026-04-03 18:05:48,463"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:05:48,463"}
+{"message": "======================18:05:48.464708=================", "module": "serializers", "asctime": "2026-04-03 18:05:48,464"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:05:48,465"}
+{"message": "======================18:05:48.465969=================", "module": "serializers", "asctime": "2026-04-03 18:05:48,466"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:05:48,466"}
+{"message": "======================18:05:48.467222=================", "module": "serializers", "asctime": "2026-04-03 18:05:48,467"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:05:48,467"}
+{"message": "returning <Response status_code=200, \"text/html; charset=utf-8\">", "module": "views", "asctime": "2026-04-03 18:05:48,469"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-04-03 18:05:48,481"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-04-03 18:05:48,481"}
+{"message": "Create action detected", "module": "views", "asctime": "2026-04-03 18:05:48,499"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-04-03 18:05:48,500"}
+{"message": "using v1", "module": "views", "asctime": "2026-04-03 18:06:11,245"}
+{"message": "[<RestrauntModel: Italian Resto>, <RestrauntModel: Burger King>, <RestrauntModel: Indian resto>, <RestrauntModel: Chinese Resto>]", "module": "views", "asctime": "2026-04-03 18:06:11,298"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 18:06:11,298"}
+{"message": "======================18:06:11.305676=================", "module": "serializers", "asctime": "2026-04-03 18:06:11,305"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:06:11,306"}
+{"message": "======================18:06:11.307280=================", "module": "serializers", "asctime": "2026-04-03 18:06:11,307"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:06:11,307"}
+{"message": "======================18:06:11.309125=================", "module": "serializers", "asctime": "2026-04-03 18:06:11,309"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:06:11,309"}
+{"message": "======================18:06:11.310816=================", "module": "serializers", "asctime": "2026-04-03 18:06:11,310"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:06:11,311"}
+{"message": "returning <Response status_code=200, \"text/html; charset=utf-8\">", "module": "views", "asctime": "2026-04-03 18:06:11,312"}
+{"message": "using v1", "module": "views", "asctime": "2026-04-03 18:06:25,823"}
+{"message": "[<RestrauntModel: Italian Resto>, <RestrauntModel: Burger King>, <RestrauntModel: Indian resto>, <RestrauntModel: Chinese Resto>]", "module": "views", "asctime": "2026-04-03 18:06:25,886"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 18:06:25,887"}
+{"message": "======================18:06:25.895892=================", "module": "serializers", "asctime": "2026-04-03 18:06:25,896"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:06:25,896"}
+{"message": "======================18:06:25.897486=================", "module": "serializers", "asctime": "2026-04-03 18:06:25,897"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:06:25,897"}
+{"message": "======================18:06:25.898788=================", "module": "serializers", "asctime": "2026-04-03 18:06:25,898"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:06:25,899"}
+{"message": "======================18:06:25.900179=================", "module": "serializers", "asctime": "2026-04-03 18:06:25,900"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:06:25,900"}
+{"message": "returning <Response status_code=200, \"text/html; charset=utf-8\">", "module": "views", "asctime": "2026-04-03 18:06:25,901"}
+{"message": "using v1", "module": "views", "asctime": "2026-04-03 18:08:47,009"}
+{"message": "[<RestrauntModel: Italian Resto>, <RestrauntModel: Burger King>, <RestrauntModel: Indian resto>, <RestrauntModel: Chinese Resto>]", "module": "views", "asctime": "2026-04-03 18:08:47,063"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 18:08:47,064"}
+{"message": "======================18:08:47.071417=================", "module": "serializers", "asctime": "2026-04-03 18:08:47,071"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:08:47,072"}
+{"message": "======================18:08:47.073008=================", "module": "serializers", "asctime": "2026-04-03 18:08:47,073"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:08:47,073"}
+{"message": "======================18:08:47.074322=================", "module": "serializers", "asctime": "2026-04-03 18:08:47,074"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:08:47,074"}
+{"message": "======================18:08:47.075706=================", "module": "serializers", "asctime": "2026-04-03 18:08:47,075"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:08:47,076"}
+{"message": "returning <Response status_code=200, \"text/html; charset=utf-8\">", "module": "views", "asctime": "2026-04-03 18:08:47,077"}
+{"message": "using v1", "module": "views", "asctime": "2026-04-03 18:09:03,744"}
+{"message": "[<RestrauntModel: Italian Resto>, <RestrauntModel: Burger King>, <RestrauntModel: Indian resto>, <RestrauntModel: Chinese Resto>]", "module": "views", "asctime": "2026-04-03 18:09:03,802"}
+{"message": "<function action at 0x7f2edb522200>", "module": "views", "asctime": "2026-04-03 18:09:03,802"}
+{"message": "======================18:09:03.809673=================", "module": "serializers", "asctime": "2026-04-03 18:09:03,809"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:09:03,810"}
+{"message": "======================18:09:03.811670=================", "module": "serializers", "asctime": "2026-04-03 18:09:03,811"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:09:03,812"}
+{"message": "======================18:09:03.813162=================", "module": "serializers", "asctime": "2026-04-03 18:09:03,813"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:09:03,813"}
+{"message": "======================18:09:03.814401=================", "module": "serializers", "asctime": "2026-04-03 18:09:03,814"}
+{"message": "Restro is Open", "module": "serializers", "asctime": "2026-04-03 18:09:03,815"}
+{"message": "returning <Response status_code=200, \"text/html; charset=utf-8\">", "module": "views", "asctime": "2026-04-03 18:09:03,815"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-04 10:19:47,190"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,948"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,949"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,950"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,962"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,965"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,967"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,968"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,969"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,986"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,986"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,987"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:57,994"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,005"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,008"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,024"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,027"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,033"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,049"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,051"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,055"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,061"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,063"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,064"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 10:19:58,066"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-04-04 10:21:51,134"}
+{"message": "Error 401: Authentication credentials were not provided.", "module": "exceptions", "asctime": "2026-04-04 10:21:51,138", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 503, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 421, in initial\n    self.check_permissions(request)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 339, in check_permissions\n    self.permission_denied(\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 180, in permission_denied\n    raise exceptions.NotAuthenticated()\nrest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.", "request_path": "/api/restaurants/menuitem/", "request_method": "GET"}
+{"message": "The use does not have the permission to register a RESTRO", "module": "permissions", "asctime": "2026-04-04 10:28:05,574"}
+{"message": "Error 401: Authentication credentials were not provided.", "module": "exceptions", "asctime": "2026-04-04 10:28:05,576", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 503, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 421, in initial\n    self.check_permissions(request)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 339, in check_permissions\n    self.permission_denied(\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 180, in permission_denied\n    raise exceptions.NotAuthenticated()\nrest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.", "request_path": "/api/restaurants/menuitem/", "request_method": "GET"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,577"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,578"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,579"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,591"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,595"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,598"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,599"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,599"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,618"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,619"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,620"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,627"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,633"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,635"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,641"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,646"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,649"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,651"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,652"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,653"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,656"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,657"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,658"}
+{"message": "<function action at 0x78df1bbc5800>", "module": "views", "asctime": "2026-04-04 11:11:23,659"}
+{"message": "Error 401: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}", "module": "exceptions", "asctime": "2026-04-04 12:49:48,492", "exc_info": "Traceback (most recent call last):\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 503, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 420, in initial\n    self.perform_authentication(request)\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/views.py\", line 330, in perform_authentication\n    request.user\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/request.py\", line 232, in user\n    self._authenticate()\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework/request.py\", line 385, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py\", line 49, in authenticate\n    validated_token = self.get_validated_token(raw_token)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/pragnakalpl39/Desktop/drf_module/drfv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py\", line 113, in get_validated_token\n    raise InvalidToken(\nrest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}", "request_path": "/api/orders/cart/", "request_method": "GET"}
+{"message": "in serializer", "module": "serializers", "asctime": "2026-04-04 15:15:49,227"}

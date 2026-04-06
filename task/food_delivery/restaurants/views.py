@@ -92,7 +92,7 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     filterset_class = RestoFilter
 
     def get_serializer_class(self):
-        logger.info(action)
+        logger.info(self.action)
         if self.action == 'list':
             return RestoListSerializer
         elif self.action == 'create':
@@ -140,8 +140,8 @@ class RestaurantViewSet(viewsets.ModelViewSet):
             return Response(cached_data)
         # by defualt v1
         logger.info("using v1")
-        queryset = self.get_queryset()
-        page = self.paginate_queryset(self.get_queryset())
+        queryset = self.filter_queryset(self.get_queryset()) # <-- GUARANTEE: Re-attaches DRF Filters
+        page = self.paginate_queryset(queryset)
         if page is not None:
             logger.info(page)
             serializer = self.get_serializer(page,many=True)
@@ -150,6 +150,8 @@ class RestaurantViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(queryset,many=True)
         logger.info(f"Listing all rests : -  {type(serializer.data)}")
         return Response(serializer.data)
+
+
     
 #==============================================================================
 # 2. GET ONE RESTAURANT BY ITS ID
@@ -204,6 +206,11 @@ class RestaurantViewSet(viewsets.ModelViewSet):
             pagination_class=MenuItemPagination)
     def menu(self,request,pk=None):
         queryset = MenuItem.objects.filter(restaurant_id=pk)
+        self.filterset_class = MenuItemFilter
+        self.search_fields = ['name','description']
+        self.ordering_fields = ['price','name','created_at']
+        self.ordering = ['name']
+        queryset = self.filter_queryset(queryset)
     
         if request.version == 'v2':
             logger.info("using v2")
